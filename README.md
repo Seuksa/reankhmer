@@ -50,7 +50,7 @@ npm run preview  # test the PWA and offline mode
 | `/letters` | 33 consonants coloured by series, tap to hear, "Listen & find" game |
 | `/vowels` | every vowel after ក (a-series) and គ (o-series), both recordings |
 | `/numbers` | number words with audio |
-| `/keyboard` | NiDA (KhmerOS) typing trainer: 9 lessons, on-screen keyboard, 2-minute game; no Khmer keyboard install needed |
+| `/typing` | NiDA (KhmerOS) typing trainer: 9 lessons, on-screen keyboard, 2-minute game; no Khmer keyboard install needed |
 | `/lessons/{chapter}/{lesson}` | 21 lessons: stories with audio, vocabulary, dialogue player, quizzes |
 | `/progress` | stats, backup/restore, "download for offline" per chapter |
 

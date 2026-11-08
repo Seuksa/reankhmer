@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import T from '../components/T.astro';
+import TypingTrainer from '../components/TypingTrainer.vue';
+import { ROWS, strokes, type TypingLesson } from '../lib/nida';
+import { chapters, dictionary, phrases } from '../lib/content';
+
+const row = (r: number, skip: string[] = []) => ROWS[r].filter((d) => !skip.includes(d.code)).map((d) => d.normal);
+const shiftOf = (codes: string[]) => ROWS.flat().filter((d) => codes.includes(d.code)).map((d) => d.shift);
+const clean = (s: string) => s.replace(/[​-‍]/g, '').trim();
+const uniq = (a: string[]) => [...new Set(a.map(clean).filter((w) => w && strokes(w)))];
+
+const vocab = uniq([...chapters.flatMap((c) => c.lessons.flatMap((l) => l.vocabulary ?? [])), ...dictionary.keys()]);
+const lines = uniq(chapters.flatMap((c) => c.lessons.flatMap((l) => (l.items ?? []).map((i) => i.text ?? ''))))
+  .filter((t) => /[ក-៿]/.test(t) && t.length <= 40);
+
+const lessons: TypingLesson[] = [
+  { id: 'home', km: 'ជួរកណ្តាល ◌ា ស ដ ថ ង ហ ក ល', en: 'Home row (A S D F G H K L)', kind: 'drill', items: row(2, ['KeyJ']) },
+  { id: 'top', km: 'ជួរខាងលើ ឆ ◌េ រ ត យ ◌ុ ◌ិ ◌ោ ផ', en: 'Top row (Q–P)', kind: 'drill', items: row(1, ['BracketRight', 'Backslash']) },
+  { id: 'bottom', km: 'ជួរខាងក្រោម ឋ ខ ច វ ប ន ម', en: 'Bottom row (Z–/)', kind: 'drill', items: row(3) },
+  { id: 'shift-consonants', km: 'ព្យញ្ជនៈ ចុច Shift (គ ទ ព ជ …)', en: 'Shift consonants (គ ទ ព ជ …)', kind: 'drill',
+    items: shiftOf(['KeyQ', 'KeyT', 'KeyP', 'KeyD', 'KeyF', 'KeyG', 'KeyJ', 'KeyK', 'KeyL', 'KeyZ', 'KeyX', 'KeyC', 'KeyB', 'KeyN']) },
+  { id: 'shift-vowels', km: 'ស្រៈ ចុច Shift (◌ី ◌ូ ◌ែ ◌ៅ …)', en: 'Shift vowels (◌ី ◌ូ ◌ែ ◌ៅ …)', kind: 'drill',
+    items: shiftOf(['KeyW', 'KeyE', 'KeyY', 'KeyU', 'KeyI', 'KeyO', 'BracketLeft', 'KeyA', 'KeyS', 'KeyH', 'Semicolon', 'Quote', 'KeyV', 'KeyM', 'Comma']) },
+  { id: 'numbers', km: 'លេខ ០–៩', en: 'Numbers ០–៩', kind: 'drill', items: '០១២៣៤៥៦៧៨៩'.split('') },
+  { id: 'words', km: 'ពាក្យងាយៗ', en: 'Simple words', kind: 'text', items: vocab.filter((w) => !w.includes('្')) },
+  { id: 'subscripts', km: 'ពាក្យមានជើង (ចុច J ជាមុន)', en: 'Words with subscripts (J, then the letter)', kind: 'text', items: vocab.filter((w) => w.includes('្')) },
+  { id: 'phrases', km: 'ឃ្លា និងប្រយោគ', en: 'Phrases and sentences', kind: 'text', items: uniq([...phrases.map((p) => p.khmer), ...lines]) },
+];
+const gamePool = uniq([...vocab, ...phrases.map((p) => p.khmer)]);
+---
+
+<BaseLayout title="ក្តារចុច Keyboard">
+  <h1 class="mb-2 text-2xl font-semibold"><T km="រៀនវាយអក្សរខ្មែរ" en="Learn Khmer typing" /></h1>
+  <p class="mb-6 max-w-3xl text-slate-600 dark:text-slate-400">
+    <T
+      km="ក្តារចុចខ្មែរយូនីកូដស្តង់ដារ NiDA (KhmerOS) — ដូចនៅលើ Windows, Mac និងទូរស័ព្ទ។ ចាប់ផ្តើមពីជួរកណ្តាល ដាក់ម្រាមដៃលើ F និង J។"
+      en="The standard NiDA (KhmerOS) Khmer Unicode layout. Start with the home row: rest your fingers on F and J."
+      stack
+    />
+  </p>
+
+  <TypingTrainer client:load lessons={lessons} gamePool={gamePool} />
+
+  <details class="card mt-10">
+    <summary class="cursor-pointer font-medium"><T km="ដំឡើងក្តារចុចខ្មែរនៅលើឧបករណ៍របស់អ្នក" en="Add the Khmer keyboard to your own device" /></summary>
+    <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-700 dark:text-slate-300">
+      <li><b>Windows:</b> Settings → Time &amp; language → Language &amp; region → Add a language → Khmer, then choose the keyboard <i>Khmer (NIDA)</i>. Switch with <kbd>Win</kbd>+<kbd>Space</kbd>.</li>
+      <li><b>macOS:</b> System Settings → Keyboard → Text Input → Edit → + → Khmer. Check its layout against this page; it may differ from NiDA on a few keys.</li>
+      <li><b>Android:</b> Gboard → Languages → Add keyboard → Khmer.</li>
+      <li><b>iPhone / iPad:</b> Settings → General → Keyboard → Keyboards → Add New Keyboard → Khmer.</li>
+    </ul>
+    <p class="mt-3 text-sm text-slate-500"><T km="ក្តារចុចទូរស័ព្ទមានទម្រង់ខុសពី NiDA បន្តិច។" en="Phone keyboards arrange keys differently from NiDA; this trainer teaches the computer layout." /></p>
+  </details>
+</BaseLayout>
