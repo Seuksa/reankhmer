@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import T from '../components/T.astro';
+import WritingPractice from '../components/WritingPractice.vue';
+import { consonants } from '../lib/content';
+---
+
+<BaseLayout title="សរសេរ Writing">
+  <h1 class="mb-2 text-2xl font-semibold"><T km="ហាត់សរសេរព្យញ្ជនៈ" en="Write the consonants" /></h1>
+  <p class="mb-6 max-w-3xl text-slate-600 dark:text-slate-400">
+    <T
+      km="មើលចលនាសរសេរដើមពីឆ្នាំ ២០០៦ ហើយសរសេរតាមលើអក្សរស្រអាប់។ ប្រើម្រាមដៃ ប៊ិច ឬកណ្តុរ។"
+      en="Watch the original 2006 writing animation, then trace over the faded letter with a finger, stylus or mouse."
+      stack
+    />
+  </p>
+  <WritingPractice client:only="vue" letters={consonants} />
+</BaseLayout>

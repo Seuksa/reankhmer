@@ -52,11 +52,30 @@ npm run preview  # test the PWA and offline mode
 | `/numbers` | number words with audio |
 | `/typing` | NiDA (KhmerOS) typing trainer: 9 lessons, on-screen keyboard, 2-minute game; no Khmer keyboard install needed |
 | `/lessons/{chapter}/{lesson}` | 21 lessons: stories with audio, vocabulary, dialogue player, quizzes |
-| `/progress` | stats, backup/restore, "download for offline" per chapter |
+| `/practice` | hub for the tools below |
+| `/review` | daily spaced-repetition review (FSRS): hear a letter, vowel sound or number, pick it |
+| `/writing` | the 2006 stroke-by-stroke writing animations (Flash, played with Ruffle) + a tracing pad |
+| `/syllables` | build consonant + vowel (+ subscript) and hear how the series changes the vowel |
+| `/progress` | stats, free-to-share banner, backup/restore (file and Google Drive), "download for offline" |
 
 Deploy: push to GitHub; `.github/workflows/deploy.yml` builds `app/` and publishes to Pages.
 DNS: add a `CNAME` record `rean` → `<github-user>.github.io` on seuksa.com, then set the custom
 domain in the repo's Pages settings (the build already ships `CNAME`).
+
+## Google Drive backup (setup)
+
+The Progress page can back up to the learner's own Google Drive (hidden app-data folder, scope
+`drive.appdata`; the app cannot see any other files). It needs a Google OAuth **Web** client ID:
+
+1. Google Cloud console → create or pick a project → enable the **Google Drive API**.
+2. OAuth consent screen → add the scope `.../auth/drive.appdata`, app name ReanKhmer, link to rean.seuksa.com.
+3. Credentials → Create OAuth client ID → Web application → Authorized JavaScript origins:
+   `https://rean.seuksa.com` and `http://localhost:4321` (no redirect URIs needed).
+4. GitHub repo → Settings → Secrets and variables → Actions → **Variables** → `GOOGLE_CLIENT_ID` = the client ID.
+   Locally: copy `app/.env.example` to `app/.env` and fill it in.
+
+Without the variable the button is hidden and the page says "coming soon".
+While the consent screen is in *Testing* mode, only listed test users can sign in; publish it for everyone.
 
 ## Re-running the export
 

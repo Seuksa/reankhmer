@@ -51,10 +51,15 @@ export default defineConfig({
         // App shell + every page is precached; lesson audio/images are cached on first use
         // or all at once from the Progress page ("Download for offline").
         globPatterns: ['**/*.{html,js,css,svg,woff2}'],
-        globIgnores: ['assets/**'],
+        globIgnores: ['assets/**', 'ruffle/**'],
         navigateFallback: null,
         cleanURLs: true,
-        runtimeCaching: [media(/\/assets\/audio\//, 'rk-audio', 800), media(/\/assets\/images\//, 'rk-images', 300)],
+        runtimeCaching: [
+          media(/\/assets\/audio\//, 'rk-audio', 800),
+          media(/\/assets\/images\//, 'rk-images', 300),
+          media(/\/assets\/flash\//, 'rk-flash', 60),
+          media(/\/ruffle\//, 'rk-ruffle', 10),
+        ],
       },
     }),
   ],

@@ -4,6 +4,8 @@ import { get, set } from 'idb-keyval';
 import { reactive } from 'vue';
 
 export interface QuizResult { score: number; total: number; at: number }
+/** Structural copy of review.ts StoredCard, kept here to avoid an import cycle. */
+export interface StoredCardLike { due: string; last_review?: string; [k: string]: unknown }
 export interface TypingResult { kpm: number; acc: number; at: number }
 export interface Progress {
   v: 1;
@@ -12,11 +14,14 @@ export interface Progress {
   lessons: Record<string, { done?: number; quiz?: QuizResult }>;
   /** best result per typing lesson: kpm = correct keystrokes per minute, acc = 0..1 */
   typing?: Record<string, TypingResult>;
+  /** FSRS review cards by item id (dates as ISO strings) */
+  cards?: Record<string, StoredCardLike>;
+  reviewDay?: { date: string; newCount: number; reviews?: number };
   updatedAt: number;
 }
 
 const KEY = 'reankhmer-progress';
-const empty = (): Progress => ({ v: 1, heard: {}, lessons: {}, typing: {}, updatedAt: 0 });
+const empty = (): Progress => ({ v: 1, heard: {}, lessons: {}, typing: {}, cards: {}, updatedAt: 0 });
 export const progress = reactive<Progress>(empty());
 
 const isProgress = (p: unknown): p is Progress =>
@@ -69,6 +74,12 @@ export function saveTyping(id: string, kpm: number, acc: number) {
   void save();
 }
 
+export function saveCards(cards: Record<string, StoredCardLike>, day: Progress['reviewDay']) {
+  progress.cards = cards;
+  progress.reviewDay = day;
+  void save();
+}
+
 export const heardCount = (prefix: string) => Object.keys(progress.heard).filter((k) => k.startsWith(prefix)).length;
 
 export function exportProgress(): Blob {
@@ -91,6 +102,12 @@ export async function importProgress(text: string): Promise<boolean> {
   for (const [id, t] of Object.entries(data.typing ?? {})) {
     const all = (progress.typing ??= {});
     if (t && typeof t.kpm === 'number' && (!all[id] || t.kpm * t.acc > all[id].kpm * all[id].acc)) all[id] = t;
+  }
+  // Review cards: keep whichever copy was reviewed most recently.
+  for (const [id, c] of Object.entries(data.cards ?? {})) {
+    const all = (progress.cards ??= {});
+    const mine = all[id];
+    if (c && typeof c.due === 'string' && (!mine || (c.last_review ?? '') > (mine.last_review ?? ''))) all[id] = c;
   }
   await save();
   return true;

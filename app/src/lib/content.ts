@@ -93,3 +93,21 @@ export function alphabetMedia(): string[] {
   ];
   return urls.filter(Boolean).map((p) => `/${p}`);
 }
+
+/** Everything the review deck can ask about (all items have a recording). */
+export function reviewItems() {
+  const items: import('./review').ReviewItem[] = [];
+  for (const c of consonants) if (c.audio) items.push({ id: `c:${c.id}`, kind: 'consonant', audio: `/${c.audio}`, answer: c.char, pool: 'c', series: c.series });
+  for (const s of [1, 2] as const) {
+    for (const v of vowels) {
+      const a = s === 1 ? v.audio_series1 : v.audio_series2;
+      if (a) items.push({ id: `v:${v.id}:${s}`, kind: 'vowel', audio: `/${a}`, answer: (s === 1 ? 'ក' : 'គ') + v.sign, pool: `v${s}`, series: s });
+    }
+  }
+  for (const n of numbers) {
+    if (n.value !== undefined && (n.value < 10 || (n.value < 100 && n.value % 10 === 0)) && !items.some((i) => i.answer === khmerDigits(n.value!))) {
+      items.push({ id: `n:${n.key}`, kind: 'number', audio: `/${n.audio}`, answer: khmerDigits(n.value), pool: 'n' });
+    }
+  }
+  return items;
+}

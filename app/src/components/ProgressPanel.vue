@@ -3,9 +3,10 @@ import { computed, onMounted, ref } from 'vue';
 import { prefetch } from '../lib/audio';
 import { exportProgress, heardCount, importProgress, loadProgress, progress, resetProgress } from '../lib/progress';
 import T from './T.vue';
+import DriveBackup from './DriveBackup.vue';
 
 interface Pack { id: string; km: string; en: string; urls: string[] }
-const props = defineProps<{ totals: { letters: number; vowels: number; lessons: number; typing: number }; packs: Pack[] }>();
+const props = defineProps<{ totals: { letters: number; vowels: number; lessons: number; typing: number; cards: number }; packs: Pack[] }>();
 
 const persisted = ref<boolean | null>(null);
 const message = ref<{ km: string; en: string } | null>(null);
@@ -21,6 +22,7 @@ const stats = computed(() => [
   { km: 'ព្យញ្ជនៈបានស្តាប់', en: 'Letters heard', value: heardCount('c:'), total: props.totals.letters },
   { km: 'ស្រៈបានស្តាប់', en: 'Vowel sounds heard', value: heardCount('v:'), total: props.totals.vowels },
   { km: 'មេរៀនចប់', en: 'Lessons finished', value: Object.values(progress.lessons).filter((l) => l.done).length, total: props.totals.lessons },
+  { km: 'កាតរំលឹក', en: 'Review cards learned', value: Object.keys(progress.cards ?? {}).length, total: props.totals.cards },
   { km: 'មេរៀនវាយអក្សរ', en: 'Typing lessons', value: Object.keys(progress.typing ?? {}).filter((k) => k !== 'game').length, total: props.totals.typing },
 ]);
 
@@ -62,7 +64,7 @@ async function offline(p: Pack) {
 <template>
   <div class="space-y-8">
     <section>
-      <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         <li v-for="s in stats" :key="s.en" class="card">
           <p class="text-sm text-slate-500"><T :km="s.km" :en="s.en" stack /></p>
           <p class="mt-1 text-3xl font-semibold">{{ s.value }}<span class="text-lg text-slate-400"> / {{ s.total }}</span></p>
@@ -86,7 +88,7 @@ async function offline(p: Pack) {
         <button class="btn-quiet text-rose-700 dark:text-rose-300" @click="reset"><T km="លុបទាំងអស់" en="Reset" /></button>
       </div>
       <p v-if="message" class="text-sm" aria-live="polite"><T :km="message.km" :en="message.en" /></p>
-      <p class="text-xs text-slate-500"><T km="ការបម្រុងទុកទៅ Google Drive នឹងមកដល់ឆាប់ៗ។" en="Google Drive backup is coming soon." /></p>
+      <DriveBackup />
     </section>
 
     <section class="card space-y-3">

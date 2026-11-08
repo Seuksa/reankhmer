@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import T from '../components/T.astro';
+import DueBadge from '../components/DueBadge.vue';
+import { reviewItems } from '../lib/content';
+
+const tools = [
+  { href: '/review', char: '🔁', km: 'រំលឹកប្រចាំថ្ងៃ', en: 'Daily review', note: { km: 'ស្តាប់ ហើយជ្រើស — ពីរបីនាទីក្នុងមួយថ្ងៃ', en: 'Listen and pick, a few minutes a day' }, badge: true },
+  { href: '/writing', char: 'ក', km: 'សរសេរ', en: 'Writing', note: { km: 'មើលចលនាឆ្នាំ ២០០៦ ហើយសរសេរតាម', en: 'Watch the 2006 animation, then trace' } },
+  { href: '/syllables', char: 'កា', km: 'ផ្សំព្យាង្គ', en: 'Syllables', note: { km: 'ព្យញ្ជនៈ + ស្រៈ + ជើងអក្សរ', en: 'Consonant + vowel + subscript' } },
+  { href: '/typing', char: '⌨', km: 'វាយអក្សរ', en: 'Typing', note: { km: 'ក្តារចុច NiDA និងល្បែង ២ នាទី', en: 'NiDA keyboard and a 2-minute game' } },
+  { href: '/numbers', char: '៥', km: 'លេខ', en: 'Numbers', note: { km: 'ពី ០ ដល់ លាន', en: 'Zero to a million' } },
+];
+---
+
+<BaseLayout title="ហាត់ Practice">
+  <h1 class="mb-6 text-2xl font-semibold"><T km="ហាត់រៀន" en="Practice" /></h1>
+  <ul class="grid gap-4 sm:grid-cols-2">
+    {tools.map((t) => (
+      <li>
+        <a href={t.href} class="card flex items-center gap-4 hover:border-brand-500">
+          <span lang="km" class="font-khmer-serif grid size-16 shrink-0 place-items-center rounded-2xl bg-brand-50 text-3xl text-brand-800 dark:bg-brand-900/40 dark:text-brand-100">{t.char}</span>
+          <span class="min-w-0 flex-1">
+            <span class="flex items-center gap-2 font-semibold"><T km={t.km} en={t.en} />{t.badge && <DueBadge client:idle items={reviewItems()} />}</span>
+            <span class="text-sm text-slate-500"><T km={t.note.km} en={t.note.en} /></span>
+          </span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

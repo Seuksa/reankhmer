@@ -31,6 +31,9 @@ jobs:
       - run: npm ci
       - run: npm run check
       - run: npm run build # copies ../assets into public/ then builds; public/CNAME = rean.seuksa.com
+        env:
+          # Google OAuth client ID for Drive backup (a public value; set as a repo variable, not a secret).
+          PUBLIC_GOOGLE_CLIENT_ID: ${{ vars.GOOGLE_CLIENT_ID }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: app/dist
