@@ -1,0 +1,2006 @@
+[
+  {
+    "number": 1,
+    "title": "Khmer Consonants and Vowels",
+    "intro": "Modern Khmer uses a wrting system consisting of 44 independent consonant symbols (33 regular symbols and 11 others modified by the diacritics (៉) and ( ៊ ) ). The principle of the writing system is that each independent symbol represents, not an isolated consonant or vowel (as in a strictly alphabetic system), but a syllable. Thuseach consonant symbol represents a spoken consonant © followed by a spoken vowel (V). There are 12 independent vowel symbols and 16 conjunct (or dependent) vowel symbols which serve in various combinations with the consonant symbols. The vowel symbols are pronounced in two different ways, according to the set to which they belong. (Ref: Communicating in Khmer Software, by Chhany Sak Humphry)",
+    "lessons": [
+      {
+        "id": 1,
+        "number": 1,
+        "title": "Consonants (ក, ខ,​ គ, ឃ, ង​)",
+        "items": [
+          {
+            "legacy_swf": "legacy/flash/kor_1.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/khor_2.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/kou_3.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/khou_4.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/ngou_5.swf"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "number": 2,
+        "title": "Consonants (ច, ឆ,​ ជ, ឈ, ញ​)",
+        "items": [
+          {
+            "legacy_swf": "legacy/flash/chor_6.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/chhor_7.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/chou_8.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/chhou_9.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/nhou_10.swf"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "number": 3,
+        "title": "Consonants (ដ, ឋ,​ ឌ, ឍ, ណ​)",
+        "items": [
+          {
+            "legacy_swf": "legacy/flash/dor_11.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/thor_12.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/dou_13.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/thou_14.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/nor_15.swf"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "number": 4,
+        "title": "Consonants (ត, ថ, ទ, ធ, ន)",
+        "items": [
+          {
+            "legacy_swf": "legacy/flash/tor_16.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/thor_17.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/tou_18.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/thou_19.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/nou_20.swf"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "number": 5,
+        "title": "Consonants (ប, ផ,​ ព, ភ, ម​)",
+        "items": [
+          {
+            "legacy_swf": "legacy/flash/bor_21.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/phor_22.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/pou_23.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/phou_24.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/mou_25.swf"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "number": 6,
+        "title": "Consonants (យ, រ,​ ល, វ, ស, ហ, ឡ, អ​)",
+        "items": [
+          {
+            "legacy_swf": "legacy/flash/you_26.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/rou_27.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/lou_28.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/vou_29.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/sor_30.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/hor_31.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/lor_32.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/or_33.swf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "title": "Learn to spelling Khmer Script",
+    "intro": "Words with no written vowel --\nMany Khmer words consist of simply two consonants, with no vowel symbol appearing, eg. ដង, មក. These words are usually pronounced with an inherent –or sound. Some common words with an initial second series consonant are, however, pronounced with an inherent –oa sound.",
+    "lessons": [
+      {
+        "id": 5,
+        "number": 1,
+        "title": "[ ] ក​ and [ ] ក់, [ ] ង and [ ] ង់",
+        "article": "ខែ​នេះទឹក​​ព្រែក​​ឡើង​ខ្លាំង​។ ថ្មីៗ​នេះ​ កូន​ពូ​ម៉ុក​លង់​ទឹក តែ​សំ​ណាង​​ល្អវាទាក់​នឹងមែក​រាំង។ យើង​ពុំ​គួរ​ទៅលេង​ឯ​ទី​នោះទេ។",
+        "vocabulary": [
+          "ទឹកព្រែក",
+          "លង់ទឹក",
+          "ទាក់",
+          "លេង"
+        ],
+        "items": [
+          {
+            "legacy_swf": "legacy/flash/spelling/spelling1_1.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/spelling/spelling1_2.swf"
+          }
+        ],
+        "article_audio": "assets/audio/spelling/lesson01/example_les1.mp3",
+        "word_audio": [
+          {
+            "key": "choeng",
+            "audio": "assets/audio/spelling/lesson01/choeng_les1.mp3"
+          },
+          {
+            "key": "kokk",
+            "audio": "assets/audio/spelling/lesson01/kokk_les1.mp3"
+          },
+          {
+            "key": "kong",
+            "audio": "assets/audio/spelling/lesson01/kong_les1.mp3"
+          },
+          {
+            "key": "kork",
+            "audio": "assets/audio/spelling/lesson01/kork_les1.mp3"
+          },
+          {
+            "key": "korng",
+            "audio": "assets/audio/spelling/lesson01/korng_les1.mp3"
+          },
+          {
+            "key": "louk",
+            "audio": "assets/audio/spelling/lesson01/louk_les1.mp3"
+          },
+          {
+            "key": "ngeark",
+            "audio": "assets/audio/spelling/lesson01/ngeark_les1.mp3"
+          },
+          {
+            "key": "nonong",
+            "audio": "assets/audio/spelling/lesson01/nonong_les1.mp3"
+          },
+          {
+            "key": "paikmuok",
+            "audio": "assets/audio/spelling/lesson01/paikmuok_les1.mp3"
+          },
+          {
+            "key": "sokk",
+            "audio": "assets/audio/spelling/lesson01/sokk_les1.mp3"
+          },
+          {
+            "key": "sork",
+            "audio": "assets/audio/spelling/lesson01/sork_les1.mp3"
+          },
+          {
+            "key": "thearngdoung",
+            "audio": "assets/audio/spelling/lesson01/thearngdoung_les1.mp3"
+          },
+          {
+            "key": "touk",
+            "audio": "assets/audio/spelling/lesson01/touk_les1.mp3"
+          },
+          {
+            "key": "trorsokk",
+            "audio": "assets/audio/spelling/lesson01/trorsokk_les1.mp3"
+          },
+          {
+            "key": "young",
+            "audio": "assets/audio/spelling/lesson01/young_les1.mp3"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "number": 2,
+        "title": "[ ] ច and [ ] ច់,​ [ ] ញ and [ ] ញ់",
+        "article": "ថ្ងៃ​សំ​រាក ខ្ញុំ​និង​មិត្ត​ទៅ​ផ្សារ​ធំ​ថ្មី។ ខ្ញុំ​ទិញ​ត្រ​លាច សាច់ ម្រេច និងខ្លាញ់។ មិត្ត​ខ្ញុំ​ទិញ​ត្រី​ក្រាញ់ និង​ស្ពី​ក្រ​ញ៉ាញ។",
+        "vocabulary": [
+          "ថ្ងៃសំរាក",
+          "មិត្ត",
+          "ផ្សារ",
+          "ទិញ",
+          "ត្រលាច",
+          "សាច់",
+          "ខ្លាញ់",
+          "ត្រី"
+        ],
+        "items": [
+          {
+            "legacy_swf": "legacy/flash/spelling/spelling2_1.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/spelling/spelling2_2.swf"
+          }
+        ],
+        "article_audio": "assets/audio/spelling/lesson02/example_les2.mp3",
+        "word_audio": [
+          {
+            "key": "bach",
+            "audio": "assets/audio/spelling/lesson02/bach_les2.mp3"
+          },
+          {
+            "key": "chegn",
+            "audio": "assets/audio/spelling/lesson02/chegn_les2.mp3"
+          },
+          {
+            "key": "degn",
+            "audio": "assets/audio/spelling/lesson02/degn.mp3"
+          },
+          {
+            "key": "dombagn",
+            "audio": "assets/audio/spelling/lesson02/dombagn_les2.mp3"
+          },
+          {
+            "key": "kach",
+            "audio": "assets/audio/spelling/lesson02/kach_les2.mp3"
+          },
+          {
+            "key": "karch",
+            "audio": "assets/audio/spelling/lesson02/karch_les2.mp3"
+          },
+          {
+            "key": "leich2",
+            "audio": "assets/audio/spelling/lesson02/leich2_les2.mp3"
+          },
+          {
+            "key": "leich",
+            "audio": "assets/audio/spelling/lesson02/leich_les2.mp3"
+          },
+          {
+            "key": "romlech",
+            "audio": "assets/audio/spelling/lesson02/romlech_les2.mp3"
+          },
+          {
+            "key": "rougn",
+            "audio": "assets/audio/spelling/lesson02/rougn_les2.mp3"
+          },
+          {
+            "key": "ruoch",
+            "audio": "assets/audio/spelling/lesson02/ruoch_les2.mp3"
+          },
+          {
+            "key": "sign",
+            "audio": "assets/audio/spelling/lesson02/sign_les2.mp3"
+          },
+          {
+            "key": "tomnegn",
+            "audio": "assets/audio/spelling/lesson02/tomnegn_les2.mp3"
+          },
+          {
+            "key": "touch",
+            "audio": "assets/audio/spelling/lesson02/touch_les2.mp3"
+          },
+          {
+            "key": "touchyoum",
+            "audio": "assets/audio/spelling/lesson02/touchyoum_les2.mp3"
+          },
+          {
+            "key": "vegnkhsei",
+            "audio": "assets/audio/spelling/lesson02/vegnkhsei_les2.mp3"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "number": 3,
+        "title": "[ ] ត and [ ] ត់, [ ] ន and [ ] ន់",
+        "article": "តា​ប៊ន​ជា​ព្រាន​ព្រៃ។ ឆ្នាំ​នេះ គាត់​ឈប់​ទៅ​បរ​បាញ់។ គាត់​លែង​ពិ​ឃាត​ជី​វិត​សត្វទៀត​ហើយ។",
+        "vocabulary": [
+          "ព្រានព្រៃ",
+          "បរបាញ់",
+          "ពិឃាត",
+          "ជីវិត",
+          "សត្វ"
+        ],
+        "items": [
+          {
+            "legacy_swf": "legacy/flash/spelling/spelling3_1.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/spelling/spelling3_2.swf"
+          }
+        ],
+        "article_audio": "assets/audio/spelling/lesson03/example_les3.mp3",
+        "word_audio": [
+          {
+            "key": "born",
+            "audio": "assets/audio/spelling/lesson03/born_les3.mp3"
+          },
+          {
+            "key": "bornn",
+            "audio": "assets/audio/spelling/lesson03/bornn_les3.mp3"
+          },
+          {
+            "key": "buntean",
+            "audio": "assets/audio/spelling/lesson03/buntean_les3.mp3"
+          },
+          {
+            "key": "chort",
+            "audio": "assets/audio/spelling/lesson03/chort_les3.mp3"
+          },
+          {
+            "key": "chott",
+            "audio": "assets/audio/spelling/lesson03/chott_les3.mp3"
+          },
+          {
+            "key": "kambett",
+            "audio": "assets/audio/spelling/lesson03/kambett_les3.mp3"
+          },
+          {
+            "key": "khalean",
+            "audio": "assets/audio/spelling/lesson03/khalean_les3.mp3"
+          },
+          {
+            "key": "leat",
+            "audio": "assets/audio/spelling/lesson03/leat_les3.mp3"
+          },
+          {
+            "key": "leatt",
+            "audio": "assets/audio/spelling/lesson03/leatt_les3.mp3"
+          },
+          {
+            "key": "mean",
+            "audio": "assets/audio/spelling/lesson03/mean_les3.mp3"
+          },
+          {
+            "key": "mornn",
+            "audio": "assets/audio/spelling/lesson03/mornn_les3.mp3"
+          },
+          {
+            "key": "phaoun",
+            "audio": "assets/audio/spelling/lesson03/phaoun_les3.mp3"
+          },
+          {
+            "key": "phsortt",
+            "audio": "assets/audio/spelling/lesson03/phsortt_les3.mp3"
+          },
+          {
+            "key": "preanprey",
+            "audio": "assets/audio/spelling/lesson03/preanprey_les3.mp3"
+          },
+          {
+            "key": "prortt",
+            "audio": "assets/audio/spelling/lesson03/prortt_les3.mp3"
+          },
+          {
+            "key": "settsorkk",
+            "audio": "assets/audio/spelling/lesson03/settsorkk_les3.mp3"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "number": 4,
+        "title": "[ ] ប and [ ] ប់, [ ] ល and [ ] ល់",
+        "article": "ថ្ងៃ​ចូល​ឆ្នាំ​ខ្មែរ យើង​ទៅ​លេ​ង​អង្គ​រ​វត្ត។ បង​ខ្ញុំ​ឃើញ​នារី​ម្នាក់​ស្អាត និង​សុ​ភាព​រាប​សា។ គាត់​លប​ដាក់​ឈ្មោះ​ថា \"រំ​ដួល​សៀម​រាប\"។",
+        "vocabulary": [
+          "ចូលឆ្នាំ",
+          "អង្គរវត្ត",
+          "ស្អាត",
+          "សុភាពរាបសា",
+          "លប",
+          "ឈ្មោះ"
+        ],
+        "items": [
+          {
+            "legacy_swf": "legacy/flash/spelling/spelling4_1.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/spelling/spelling4_2.swf"
+          }
+        ],
+        "article_audio": "assets/audio/spelling/lesson04/example_les4.mp3",
+        "word_audio": [
+          {
+            "key": "brognab_brognarl",
+            "audio": "assets/audio/spelling/lesson04/brognab_brognarl_les4.mp3"
+          },
+          {
+            "key": "dall",
+            "audio": "assets/audio/spelling/lesson04/dall_les4.mp3"
+          },
+          {
+            "key": "darl",
+            "audio": "assets/audio/spelling/lesson04/darl_les4.mp3"
+          },
+          {
+            "key": "heil",
+            "audio": "assets/audio/spelling/lesson04/heil_les4.mp3"
+          },
+          {
+            "key": "kobb",
+            "audio": "assets/audio/spelling/lesson04/kobb_les4.mp3"
+          },
+          {
+            "key": "korb",
+            "audio": "assets/audio/spelling/lesson04/korb_les4.mp3"
+          },
+          {
+            "key": "orb_or",
+            "audio": "assets/audio/spelling/lesson04/orb_or_les4.mp3"
+          },
+          {
+            "key": "phdorl",
+            "audio": "assets/audio/spelling/lesson04/phdorl_les4.mp3"
+          },
+          {
+            "key": "reab",
+            "audio": "assets/audio/spelling/lesson04/reab_les4.mp3"
+          },
+          {
+            "key": "romduol",
+            "audio": "assets/audio/spelling/lesson04/romduol_les4.mp3"
+          },
+          {
+            "key": "rorbb",
+            "audio": "assets/audio/spelling/lesson04/rorbb_les4.mp3"
+          },
+          {
+            "key": "rosoeb",
+            "audio": "assets/audio/spelling/lesson04/rosoeb_les4.mp3"
+          },
+          {
+            "key": "sroub",
+            "audio": "assets/audio/spelling/lesson04/sroub_les4.mp3"
+          },
+          {
+            "key": "steab",
+            "audio": "assets/audio/spelling/lesson04/steab_les4.mp3"
+          },
+          {
+            "key": "teal",
+            "audio": "assets/audio/spelling/lesson04/teal_les4.mp3"
+          },
+          {
+            "key": "torll",
+            "audio": "assets/audio/spelling/lesson04/torll_les4.mp3"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "number": 5,
+        "title": "[ ] ម,​ [ ] ស, [ ] ស់",
+        "article": "សុ​ភី​ងូត​ទឹក ដុស​ក្អែល​រាល់​ថ្ងៃ។ សុ​ភី​ជា​ក្មេង​ស្អាត។ នា​ង​ពុំ​ដែល​កើត​រមាស់​ទេ។",
+        "vocabulary": [
+          "ងូតទឹក",
+          "ក្អែល",
+          "រាល់ថ្ងៃ",
+          "រមាស់"
+        ],
+        "items": [
+          {
+            "legacy_swf": "legacy/flash/spelling/spelling5_1.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/spelling/spelling5_2.swf"
+          }
+        ],
+        "article_audio": "assets/audio/spelling/lesson05/example_les5.mp3",
+        "word_audio": [
+          {
+            "key": "boss",
+            "audio": "assets/audio/spelling/lesson05/boss_les5.mp3"
+          },
+          {
+            "key": "chars",
+            "audio": "assets/audio/spelling/lesson05/chars_les5.mp3"
+          },
+          {
+            "key": "choerkous",
+            "audio": "assets/audio/spelling/lesson05/choerkous_les5.mp3"
+          },
+          {
+            "key": "chrars",
+            "audio": "assets/audio/spelling/lesson05/chrars_les5.mp3"
+          },
+          {
+            "key": "dous",
+            "audio": "assets/audio/spelling/lesson05/dous_les5.mp3"
+          },
+          {
+            "key": "kous",
+            "audio": "assets/audio/spelling/lesson05/kous_les5.mp3"
+          },
+          {
+            "key": "leas",
+            "audio": "assets/audio/spelling/lesson05/leas_les5.mp3"
+          },
+          {
+            "key": "mous",
+            "audio": "assets/audio/spelling/lesson05/mous_les5.mp3"
+          },
+          {
+            "key": "ormbous",
+            "audio": "assets/audio/spelling/lesson05/ormbous_les5.mp3"
+          },
+          {
+            "key": "roes",
+            "audio": "assets/audio/spelling/lesson05/roes_les5.mp3"
+          },
+          {
+            "key": "romeas",
+            "audio": "assets/audio/spelling/lesson05/romeas_les5.mp3"
+          },
+          {
+            "key": "romors",
+            "audio": "assets/audio/spelling/lesson05/romors_les5.mp3"
+          },
+          {
+            "key": "ronors",
+            "audio": "assets/audio/spelling/lesson05/ronors_les5.mp3"
+          },
+          {
+            "key": "thars",
+            "audio": "assets/audio/spelling/lesson05/thars_les5.mp3"
+          },
+          {
+            "key": "tous",
+            "audio": "assets/audio/spelling/lesson05/tous_les5.mp3"
+          },
+          {
+            "key": "vors",
+            "audio": "assets/audio/spelling/lesson05/vors_les5.mp3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "title": "More on spelling Khmer Script",
+    "intro": "Consonant clusters and subscript\nWhen two consonant sounds occur together at the beginning of a word \u0013 e.g: t\u0019 wer, s\u0019 ray, kroo, etc. \u0013 the second consonant symbol is written underneath the initial consonant. Each consonant symbol in Cambodian has in addition to its normal form a subscript form. Thus, for every consonant symbol, it is also necessary to learn a subscript form. In some cases the subscript consonant are very similar to their \u0018 parent\u0019  consonants; in other instances there is virtually no resemblance whatsoever.\n\nConsonant clusters and vowels\nIf the initial consonant and subscript consonant both belong to the same series then the vowel will take that series. But if an initial consonant belonging to the first series is followed by one of the subscript consonants above, then the vowel takes the first series pronunciation.",
+    "lessons": [
+      {
+        "id": 10,
+        "number": 1,
+        "title": "ញ្ច, ញ្ឆ,​ ញ្ជ, ញ្ឈ, ញ្ញ",
+        "article": "មី​ង​ប្រេម​ជញ្ជាត់​ត្រី​បាន​កន្លះ​កញ្ជើ។ គាត់​ចុះ​បេះ​កញ្ឆែត តែ​កញ្ចាញ់​ចេ​ក​មួយ​លោត​ចេញ​មក គាត់​ក៏​ភ្ញាក់​ធ្លាក់​ឈ្នាង​ពី​ដៃ។",
+        "vocabulary": [
+          "ជញ្ជាត់ត្រី",
+          "កញ្ជើ",
+          "កញ្ឆែត",
+          "កញ្ចាញ់ចេក",
+          "លោត",
+          "ភ្ញាក់",
+          "ធ្លាក់",
+          "ឈ្នាង"
+        ],
+        "items": [
+          {
+            "legacy_swf": "legacy/flash/spelling/2spelling1_1.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/spelling/2spelling1_2.swf"
+          }
+        ],
+        "article_audio": "assets/audio/spelling/lesson06/example_les6.mp3",
+        "word_audio": [
+          {
+            "key": "borgnchhor",
+            "audio": "assets/audio/spelling/lesson06/borgnchhor_les6.mp3"
+          },
+          {
+            "key": "chignchean",
+            "audio": "assets/audio/spelling/lesson06/chignchean_les6.mp3"
+          },
+          {
+            "key": "chugnchang",
+            "audio": "assets/audio/spelling/lesson06/chugnchang_les6.mp3"
+          },
+          {
+            "key": "chugnching",
+            "audio": "assets/audio/spelling/lesson06/chugnching_les6.mp3"
+          },
+          {
+            "key": "kagna",
+            "audio": "assets/audio/spelling/lesson06/kagna_les6.mp3"
+          },
+          {
+            "key": "kagnche",
+            "audio": "assets/audio/spelling/lesson06/kagnche_les6.mp3"
+          },
+          {
+            "key": "kagnchoer",
+            "audio": "assets/audio/spelling/lesson06/kagnchoer_les6.mp3"
+          },
+          {
+            "key": "kagnchoet",
+            "audio": "assets/audio/spelling/lesson06/kagnchoet_les6.mp3"
+          },
+          {
+            "key": "korgnchagnchek",
+            "audio": "assets/audio/spelling/lesson06/korgnchagnchek_les6.mp3"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "number": 2,
+        "title": "ង្ក, ង្ខ, ង្គ, ង្រ, ង្វ, ង្ស, ង្ហ, ង្អ",
+        "article": "ខ្យល់​ធ្លាក់​ពី​ជើង កុមារ​បង្ហោះ​ខ្លែង។ ប្អូន​វា​ឈរ​លេង​កង្ហារ។ ម៉ែ​កុមារ​លាយ​ស្រូវ។ ឪ​ពុក​កុមារ​លី​អង្រុត​ចេញ​ទៅ​រុត​ត្រី។",
+        "vocabulary": [
+          "ខ្យល់",
+          "ជើង",
+          "ខ្លែង",
+          "កង្ហារ",
+          "ស្រូវ",
+          "អង្រុត"
+        ],
+        "items": [
+          {
+            "legacy_swf": "legacy/flash/spelling/2spelling2_1.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/spelling/2spelling2_2.swf"
+          }
+        ],
+        "article_audio": "assets/audio/spelling/lesson07/example_les7.mp3",
+        "word_audio": [
+          {
+            "key": "angkorr",
+            "audio": "assets/audio/spelling/lesson07/angkorr_les7.mp3"
+          },
+          {
+            "key": "angroeng",
+            "audio": "assets/audio/spelling/lesson07/angroeng_les7.mp3"
+          },
+          {
+            "key": "angrout",
+            "audio": "assets/audio/spelling/lesson07/angrout_les7.mp3"
+          },
+          {
+            "key": "angvor",
+            "audio": "assets/audio/spelling/lesson07/angvor_les7.mp3"
+          },
+          {
+            "key": "bornghou",
+            "audio": "assets/audio/spelling/lesson07/bornghou_les7.mp3"
+          },
+          {
+            "key": "borngkear",
+            "audio": "assets/audio/spelling/lesson07/borngkear_les7.mp3"
+          },
+          {
+            "key": "borngkhorm",
+            "audio": "assets/audio/spelling/lesson07/borngkhorm_les7.mp3"
+          },
+          {
+            "key": "bornguoch",
+            "audio": "assets/audio/spelling/lesson07/bornguoch_les7.mp3"
+          },
+          {
+            "key": "chornge",
+            "audio": "assets/audio/spelling/lesson07/chornge_les7.mp3"
+          },
+          {
+            "key": "kanghar",
+            "audio": "assets/audio/spelling/lesson07/kanghar_les7.mp3"
+          },
+          {
+            "key": "sangsar",
+            "audio": "assets/audio/spelling/lesson07/sangsar_les7.mp3"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "number": 3,
+        "title": "ណ្ត, ណ្ណ, ន្ត, ន្ទ, ន្ល, ន្ស",
+        "article": "ពូ​ប្រុក​ទៅ​កាប់​ដើម​ទន្រ្ទាន​ខែត្រ​នៅ​គុម្ពោត​ឯ​នាយ។​ គាត់​បាន​គោះ​ពង​អង្រ្កង​អោយ​ប្រ​ពន្ធ​គាត់​ធ្វើ​ជ្រក់។ គាត់​ពិ​សារ​វា​ជា​មួយ​ត្រី​កន្រ្តប់​អាំង។",
+        "vocabulary": [
+          "គុម្ពោត",
+          "គោះ",
+          "អង្រ្កង",
+          "ប្រពន្ធ",
+          "ជ្រក់",
+          "ពិសារ"
+        ],
+        "items": [
+          {
+            "legacy_swf": "legacy/flash/spelling/2spelling3_1.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/spelling/2spelling3_2.swf"
+          }
+        ],
+        "article_audio": "assets/audio/spelling/lesson08/example_les8.mp3",
+        "word_audio": [
+          {
+            "key": "doembey",
+            "audio": "assets/audio/spelling/lesson08/doembey_les8.mp3"
+          },
+          {
+            "key": "kagnchreng",
+            "audio": "assets/audio/spelling/lesson08/kagnchreng_les8.mp3"
+          },
+          {
+            "key": "kagnchroung",
+            "audio": "assets/audio/spelling/lesson08/kagnchroung_les8.mp3"
+          },
+          {
+            "key": "kamkor",
+            "audio": "assets/audio/spelling/lesson08/kamkor_les8.mp3"
+          },
+          {
+            "key": "kampuchea",
+            "audio": "assets/audio/spelling/lesson08/kampuchea_les8.mp3"
+          },
+          {
+            "key": "kompy",
+            "audio": "assets/audio/spelling/lesson08/kompy_les8.mp3"
+          },
+          {
+            "key": "sangkruos",
+            "audio": "assets/audio/spelling/lesson08/sangkruos_les8.mp3"
+          },
+          {
+            "key": "tontrean",
+            "audio": "assets/audio/spelling/lesson08/tontrean_les8.mp3"
+          },
+          {
+            "key": "treykorntrobb",
+            "audio": "assets/audio/spelling/lesson08/treykorntrobb_les8.mp3"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "number": 4,
+        "title": "ប្ប, ម្ព, ម្ម, ង្ក្រ, ង្គ្រ, ញ្ជ្រ, ន្ត្រ, ន្ទ្រ",
+        "article": "ពន្លក​មាន​សណ្តាប់​ធ្នាប់​ល្អ។ វា​ចេះ​រៀប​ចំ​បន្ទប់​ទុក​ដាក់​ប្រ​ដាប់​ប្រ​ដា​ត្រឹម​ត្រូវ​តាម​កន្លែង។ ពន្លក​ពុំ​ដែល​ទទួល​ការ​ស្តី​បន្ទោស​ឡើយ។",
+        "vocabulary": [
+          "សណ្តាប់ធ្នាប់",
+          "បន្ទប់",
+          "ទុកដាក់",
+          "ស្តីបន្ទោស"
+        ],
+        "items": [
+          {
+            "legacy_swf": "legacy/flash/spelling/2spelling4_1.swf"
+          },
+          {
+            "legacy_swf": "legacy/flash/spelling/2spelling4_2.swf"
+          }
+        ],
+        "article_audio": "assets/audio/spelling/lesson09/example_les9.mp3",
+        "word_audio": [
+          {
+            "key": "bornlar",
+            "audio": "assets/audio/spelling/lesson09/bornlar_les9.mp3"
+          },
+          {
+            "key": "borntor",
+            "audio": "assets/audio/spelling/lesson09/borntor_les9.mp3"
+          },
+          {
+            "key": "borntou",
+            "audio": "assets/audio/spelling/lesson09/borntou_les9.mp3"
+          },
+          {
+            "key": "kantel",
+            "audio": "assets/audio/spelling/lesson09/kantel_les9.mp3"
+          },
+          {
+            "key": "orndark",
+            "audio": "assets/audio/spelling/lesson09/orndark_les9.mp3"
+          },
+          {
+            "key": "orndoerk",
+            "audio": "assets/audio/spelling/lesson09/orndoerk_les9.mp3"
+          },
+          {
+            "key": "ornsorm",
+            "audio": "assets/audio/spelling/lesson09/ornsorm_les9.mp3"
+          },
+          {
+            "key": "sandek",
+            "audio": "assets/audio/spelling/lesson09/sandek_les9.mp3"
+          },
+          {
+            "key": "tonlee",
+            "audio": "assets/audio/spelling/lesson09/tonlee_les9.mp3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "title": "Learn reading Khmer",
+    "intro": "Read Khmer",
+    "lessons": [
+      {
+        "id": 16,
+        "number": 1,
+        "title": "សាលារៀនយើង (Our School)",
+        "article": "សា​លា​រៀន​យើង​ សង់​នៅលើ​ទីធ្លា​មួយ ធំទូ​លាយ​។ សា​លា​រៀន​នេះ មាន​អា​គារ​ច្រើន​ខ្នង និង​មាន​របង​ព័ទ្ធ​ជុំ​វិញ។​ នៅ​កណ្តាល​ទី​ធ្លា លើ​បង្គោល​មួយ​ខ្ពស់ មាន​ចង​ទង​ជាតិ រូប​ប្រា​សាទ​អង្គរ​វត្ត។ យើង​ស្រ​លាញ់​សា​លា​រៀន​នេះ​ណាស់ ព្រោះ​ជា​កន្លែង​អប់​រំ​យើង​ខ្ញុំ អោយទៅ​​ជា​ពល​រដ្ឋ​ល្អ។",
+        "vocabulary": [
+          "សាលារៀន",
+          "សង់",
+          "ទីធ្លា",
+          "ធំទូលាយ",
+          "អគារ",
+          "របង",
+          "កណ្តាល",
+          "ទង់ជាតិ",
+          "ស្រលាញ់",
+          "ពលរដ្ឋ"
+        ],
+        "items": [
+          {
+            "image": "assets/images/reading/rupp.jpg",
+            "text": "Royal University of Phnom Penh"
+          },
+          {
+            "image": "assets/images/reading/students.jpg",
+            "text": "In class, self-studying in group"
+          }
+        ],
+        "article_audio": "assets/audio/reading/ourschool.mp3",
+        "quiz": [
+          {
+            "id": 1,
+            "order": 1,
+            "question": "១- តើសាលារៀននេះសង់យ៉ាងដូចម្តេច?",
+            "choices": [
+              {
+                "text": "សង់លើដីចង្អៀត",
+                "correct": false
+              },
+              {
+                "text": "សង់លើដីធំទូលាយ",
+                "correct": true
+              },
+              {
+                "text": "សង់លើថ្ម",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "order": 2,
+            "question": "២- តើសាលារៀននេះមានអគារប៉ុន្មានខ្នង?",
+            "choices": [
+              {
+                "text": "៤ខ្នង",
+                "correct": false
+              },
+              {
+                "text": "១២ខ្នង",
+                "correct": false
+              },
+              {
+                "text": "ច្រើនខ្នង",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "order": 3,
+            "question": "៣- ក្នុងអត្ថបទ ហេតុអ្វីបានជាគេស្រលាញ់សាលារៀននេះ?",
+            "choices": [
+              {
+                "text": "ព្រោះគេអាចរៀនអក្សរ",
+                "correct": false
+              },
+              {
+                "text": "ព្រោះគេអាចជួបមិត្តភក្តិ",
+                "correct": false
+              },
+              {
+                "text": "ព្រោះជាកន្លែងអប់រំ",
+                "correct": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "number": 2,
+        "title": "ផ្សារនៅកម្ពុជា (The markets in Cambodia)",
+        "article": "នៅ​គ្រប់​ខេត្ត ស្រុក ឃុំ ភូមិ​នៃ​ប្រ​ទេស​កម្ពុជា​តែង​មាន​ផ្សារ​ធំ​តូច​សំ​រាប់​អ្នក​រ​ក​ស៊ី​លក់​ដូរ​ទំ​និញ​ផ្សេងៗ។\nនៅ​ក្រុង​ភ្នំ​ពេញ ផ្សារ​ដែល​មាន​ឈ្មោះ​ល្បី​ជាង​គេ គឺ​ផ្សារ​ថ្មី ​ឬ​ផ្សារ​ធំ។ ក្រៅ​ពី​នេះ​មាន​ផ្សារ​កណ្តាល ផ្សារ​ចាស់ ផ្សារអូ​ឡាំ​ពិក និង​ផ្សារអូ​ឬស្សី​ជា​ដើម។\nនៅ​ផ្សារ​ទាំង​នោះ​គេ​លក់​របស់​ផ្សេងៗ​មាន ផ្លែឈើ បន្លែ ត្រី សាច់ សំ​លៀក​បំ​ពាក់ សៀវ​ភៅ ហើយ​នឹ​​ង​គ្រឿង​សំ​រាប់​ប្រើ​ក្នុង​ផ្ទះ។\nមុន​នឹង​ទិញ​រ​បស់​អ្វី​មួយ យើង​អាច​ត​ថ្លៃ​បា​ន តែ​បើ​ប្រ​គល់​ប្រាក់​ហើយៗ ចង់​ដូរ​របស់​ជា​ប្រាក់​វិញ​នឹង​មាន​ការ​ពិ​បាក​ច្រើន។",
+        "vocabulary": [
+          "គ្រប់",
+          "ស្រុក",
+          "ឃុំ",
+          "នៃ",
+          "តែង",
+          "សំរាប់",
+          "អ្នករកស៊ី",
+          "លក់",
+          "ដូរ",
+          "ទំនិញ",
+          "ផ្សេងៗ",
+          "មានឈ្មោះល្បី",
+          "ក្រៅពី",
+          "ជាដើម",
+          "របស់",
+          "ផ្លែឈើរ",
+          "បន្លែ",
+          "សំលៀកបំពាក់",
+          "សៀវភៅ",
+          "គ្រឿង",
+          "ប្រើ",
+          "ក្នុង",
+          "ទិញ",
+          "​ អ្វីមួយ",
+          "តថ្លៃ",
+          "ប្រគល់",
+          "ប្រាក់",
+          "ដូរ...វិញ"
+        ],
+        "items": [
+          {
+            "image": "assets/images/reading/people1.jpg",
+            "text": "Cambodian people in Mondulkiri"
+          },
+          {
+            "image": "assets/images/reading/people2.jpg",
+            "text": "Cambodian people in Phnom Penh"
+          }
+        ],
+        "article_audio": "assets/audio/reading/market.mp3",
+        "quiz": [
+          {
+            "id": 2,
+            "order": 1,
+            "question": "១- តើនៅប្រទេសកម្ពុជាមានផ្សារនៅទីណាខ្លះ?",
+            "choices": [
+              {
+                "text": "នៅគ្រប់ខេត្ត ស្រុក ឃុំ ភូមិ",
+                "correct": true
+              },
+              {
+                "text": "នៅតែក្នុងភ្នំពេញដែលជាទីប្រជុំជនធំ",
+                "correct": false
+              },
+              {
+                "text": "នៅតាមស្រុកស្រែ",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "order": 2,
+            "question": "២- តើផ្សារណាល្បីជាងគេនៅក្រុងភ្នំពេញ?",
+            "choices": [
+              {
+                "text": "ផ្សារអូឬស្សី",
+                "correct": false
+              },
+              {
+                "text": "ផ្សារអូឡាំពិក",
+                "correct": false
+              },
+              {
+                "text": "ផ្សារថ្មី",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "order": 3,
+            "question": "៣- នៅក្នុងផ្សារនៅប្រទេសកម្ពុជា មានលក់អ្វីខ្លះ?",
+            "choices": [
+              {
+                "text": "លក់ផ្លែឈើ បន្លែ ត្រី សាច់ របស់ផ្សេងៗ (ក)",
+                "correct": false
+              },
+              {
+                "text": "លក់សៀវភៅ សំលៀកបំពាក់ (ខ)",
+                "correct": false
+              },
+              {
+                "text": "ចំលើយ ក និង ខ",
+                "correct": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "title": "Khmer conversation",
+    "intro": "Conversation,",
+    "lessons": [
+      {
+        "id": 18,
+        "number": 1,
+        "title": "និយាយពីខ្លួនឯង (Talking about yourself)",
+        "article": "If you are a foreigner in Cambodia, your most frequent conversations with Cambodians are likely to involve telling them your name, nationality and perhaps something about your work. These are the kind of statements you will probably need to be able to make about yourself.",
+        "vocabulary": [
+          "ខ្ញុំ",
+          "ឈ្មោះ",
+          "ត្រកូល",
+          "ជា",
+          "អង់គ្លេស",
+          "មក",
+          "ពី",
+          "ភ្នំពេញ",
+          "ធ្វើ",
+          "ធ្វើការ",
+          "នៅ",
+          "គ្រូពេទ្យ"
+        ],
+        "items": [
+          {
+            "image": "assets/images/conversation/con_les1_1.jpg",
+            "text": "ខ្ញុំឈ្មោះ Sally។ ត្រកូល Morris។",
+            "audio": "assets/audio/conversation/con_les1_1.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les1_2.jpg",
+            "text": "ជាជនជាតិអង់គ្លេស។ មកពី London។ ខ្ញុំជាគ្រូពេទ្យ។ ធ្វើការនៅភ្នំពេញ។",
+            "audio": "assets/audio/conversation/con_les1_2.mp3"
+          }
+        ],
+        "quiz": [
+          {
+            "id": 7,
+            "order": 1,
+            "question": "PART 1",
+            "choices": [
+              {
+                "text": "ខ្ញុំឈ្មោះ",
+                "correct": true
+              },
+              {
+                "text": "Morris",
+                "correct": false
+              },
+              {
+                "text": " Sally ត្រកូល",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "order": 2,
+            "question": "PART 2",
+            "choices": [
+              {
+                "text": " ធ្វើការនៅភ្នំពេញ។",
+                "correct": false
+              },
+              {
+                "text": "ជាជនជាតិអង់គ្លេស។",
+                "correct": true
+              },
+              {
+                "text": "មកពី London។ ខ្ញុំជាគ្រូពេទ្យ។",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "number": 2,
+        "title": "នៅក្នុងភោជនីយដ្ឋាន (In the restaurant)",
+        "article": "Food is cheap in Cambodia and the larger restaurants offer a variety of local, Chinese and western dishes. Usually the menu will list foods in French, English and Cambodian. In Phnom Penh’s ‘dancing restaurants’ there will be a live band and girls can be hired as dancing partners. Customers are usually there for the dancing rather than the food. Cambodian food itself is rather less spicy than Thai food. Typically a meal will consist of rice with a number of side dishes consisting of soups, salads and stir-fried dishes. In the conversation, one of the popular Cambodian dishes Sopheap orders is som-lor m’joo which is a sour soup made from mixture of tomatoes, cucumbers and pineapples cooked with basil and tamarind juice.",
+        "vocabulary": [
+          "ហាងបាយ",
+          "ភោជនីយដ្ឋាន",
+          "ហៅ",
+          "ម្ហូប",
+          "ហៅម្ហូប",
+          "ហើយឬនៅ?",
+          "មិនទាន់ទេ",
+          "យក",
+          "មើល",
+          "តារាងម្ហូប",
+          "ចូលចិត្ត",
+          "ពិសារ",
+          "ហឹរ",
+          "ញ៉ាំ",
+          "សម្ល",
+          "សម្លកកូរ",
+          "សម្លម្ជូ",
+          "ត្រី",
+          "ឆា",
+          "បង្កង",
+          "ចាន",
+          "ឆ្ងាញ់",
+          "ក៏…ដែរ",
+          "ទឹក",
+          "ដប",
+          "កូកា កូឡា",
+          "បៀរ។ (A: waiter; B: Sopheap; C: Sally; D: Sokha)"
+        ],
+        "items": [
+          {
+            "image": "assets/images/conversation/con_les2_1.jpg",
+            "text": "អត់ទោស លោកហៅម្ហូបហើយឬនៅ?",
+            "speaker": "A",
+            "audio": "assets/audio/conversation/con_les2_1.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les2_2.jpg",
+            "text": "ខ្ញុំមិនទាន់ហៅទេ។ សូមមើលតារាងមុខម្ហូបបន្តិច។",
+            "speaker": "B",
+            "audio": "assets/audio/conversation/con_les2_2.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les2_3.jpg",
+            "text": "Sally ចូលចិត្តម្ហូបអី? ញ៉ាំហឹរបានអត់?",
+            "speaker": "D",
+            "audio": "assets/audio/conversation/con_les2_3.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les2_4.jpg",
+            "text": "ចា៎ ញ៉ាំបាន។",
+            "speaker": "C",
+            "audio": "assets/audio/conversation/con_les2_4.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les2_5.jpg",
+            "text": "បើអញ្ចឹងសូមយកសម្លម្ជូត្រីមួយចាន។ សម្លកកូរមួយចាន។",
+            "speaker": "B",
+            "audio": "assets/audio/conversation/con_les2_5.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les2_6.jpg",
+            "text": "ចុះ​ឆាបង្កងវិញ?",
+            "speaker": "C",
+            "audio": "assets/audio/conversation/con_les2_6.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les2_7.jpg",
+            "text": "ល្អ សូមយកអោយខ្ញុំឆាបង្កងមួយចាន ហើយនិងបាយដែរ។",
+            "speaker": "B",
+            "audio": "assets/audio/conversation/con_les2_7.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les2_8.jpg",
+            "text": "ចា៎ អញ្ចឹង​ពិសារទឹកអី​ដែរ?",
+            "speaker": "A",
+            "audio": "assets/audio/conversation/con_les2_8.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les2_9.jpg",
+            "text": "ខ្ញុំចង់បានកូកា-កូឡាមួយដប ហើយនិងបៀរមួយដបផង។",
+            "speaker": "B",
+            "audio": "assets/audio/conversation/con_les2_9.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les2_10.jpg",
+            "text": "ចំនែក​ខ្ញុំ​សុំតែទឹកកក។",
+            "speaker": "C",
+            "audio": "assets/audio/conversation/con_les2_10.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les2_11.jpg",
+            "text": "ខ្ញុំយកតែទឹកកដែរ។",
+            "speaker": "D",
+            "audio": "assets/audio/conversation/con_les2_11.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les2_12.jpg",
+            "text": "ចា៎ អញ្ចឹងសូមចាំមួយភ្លែត។ ខ្ញុំនឹងលើកជូនលោកនៅពេល​បន្តិចទៀតនេះ។",
+            "speaker": "A",
+            "audio": "assets/audio/conversation/con_les2_12.mp3"
+          }
+        ],
+        "quiz": [
+          {
+            "id": 9,
+            "order": 1,
+            "question": "PART 1 :: A",
+            "choices": [
+              {
+                "text": "ម្ហូបហើយ",
+                "correct": false
+              },
+              {
+                "text": "អត់ទោសលោកហៅ",
+                "correct": true
+              },
+              {
+                "text": "ឬនៅ?",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "order": 2,
+            "question": "PART 2 :: B",
+            "choices": [
+              {
+                "text": "តារាងមុខម្ហូបបន្តិច។",
+                "correct": false
+              },
+              {
+                "text": "ខ្ញុំមិនទាន់ហៅទេ។",
+                "correct": true
+              },
+              {
+                "text": "សូមមើល",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 11,
+            "order": 3,
+            "question": "PART 3 :: D",
+            "choices": [
+              {
+                "text": "ញ៉ាំហឹរបានអត់?",
+                "correct": false
+              },
+              {
+                "text": "Sally",
+                "correct": true
+              },
+              {
+                "text": "ចូលចិត្តម្ហូបអី?",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 12,
+            "order": 4,
+            "question": "PART 4 :: C",
+            "choices": [
+              {
+                "text": "ញ៉ាំ",
+                "correct": false
+              },
+              {
+                "text": "បាន",
+                "correct": false
+              },
+              {
+                "text": "ចា៎",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "id": 13,
+            "order": 5,
+            "question": "PART 5 :: B",
+            "choices": [
+              {
+                "text": "បើអញ្ចឹងសូមយក",
+                "correct": true
+              },
+              {
+                "text": "សម្លម្ជូត្រីមួយចាន",
+                "correct": false
+              },
+              {
+                "text": "សម្លកកូរមួយចាន",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 14,
+            "order": 6,
+            "question": "PART 6 :: C",
+            "choices": [
+              {
+                "text": "ឆា",
+                "correct": false
+              },
+              {
+                "text": "បង្កងវិញ?",
+                "correct": false
+              },
+              {
+                "text": "ចុះ",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "id": 15,
+            "order": 7,
+            "question": "PART 7 :: B",
+            "choices": [
+              {
+                "text": "ហើយនិងបាយដែរ",
+                "correct": false
+              },
+              {
+                "text": "ខ្ញុំឆាបង្កងមួយចាន",
+                "correct": false
+              },
+              {
+                "text": "ល្អ សូមយក",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "id": 16,
+            "order": 8,
+            "question": "PART 8 :: A",
+            "choices": [
+              {
+                "text": "ចា៎",
+                "correct": true
+              },
+              {
+                "text": "អញ្ចឹង",
+                "correct": false
+              },
+              {
+                "text": "ពិសារទឹកអីដែរ?",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 17,
+            "order": 9,
+            "question": "PART 9 :: B",
+            "choices": [
+              {
+                "text": "កូកាកូឡាមួយដប",
+                "correct": false
+              },
+              {
+                "text": "ហើយនិងបៀរមួយដបផង",
+                "correct": false
+              },
+              {
+                "text": "ខ្ញុំចង់បាន",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "id": 18,
+            "order": 10,
+            "question": "PART 10 :: C",
+            "choices": [
+              {
+                "text": "ចំនែកខ្ញុំសុំ",
+                "correct": true
+              },
+              {
+                "text": "ទឹកកក",
+                "correct": false
+              },
+              {
+                "text": "តែ",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 19,
+            "order": 11,
+            "question": "PART 11 :: D",
+            "choices": [
+              {
+                "text": "ទឹកកក",
+                "correct": false
+              },
+              {
+                "text": "យកតែ",
+                "correct": false
+              },
+              {
+                "text": "ខ្ញុំក៏",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "id": 20,
+            "order": 12,
+            "question": "PART 12 :: A",
+            "choices": [
+              {
+                "text": "អញ្ចឹងសូមចាំមួយភ្លែត",
+                "correct": false
+              },
+              {
+                "text": "ខ្ញុំនឹងលើជូនលោកនៅពេលបន្តិចទៀតនេះ",
+                "correct": false
+              },
+              {
+                "text": "ចា៎ សូមចាំមួយភ្លែត",
+                "correct": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "number": 3,
+        "title": "នៅឯផ្សារ (At the market)",
+        "article": "Generally speaking, markets are excellent places to practice your Cambodian, and often, for the cost of a very small purchase, you can get a valuable language lesson from vendors. This lesson gives you practice in two basic transactions – bargaining and asking names of things. See how much of the dialogue you can read in Cambodian script now! (A=Jill; B=Vendor)",
+        "vocabulary": [
+          "ក្រូច",
+          "លមើល",
+          "ឆ្ងាញ់មិនឆ្ងាញ់",
+          "គ្រាន់បើ",
+          "សូម",
+          "សូមសួរ",
+          "ហៅ",
+          "ហៅថា",
+          "ចុះថ្លៃ",
+          "បើ"
+        ],
+        "items": [
+          {
+            "image": "assets/images/conversation/con_les3_1.jpg",
+            "text": "សូមសួរ នេះហៅថាអ្វី?",
+            "speaker": "A",
+            "audio": "assets/audio/conversation/con_les3_1.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les3_2.jpg",
+            "text": "គេហៅថា ផ្លែក្រូច។",
+            "speaker": "B",
+            "audio": "assets/audio/conversation/con_les3_2.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les3_3.jpg",
+            "text": "មួយគីឡូប៉ុន្មានរៀល?",
+            "speaker": "A",
+            "audio": "assets/audio/conversation/con_les3_3.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les3_4.jpg",
+            "text": "មួយគីឡូបីពាន់រៀលប៉ុណ្ណោះ។",
+            "speaker": "B",
+            "audio": "assets/audio/conversation/con_les3_4.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les3_5.jpg",
+            "text": "អូ៎ ថ្លៃណាស់។ ចុះថ្លៃបន្តិចបានទេ?",
+            "speaker": "A",
+            "audio": "assets/audio/conversation/con_les3_5.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les3_6.jpg",
+            "text": "ទេ មិនថ្លៃទេ។ ក្រូចនេះឆ្ងាញ់ណាស់។ លមើល ឆ្ងាញ់មិនឆ្ងាញ់។",
+            "speaker": "B",
+            "audio": "assets/audio/conversation/con_les3_6.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les3_7.jpg",
+            "text": "ឆ្ងាញ់គ្រាន់បើ។ ពីរពាន់រៀលបានទេ?",
+            "speaker": "A",
+            "audio": "assets/audio/conversation/con_les3_7.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les3_8.jpg",
+            "text": "មិនបានទេ។ ចង់បានប៉ុន្មានគីឡូ?",
+            "speaker": "B",
+            "audio": "assets/audio/conversation/con_les3_8.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les3_9.jpg",
+            "text": "ខ្ញុំចង់បានតែមួយគីឡូទេ។",
+            "speaker": "A",
+            "audio": "assets/audio/conversation/con_les3_9.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les3.jpg",
+            "text": "ទិញផ្លែក្រូចនៅផ្សារ",
+            "audio": "assets/audio/conversation/endof_les3.mp3"
+          }
+        ],
+        "quiz": [
+          {
+            "id": 21,
+            "order": 1,
+            "question": "PART 1 :: A",
+            "choices": [
+              {
+                "text": "សូមសួរ",
+                "correct": true
+              },
+              {
+                "text": "ថាអ្វី?",
+                "correct": false
+              },
+              {
+                "text": "នេះហៅ",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 22,
+            "order": 2,
+            "question": "PART 2 :: B",
+            "choices": [
+              {
+                "text": "គេថា",
+                "correct": false
+              },
+              {
+                "text": "ក្រូច",
+                "correct": false
+              },
+              {
+                "text": "គេហៅ",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "id": 23,
+            "order": 3,
+            "question": "PART 3 :: A",
+            "choices": [
+              {
+                "text": "ប៉ុន្មាន",
+                "correct": false
+              },
+              {
+                "text": "រៀល?",
+                "correct": false
+              },
+              {
+                "text": "មួយគីឡូ",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "id": 24,
+            "order": 4,
+            "question": "PART 4 :: B",
+            "choices": [
+              {
+                "text": "ប៉ុណ្ណោះ",
+                "correct": false
+              },
+              {
+                "text": "មួយគីឡូ",
+                "correct": true
+              },
+              {
+                "text": "បីពាន់រៀល",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 25,
+            "order": 5,
+            "question": "PART 5 :: A",
+            "choices": [
+              {
+                "text": "អូ៎ ថ្លៃណាស់។",
+                "correct": true
+              },
+              {
+                "text": "បានទេ?",
+                "correct": false
+              },
+              {
+                "text": "ចុះថ្លៃបន្តិច",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 26,
+            "order": 6,
+            "question": "PART 6 :: B",
+            "choices": [
+              {
+                "text": "ក្រូចនេះឆ្ងាញ់ណាស់។",
+                "correct": false
+              },
+              {
+                "text": "ទេ មិនថ្លៃទេ។",
+                "correct": true
+              },
+              {
+                "text": "លមើល ឆ្ងាញ់មិនឆ្ងាញ់។",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 27,
+            "order": 7,
+            "question": "PART 7 :: A",
+            "choices": [
+              {
+                "text": "ពីរពាន់រៀល",
+                "correct": false
+              },
+              {
+                "text": "បានទេ?",
+                "correct": false
+              },
+              {
+                "text": "ឆ្ងាញ់គ្រាន់បើ។",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "id": 28,
+            "order": 8,
+            "question": "PART 8 :: B",
+            "choices": [
+              {
+                "text": "ចង់បានប៉ុន្មាន",
+                "correct": false
+              },
+              {
+                "text": "គីឡូ?",
+                "correct": false
+              },
+              {
+                "text": "មិនបានទេ។",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "id": 29,
+            "order": 9,
+            "question": "PART 9 :: A",
+            "choices": [
+              {
+                "text": "ចង់បាន",
+                "correct": false
+              },
+              {
+                "text": "ខ្ញុំ",
+                "correct": true
+              },
+              {
+                "text": "តែមួយគីឡូទេ។",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "number": 4,
+        "title": "និយាយភាសាខ្មែរ (Speaking Cambodian)",
+        "article": "Cambodians are generally surprised and pleased that westerners make the effort to learn their language. Even the clumsiest attempts to say something in Cambodian are likely to be greeted with enthusiastic praise. But don’t let fulsome praise go to your head!",
+        "vocabulary": [
+          "ចេះ",
+          "និយាយ",
+          "ឬទេ?",
+          "បាន",
+          "បន្តិចបន្តួច",
+          "ល្អ",
+          "មិន…ប៉ុន្មានទេ",
+          "សរសេរ",
+          "អក្សរ",
+          "អក្សរខ្មែរ",
+          "ស្តាប់បាន",
+          "ស្តាប់មិនបានទេ",
+          "សូម",
+          "ថា",
+          "ម្តង",
+          "ទៀត",
+          "អរគុណ",
+          "យល់",
+          "ចង់"
+        ],
+        "items": [
+          {
+            "image": "assets/images/conversation/con_les5_1.jpg",
+            "text": "លោកចេះនិយាយភាសាខ្មែរឬទេ?",
+            "speaker": "A",
+            "audio": "assets/audio/conversation/con_les5_1.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les5_2.jpg",
+            "text": "ខ្ញុំនិយាយបានបន្តិចបន្តួច។",
+            "speaker": "B",
+            "audio": "assets/audio/conversation/con_les5_2.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les5_3.jpg",
+            "text": "ទេ, លោកនិយាយបានល្អណាស់។ នៅស្រុកខ្មែរយូរទេ?",
+            "speaker": "A",
+            "audio": "assets/audio/conversation/con_les5_3.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les5_4.jpg",
+            "text": "មិនយូរប៉ុន្មានទេ។",
+            "speaker": "B",
+            "audio": "assets/audio/conversation/con_les5_4.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les5_5.jpg",
+            "text": "លោកសរសេរអក្សរខ្មែរបានទេ?",
+            "speaker": "A",
+            "audio": "assets/audio/conversation/con_les5_5.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les5_6.jpg",
+            "text": "ខ្ញុំស្តាប់មិនបានទេ។ សូមថាម្តងទៀតបានទេ?",
+            "speaker": "B",
+            "audio": "assets/audio/conversation/con_les5_6.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les5_7.jpg",
+            "text": "ចា៎។ លោកសរសេរអក្សរខ្មែរបានទេ?",
+            "speaker": "A",
+            "audio": "assets/audio/conversation/con_les5_7.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les5_8.jpg",
+            "text": "“អក្សរ”? ខ្ញុំមិនយល់ទេ។ ភាសាអង់គ្លេសថាអ្វី?",
+            "speaker": "B",
+            "audio": "assets/audio/conversation/con_les5_8.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les5_9.jpg",
+            "text": "ភាសាអង់គ្លេសថា ‘Letter’",
+            "speaker": "A",
+            "audio": "assets/audio/conversation/con_les5_9.mp3"
+          },
+          {
+            "image": "assets/images/conversation/con_les5_10.jpg",
+            "text": "បាទ, អរគុណ។ យល់ហើយ។ ខ្ញុំសរសេរខ្មែរមិនបានទេ ប៉ុន្តែចង់រៀន។",
+            "speaker": "B",
+            "audio": "assets/audio/conversation/con_les5_10.mp3"
+          }
+        ],
+        "quiz": [
+          {
+            "id": 30,
+            "order": 1,
+            "question": "PART 1 :: A",
+            "choices": [
+              {
+                "text": "លោកចេះ",
+                "correct": true
+              },
+              {
+                "text": "ភាសាខ្មែរឬទេ?",
+                "correct": false
+              },
+              {
+                "text": "និយាយ",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 31,
+            "order": 2,
+            "question": "PART 2 :: B",
+            "choices": [
+              {
+                "text": "និយាយបាន",
+                "correct": false
+              },
+              {
+                "text": "ខ្ញុំ",
+                "correct": true
+              },
+              {
+                "text": "បន្តិចបន្តួច",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 32,
+            "order": 3,
+            "question": "PART 3 :: A",
+            "choices": [
+              {
+                "text": "លោកនិយាយបានល្អណាស់",
+                "correct": false
+              },
+              {
+                "text": "ទេ,",
+                "correct": true
+              },
+              {
+                "text": "នៅស្រុកខ្មែរយូរទេ?",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 33,
+            "order": 4,
+            "question": "PART 4 :: B",
+            "choices": [
+              {
+                "text": "ទេ",
+                "correct": false
+              },
+              {
+                "text": "ប៉ុន្មាន",
+                "correct": false
+              },
+              {
+                "text": "មិនយូរ",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "id": 34,
+            "order": 5,
+            "question": "PART 5 :: A",
+            "choices": [
+              {
+                "text": "សរសេរអក្សរខ្មែរ",
+                "correct": false
+              },
+              {
+                "text": "បានទេ?",
+                "correct": false
+              },
+              {
+                "text": "លោក",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "id": 35,
+            "order": 6,
+            "question": "PART 6 :: B",
+            "choices": [
+              {
+                "text": "ខ្ញុំស្តាប់",
+                "correct": true
+              },
+              {
+                "text": "សូមថាម្តងទៀតបានទេ",
+                "correct": false
+              },
+              {
+                "text": "មិនបានទេ",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 36,
+            "order": 7,
+            "question": "PART 7 :: A",
+            "choices": [
+              {
+                "text": "ចា៎",
+                "correct": true
+              },
+              {
+                "text": "អក្សរខ្មែរបានទេ?",
+                "correct": false
+              },
+              {
+                "text": "លោកសរសេរ",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 37,
+            "order": 8,
+            "question": "PART 8 :: B",
+            "choices": [
+              {
+                "text": "ខ្ញុំអត់យល់ទេ។",
+                "correct": false
+              },
+              {
+                "text": "អក្សរ?",
+                "correct": true
+              },
+              {
+                "text": "ភាសាអង់គ្លេសថាអ្វី?",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": 38,
+            "order": 9,
+            "question": "PART 9 :: A",
+            "choices": [
+              {
+                "text": "Letter",
+                "correct": false
+              },
+              {
+                "text": "ថា",
+                "correct": false
+              },
+              {
+                "text": "ភាសាអង់គ្លេស",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "id": 39,
+            "order": 10,
+            "question": "PART 10 :: B",
+            "choices": [
+              {
+                "text": "អរគុណ។ យល់ហើយ។",
+                "correct": false
+              },
+              {
+                "text": "បាទ,",
+                "correct": true
+              },
+              {
+                "text": "ខ្ញុំសរសេរខ្មែរមិនបានទេ ប៉ុន្តែចង់រៀន។",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

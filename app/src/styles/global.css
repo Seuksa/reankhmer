@@ -1,0 +1,62 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/kantumruy-pro';
+@import '@fontsource-variable/noto-serif-khmer';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Same type as seuksa.com */
+  --font-sans: 'Kantumruy Pro Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-khmer-serif: 'Noto Serif Khmer Variable', 'Kantumruy Pro Variable', serif;
+  /* ReanKhmer brand = teal. Series colours teach the two consonant series at a glance. */
+  --color-brand-50: #f0fdfa;
+  --color-brand-100: #ccfbf1;
+  --color-brand-200: #99f6e4;
+  --color-brand-500: #14b8a6;
+  --color-brand-600: #0d9488;
+  --color-brand-700: #0f766e;
+  --color-brand-800: #115e59;
+  --color-brand-900: #134e4a;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth bg-white text-slate-800 antialiased dark:bg-slate-950 dark:text-slate-200;
+    -webkit-tap-highlight-color: transparent;
+  }
+  /* Khmer script needs more vertical room than Latin. */
+  :lang(km) {
+    @apply leading-[1.9];
+  }
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+/* ---------- Bilingual text: <html data-lang="both|km|en"> ---------- */
+html[data-lang='km'] .t-en,
+html[data-lang='en'] .t-km {
+  display: none;
+}
+html[data-lang='both'] .t-km + .t-en {
+  margin-inline-start: 0.4em;
+  font-size: 0.82em;
+  opacity: 0.72;
+}
+html[data-lang='both'] .t-stack > .t-en {
+  display: block;
+  margin-inline-start: 0;
+}
+
+@utility card {
+  @apply rounded-2xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900;
+}
+@utility chip {
+  @apply inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-3 py-1 text-sm hover:border-brand-500 hover:bg-brand-50 dark:border-slate-700 dark:bg-slate-900 dark:hover:bg-brand-900/40;
+}
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl bg-brand-700 px-4 py-2 font-medium text-white hover:bg-brand-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600 disabled:opacity-50;
+}
+@utility btn-quiet {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 px-4 py-2 font-medium hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800;
+}

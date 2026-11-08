@@ -1,0 +1,35 @@
+{
+  "name": "reankhmer-app",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ReanKhmer (រៀនខ្មែរ) — offline-first Khmer–English PWA for Khmer families abroad",
+  "scripts": {
+    "sync": "node scripts/sync-assets.mjs",
+    "dev": "npm run sync && astro dev",
+    "build": "npm run sync && astro build",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "@astrojs/vue": "^7.1.2",
+    "@fontsource-variable/kantumruy-pro": "^5.3.0",
+    "@fontsource-variable/noto-serif-khmer": "^5.3.0",
+    "@tailwindcss/vite": "^4.3.5",
+    "@vite-pwa/astro": "^2.0.1",
+    "astro": "^7.4.7",
+    "idb-keyval": "^6.3.0",
+    "tailwindcss": "^4.3.5",
+    "vite-plugin-pwa": "^2.0.0",
+    "vue": "^3.5.45",
+    "workbox-window": "^7.4.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "sharp": "^0.35.5",
+    "typescript": "^6.0.3"
+  }
+}

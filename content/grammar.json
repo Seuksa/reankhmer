@@ -1,0 +1,67 @@
+[
+  {
+    "id": 0,
+    "title": "១- ល្បះ (Sentence)",
+    "text": "ល្បះ is a group of words which have enough meanings and are ended by mark: (។), (?) or (!).\n\nEx: កូនចូលរៀននៅម៉ោង ១២ និង ៣០ នាទី។\nតើកូនទៅរៀនម៉ោងប៉ុន្មាន?\nជិតដល់ម៉ោងហើយ! ប្រយ័ត្នទៅសាលាមិនទាន់ពេលណា៎!\n\nល្បះ has 4 kinds:\nល្បះបញ្ជាក់ (Certified sentence): is a sentence for showing and is ended by a mark (។).\n\tEx: សៅមានពោត និងចេកទុំ។ \nល្បះសំនួរ (Interrogative sentence): is a sentence for asking and is ended by a mark (?).\n\tEx: តើអ្នកណាធ្វើចំនីសំរាប់ឯង?\nល្បះឧទាន (Exclamation sentence): is a sentence for showing excited expression and are ended by a mark (!).\n\tEx: អៃយ៉ា! អ្នកទាំងអស់គ្នាឆ្លាតណាស់!\nល្បះបញ្ជា (Imperative sentence): is a sentence to order or suggest someone to do something and is ended by a mark (។).\n\tEx: កុំដើររហេតរហូតនៅពេលកំពុងរៀន។"
+  },
+  {
+    "id": 1,
+    "title": "២- កន្សោមប្រធាន និង កន្សោមកិរិយា (Predicate subjects and predicate verbs)",
+    "text": "A sentence has 2 parts of a group of words.\nកន្សោមប្រធាន  tell about people (animals, objects) are mentioned in a sentence.\n\nEx: ផ្ទះយើងស្អាតណាស់។\tWord: ផ្ទះយើង ជាកន្សោមប្រធាន។\n\nកន្សោមកិរិយា tell about action or state of predicate subjects and predicate verbs are started by verbs.\nEx: អាវនេះថ្មីជានិច្ច។\tWord: ថ្មីជានិច្ច ជាកន្សោមកិរិយា។"
+  },
+  {
+    "id": 2,
+    "title": "៣- នាម (Noun)",
+    "text": "នាម is a word identifying people, animal, plant, object, time and place.\nEx: ធីតាស្រលាញ់ឆ្កែ។\tWords: ធីតា and ឆ្កែ ជានាម។"
+  },
+  {
+    "id": 3,
+    "title": "៤- កិរិយាស័ព្ទ (Verb)",
+    "text": "កិរិយាស័ព្ទ is a word showing about physical and mental actions and movement of  objects or nature.\nEx: សំស្រលាញ់សៅ។\tWord: ស្រលាញ់ ជាកិរិយាស័ព្ទ។"
+  },
+  {
+    "id": 4,
+    "title": "៥- គុណនាម (Adjective)",
+    "text": "គុណនាម is a word identifying a state of noun which is left of it.\nEx: តុលាជាក្មេងឆ្លាត។\nសៅមានរូបរាងអាក្រក់។\nWords: ឆ្លាត and អាក្រក់ ជាគុណនាម។"
+  },
+  {
+    "id": 5,
+    "title": "៦- គុណកិរិយា (Adverb)",
+    "text": "គុណកិរិយា is a word identifying a state of adjective or verb which is left of it.\nEx: គាត់ច្រៀងពិរោះ។\nនាងរត់យ៉ាងលឿន។\nWords: ពិរោះ and យ៉ាងលឿន ជាគុណកិរិយា។"
+  },
+  {
+    "id": 6,
+    "title": "៧- ពាក្យន័យដូច (Synonym)",
+    "text": "ពាក្យន័យដូច is a word which can be used to replace another word and has repeated meanings.\nEx: សុខាសប្បាយចិត្ត ព្រោះមនុស្សក្នុងផ្ទះរីករាយ។\nWords: សប្បាយចិត្ត and រីករាយ ជាពាក្យន័យដូច។"
+  },
+  {
+    "id": 7,
+    "title": "៨- ពាក្យន័យផ្ទុយ (Antonym)",
+    "text": "ពាក្យន័យផ្ទុយ is a word which means the opposite of another word.\nEx: ចិន្តាស្រលាញ់មនុស្សល្អ តែនាងស្អប់មនុស្សអាក្រក់។\nWords: ស្រលាញ់ and ស្អប់ ជាពាក្យន័យផ្ទុយ។"
+  },
+  {
+    "id": 8,
+    "title": "៩- ឈ្នាប់ចង (Conjunction)",
+    "text": "ឈ្នាប់ចង is a word which links different parts of a sentence.\nWords: និង រឺ តែ ហើយនិង រឺក៏ ប៉ុន្តែ ជាឈ្នាប់ចង។\nEx: អ្នកភូមិយើង ដាំកប្បាស និងថ្នាំជក់។\nតើអ្នករស់នៅតំបន់ភ្នំ រឺតំបន់ទំនាប។"
+  },
+  {
+    "id": 9,
+    "title": "១០- ធ្នាក់ (Preposition)",
+    "text": "ធ្នាក់; is a word which is used with a noun/pronoun to show how it is linked to another word.\nWords: ក្បែរ ជិត លើ ក្រោយ... ជាធ្នាក់។\nEx: ម្តាយយើងដាំត្រកួន ក្បែរអណ្តូងទឹក។\nជនជាតិភាគតិច ច្រើនដាំដំនាំលើភ្នំ។"
+  },
+  {
+    "id": 10,
+    "title": "១១- ប្រយោគសំនួរ (Question Sentence)",
+    "text": "Simple statements can be turned into questions by adding the question word dtay? (ទេ?) at the end of the sentence:\nEx: ភាសាខ្មែរពិបាក។ pee-a-saa k’mai bpi-baak (Cambodian is difficult.)\nភាសាខ្មែរពិបាកទេ? pee-a-saa k’mai bpi-baak dtay? (Is Cambodian difficult?)\n\nAnother common question form, similar to the English ‘…, isn’t it?’ , ‘…, aren’t they?’ is formed by adding mairn dtay? (មែនទេ?) at the end of the sentence:\nមកពីភ្នំពេញមែនទេ? moak bpee p’nOOm bpeun mairn dtay? ((You) come from Phnom Penh, don’t you?)\n៥០០រៀលមែនទេ? bprum roy ree-ul mairn dtay? (It’s 500 riels, isn’t it?)\n\nOther useful question words are:\nay/a-way? (អី/អ្វី? What)\n\tលោកឈ្មោះអី? loak ch’moo-ah ay? (What is your name?)\n\tលោកធ្វើការអី? loak t’wer gaa ay? (What (job) do you do?)\n\nbpon-maan? (ប៉ុន្មាន? How much/how many?)\n\tថ្លៃប៉ុន្មាន? t’lai bpon-maan? (How much is the price?)\n\tអាយុប៉ុន្មានឆ្នាំហើយ? aa-yOO bpon-maan ch’num hai-ee? (How old are you?)\n\n(ai) naa/(ee)-naa? (ឯណា? (at) where?)\n\tនៅឯណា? nou ai-naa? (Where is (it)?)\n\tរៀននៅឯណា? ree-un nou ai-naa? (Where do (you) study?)\n\nNotice that ai/ee is dropped in sentence like these:\n\tមកពីណា? moak bpee naa? (Where do (you) come from?)\n\tលោកទៅណា? loak dtou naa? (Where are you going?)\n\nnay-uk naa? (នរណា? who?)\n\tអ្នកណាប្រាប់គាត់? nay-uk naa bprup goa-ut? (Who told him?)\n\tយើងទៅជួបអ្នកណា? yerng dtou joo-up nay-uk naa? (Who are we going to meet?)\n\nmaych baan jee-a/hait ay baan jee-a (ម៉េចបានជា/ហេតុអីបានជា…? Why?)\n\tម៉េចបានជាលោកមិនទៅ? maych baan jee-a loak meun dtou? (Why aren’t you going?)\n\tហេតុអីបានជាលោកចេះភាសាខ្មែរ? hait ay baan jee-a loak jeh pee-a-saa k’mai? (Why can you speak Cambodian?)\n\n(bpee) ong-gul? ((ពី)អង្កាល់? When?)\n\tIf a question refers to the future, use ong-ul? (អង្កាល់?), and if it refers to the past use bpee ong-gul? (ពីអង្កាល់?)\n\tលោកមកដល់ពីអង្កាល់? loak moak dol bpee ong-gul? (When did you arrive?)\n\tយើងចេញអង្កាល់? yerng jeuñ ong-gul? (When are we leaving?)"
+  },
+  {
+    "id": 11,
+    "title": "១២- ប្រយោគបដិសេធ (Negative sentences)",
+    "text": "The negative is formed by placing meun (មិន) in front of the adjective or main verb and, optionally, dtay (ទេ) at the end of the phrase or sentence:\nមិនឆ្ងាយទេ meun ch’ngai dtay  (not far)\nមិនស្រួលទេ meun s’roo-ul dtay (not easy)\n\nThe negative of mee-un, ‘to have’ , is k’mee-un or meun mee-un:\nគ្មានលុយទេ k'mee-un loo-ee dtay. ((They) don’t have any money.)"
+  },
+  {
+    "id": 12,
+    "title": "១៣- លំដាប់ពាក្យ (Word order)",
+    "text": "The order of words in a sentence tends to follow the pattern (subject + verb + object). Relative clauses are introduced by the word dail (ដែល= which, where, who, that etc.):\nសាលាដែលគេបង្រៀនថៃ saalaa dail gay bong-ree-un tai (The school where they teach Thai.)\nបងស្រីដែលជាគ្រូ borng s’ray dail jee-a kroo (My older sister who is a teacher.)\nផ្ទះដែលយើងទិញ p’dtay-ah dail yerng dteuñ (The house which we bought.)"
+  }
+]

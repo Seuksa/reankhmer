@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import T from '../components/T.astro';
+import VowelTable from '../components/VowelTable.vue';
+import { vowels } from '../lib/content';
+---
+
+<BaseLayout title="ស្រៈ Vowels">
+  <h1 class="mb-2 text-2xl font-semibold"><T km="ស្រៈនិស្ស័យ" en="Dependent vowels" /></h1>
+  <p class="mb-6 max-w-3xl text-slate-600 dark:text-slate-400">
+    <T
+      km="ស្រៈនីមួយៗមានសំឡេងពីរ៖ មួយពេលនៅជាមួយអក្សរសំឡេង «អ» (ក) និងមួយទៀតពេលនៅជាមួយអក្សរសំឡេង «អូ» (គ)។"
+      en="Every vowel has two sounds: one after an a-series consonant (ក) and one after an o-series consonant (គ). Listen to both."
+      stack
+    />
+  </p>
+  <VowelTable client:visible vowels={vowels} />
+</BaseLayout>

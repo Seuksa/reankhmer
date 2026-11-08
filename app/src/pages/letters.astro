@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import T from '../components/T.astro';
+import LetterGrid from '../components/LetterGrid.vue';
+import { consonants } from '../lib/content';
+---
+
+<BaseLayout title="ព្យញ្ជនៈ Consonants">
+  <h1 class="mb-2 text-2xl font-semibold"><T km="ព្យញ្ជនៈ ៣៣ តួ" en="The 33 consonants" /></h1>
+  <p class="mb-6 max-w-3xl text-slate-600 dark:text-slate-400">
+    <T
+      km="ចុចលើអក្សរ ដើម្បីស្តាប់។ អក្សរពណ៌បៃតងជាអក្សរសំឡេង «អ» ហើយអក្សរពណ៌លឿងជាអក្សរសំឡេង «អូ»។ ស្រៈដដែលបញ្ចេញសំឡេងខុសគ្នា តាមក្រុមនីមួយៗ។"
+      en="Tap a letter to hear it. Green letters are the a-series (they end in -or), amber letters the o-series (-ou). The same vowel sounds different after each series."
+      stack
+    />
+  </p>
+  <LetterGrid client:load letters={consonants} game />
+</BaseLayout>

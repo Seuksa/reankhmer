@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import T from '../../components/T.astro';
+import LessonList from '../../components/LessonList.vue';
+import { CHAPTER_TITLE, chapters, khmerDigits, lessonHref, lessonTitle } from '../../lib/content';
+---
+
+<BaseLayout title="មេរៀន Lessons">
+  <h1 class="mb-6 text-2xl font-semibold"><T km="មេរៀនទាំងអស់" en="All lessons" /></h1>
+  <div class="space-y-10">
+    {chapters.map((ch) => (
+      <section aria-labelledby={`ch${ch.number}`}>
+        <h2 id={`ch${ch.number}`} class="mb-1 text-xl font-semibold">
+          <span class="text-brand-700 dark:text-brand-200">{khmerDigits(ch.number)}.</span>
+          <T km={CHAPTER_TITLE[ch.number].km} en={CHAPTER_TITLE[ch.number].en} />
+        </h2>
+        {ch.intro.length > 40 && <p class="mb-3 max-w-3xl text-sm text-slate-600 dark:text-slate-400" lang="en">{ch.intro.split('\n')[0]}</p>}
+        <LessonList
+          client:visible
+          lessons={ch.lessons.map((l) => ({ id: l.id, href: lessonHref(ch.number, l.number), n: khmerDigits(l.number), title: lessonTitle(ch.number, l) }))}
+        />
+      </section>
+    ))}
+  </div>
+</BaseLayout>

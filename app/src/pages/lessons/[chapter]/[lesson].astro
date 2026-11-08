@@ -1,0 +1,136 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import T from '../../../components/T.astro';
+import AudioButton from '../../../components/AudioButton.vue';
+import LetterGrid from '../../../components/LetterGrid.vue';
+import Vocabulary from '../../../components/Vocabulary.vue';
+import DialoguePlayer from '../../../components/DialoguePlayer.vue';
+import Quiz from '../../../components/Quiz.vue';
+import LessonDone from '../../../components/LessonDone.vue';
+import {
+  CHAPTER_TITLE, chapters, dictionary, khmerDigits, lessonHref, lessonLetters, lessonTitle,
+  type Chapter, type Lesson,
+} from '../../../lib/content';
+
+export function getStaticPaths() {
+  const flat = chapters.flatMap((ch) => ch.lessons.map((les) => ({ ch, les })));
+  return flat.map(({ ch, les }, i) => ({
+    params: { chapter: String(ch.number), lesson: String(les.number) },
+    props: { ch, les, prev: flat[i - 1], next: flat[i + 1] },
+  }));
+}
+
+interface Props {
+  ch: Chapter; les: Lesson;
+  prev?: { ch: Chapter; les: Lesson }; next?: { ch: Chapter; les: Lesson };
+}
+const { ch, les, prev, next } = Astro.props;
+const title = lessonTitle(ch.number, les);
+const letters = ch.number === 1 ? lessonLetters(les) : [];
+const isDialogue = ch.number === 5;
+const lines = (les.items ?? []).filter((i) => i.audio);
+const photos = (les.items ?? []).filter((i) => i.image && !i.audio);
+const meanings = Object.fromEntries((les.vocabulary ?? []).flatMap((w) => (dictionary.has(w) ? [[w, dictionary.get(w)!]] : [])));
+const intro = les.number === ch.lessons[0].number && ch.intro.length > 40 ? ch.intro : null;
+const navLabel = (x: { ch: Chapter; les: Lesson }) => lessonTitle(x.ch.number, x.les);
+---
+
+<BaseLayout title={`${title.km} ${title.en}`}>
+  <nav class="mb-4 text-sm text-slate-500" aria-label="Breadcrumb">
+    <a href="/lessons" class="hover:underline"><T km="មេរៀន" en="Lessons" /></a>
+    <span aria-hidden="true"> / </span>
+    <T km={`ជំពូក ${khmerDigits(ch.number)} · ${CHAPTER_TITLE[ch.number].km}`} en={`Chapter ${ch.number} · ${CHAPTER_TITLE[ch.number].en}`} />
+  </nav>
+
+  <h1 class="mb-6 text-2xl font-semibold sm:text-3xl"><T km={title.km} en={title.en} stack /></h1>
+
+  {intro && (
+    <details class="card mb-8" open={ch.number !== 1}>
+      <summary class="cursor-pointer font-medium"><T km="ច្បាប់ក្នុងជំពូកនេះ" en="How this works" /></summary>
+      <div class="mt-3 space-y-2 text-slate-700 dark:text-slate-300" lang="en">
+        {intro.split('\n').filter(Boolean).map((p) => <p>{p}</p>)}
+      </div>
+    </details>
+  )}
+
+  {letters.length > 0 && (
+    <section class="mb-8">
+      <LetterGrid client:load letters={letters} game />
+      <p class="mt-4 text-sm text-slate-500"><a href="/letters" class="underline"><T km="មើលព្យញ្ជនៈទាំង ៣៣" en="See all 33 consonants" /></a></p>
+    </section>
+  )}
+
+  {les.article && !isDialogue && (
+    <section class="mb-8">
+      <div class="mb-3 flex flex-wrap items-center gap-3">
+        <h2 class="text-lg font-semibold"><T km="អត្ថបទ" en="Read" /></h2>
+        {les.article_audio && <AudioButton client:visible src={`/${les.article_audio}`} heardKey={`a:${les.id}`}><T km="ស្តាប់អត្ថបទ" en="Listen" /></AudioButton>}
+      </div>
+      <div lang="km" class="card font-khmer-serif text-xl leading-[2.2] sm:text-2xl">
+        {les.article.split('\n').filter(Boolean).map((p) => <p class="mb-2">{p}</p>)}
+      </div>
+    </section>
+  )}
+
+  {photos.length > 0 && (
+    <section class="mb-8 grid gap-4 sm:grid-cols-2">
+      {photos.map((p) => (
+        <figure class="card">
+          <img src={`/${p.image}`} alt={p.text ?? ''} loading="lazy" class="w-full rounded-xl" />
+          {p.text && <figcaption class="mt-2 text-sm text-slate-500">{p.text}</figcaption>}
+        </figure>
+      ))}
+    </section>
+  )}
+
+  {isDialogue && (
+    <section class="mb-8">
+      {les.article && <p class="mb-4 max-w-3xl text-slate-700 dark:text-slate-300" lang="en">{les.article}</p>}
+      <h2 class="mb-3 text-lg font-semibold"><T km="សន្ទនា" en="Dialogue" /></h2>
+      <DialoguePlayer client:visible lessonId={les.id} lines={lines} />
+    </section>
+  )}
+
+  {les.word_audio && les.word_audio.length > 0 && (
+    <section class="mb-8">
+      <h2 class="mb-3 text-lg font-semibold"><T km="ស្តាប់ពាក្យ" en="Listen to the words" /></h2>
+      <ul class="flex flex-wrap gap-2">
+        {les.word_audio.map((w) => (
+          <li><AudioButton client:visible src={`/${w.audio}`} size="sm" label={w.key} /></li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {les.vocabulary && les.vocabulary.length > 0 && (
+    <section class="mb-8">
+      <h2 class="mb-3 text-lg font-semibold"><T km="វាក្យសព្ទ" en="Vocabulary" /></h2>
+      <Vocabulary client:visible words={les.vocabulary} meanings={meanings} />
+    </section>
+  )}
+
+  {les.quiz && les.quiz.length > 0 && (
+    <section class="mb-8">
+      <h2 class="mb-3 text-lg font-semibold"><T km="សំណួរ" en="Quiz" /></h2>
+      {isDialogue && <p class="mb-3 text-sm text-slate-500"><T km="ស្តាប់ផ្នែកនីមួយៗ ហើយជ្រើសរើសឃ្លាដែលអ្នកឮ។" en="Play each part and pick the phrase you hear." /></p>}
+      <Quiz client:visible lessonId={les.id} questions={les.quiz} audio={isDialogue ? les.quiz.map((q) => lines[q.order - 1]?.audio) : undefined} />
+    </section>
+  )}
+
+  <div class="mb-8"><LessonDone client:visible lessonId={les.id} /></div>
+
+  <nav class="grid gap-3 border-t border-slate-200 pt-6 sm:grid-cols-2 dark:border-slate-800" aria-label="Lesson navigation">
+    {prev ? (
+      <a href={lessonHref(prev.ch.number, prev.les.number)} class="card hover:border-brand-500">
+        <span class="text-sm text-slate-500">← <T km="មុន" en="Previous" /></span>
+        <span class="block"><T km={navLabel(prev).km} en={navLabel(prev).en} /></span>
+      </a>
+    ) : <span />}
+    {next && (
+      <a href={lessonHref(next.ch.number, next.les.number)} class="card text-right hover:border-brand-500">
+        <span class="text-sm text-slate-500"><T km="បន្ទាប់" en="Next" /> →</span>
+        <span class="block"><T km={navLabel(next).km} en={navLabel(next).en} /></span>
+      </a>
+    )}
+  </nav>
+</BaseLayout>

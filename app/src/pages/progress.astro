@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import T from '../components/T.astro';
+import ProgressPanel from '../components/ProgressPanel.vue';
+import { CHAPTER_TITLE, alphabetMedia, chapterMedia, chapters, consonants, khmerDigits, vowels } from '../lib/content';
+
+const packs = [
+  { id: 'alphabet', km: 'ព្យញ្ជនៈ ស្រៈ និងលេខ', en: 'Letters, vowels and numbers', urls: alphabetMedia() },
+  ...chapters.filter((ch) => ch.number > 1).map((ch) => ({
+    id: `ch${ch.number}`,
+    km: `ជំពូក ${khmerDigits(ch.number)} · ${CHAPTER_TITLE[ch.number].km}`,
+    en: `Chapter ${ch.number} · ${CHAPTER_TITLE[ch.number].en}`,
+    urls: chapterMedia(ch),
+  })),
+];
+const totals = {
+  letters: consonants.length,
+  vowels: vowels.reduce((n, v) => n + (v.audio_series1 ? 1 : 0) + (v.audio_series2 ? 1 : 0), 0),
+  lessons: chapters.reduce((n, ch) => n + ch.lessons.length, 0),
+  typing: 9,
+};
+---
+
+<BaseLayout title="វឌ្ឍនភាព Progress">
+  <h1 class="mb-6 text-2xl font-semibold"><T km="វឌ្ឍនភាពរបស់ខ្ញុំ" en="My progress" /></h1>
+  <ProgressPanel client:load totals={totals} packs={packs} />
+</BaseLayout>

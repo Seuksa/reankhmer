@@ -1,0 +1,339 @@
+[
+  {
+    "id": 1,
+    "char": "ក",
+    "name": "kor",
+    "series": 1,
+    "roman": "Gor",
+    "audio": "assets/audio/consonants/01-kor.mp3",
+    "audio_alt": "assets/audio/consonants/01-kor-alt.mp3",
+    "image": "assets/images/letters/01-kor.jpg",
+    "legacy_swf": "legacy/flash/kor_1.swf"
+  },
+  {
+    "id": 2,
+    "char": "ខ",
+    "name": "khor",
+    "series": 1,
+    "roman": "Khor",
+    "audio": "assets/audio/consonants/02-khor.mp3",
+    "audio_alt": "assets/audio/consonants/02-khor-alt.mp3",
+    "image": "assets/images/letters/02-khor.jpg",
+    "legacy_swf": "legacy/flash/khor_2.swf"
+  },
+  {
+    "id": 3,
+    "char": "គ",
+    "name": "kou",
+    "series": 2,
+    "roman": "Kou",
+    "audio": "assets/audio/consonants/03-kou.mp3",
+    "audio_alt": "assets/audio/consonants/03-kou-alt.mp3",
+    "image": "assets/images/letters/03-kou.jpg",
+    "legacy_swf": "legacy/flash/kou_3.swf"
+  },
+  {
+    "id": 4,
+    "char": "ឃ",
+    "name": "khou",
+    "series": 2,
+    "roman": "Khou",
+    "audio": "assets/audio/consonants/04-khou.mp3",
+    "audio_alt": "assets/audio/consonants/04-khou-alt.mp3",
+    "image": "assets/images/letters/04-khou.jpg",
+    "legacy_swf": "legacy/flash/khou_4.swf"
+  },
+  {
+    "id": 5,
+    "char": "ង",
+    "name": "ngou",
+    "series": 2,
+    "roman": "Ngou",
+    "audio": "assets/audio/consonants/05-ngou.mp3",
+    "audio_alt": "assets/audio/consonants/05-ngou-alt.mp3",
+    "image": "assets/images/letters/05-ngou.jpg",
+    "legacy_swf": "legacy/flash/ngou_5.swf"
+  },
+  {
+    "id": 6,
+    "char": "ច",
+    "name": "chor",
+    "series": 1,
+    "roman": "Chor",
+    "audio": "assets/audio/consonants/06-chor.mp3",
+    "audio_alt": "assets/audio/consonants/06-chor-alt.mp3",
+    "image": "assets/images/letters/06-chor.jpg",
+    "legacy_swf": "legacy/flash/chor_6.swf"
+  },
+  {
+    "id": 7,
+    "char": "ឆ",
+    "name": "chhor",
+    "series": 1,
+    "roman": "Chhor",
+    "audio": "assets/audio/consonants/07-chhor.mp3",
+    "audio_alt": "assets/audio/consonants/07-chhor-alt.mp3",
+    "image": "assets/images/letters/07-chhor.jpg",
+    "legacy_swf": "legacy/flash/chhor_7.swf"
+  },
+  {
+    "id": 8,
+    "char": "ជ",
+    "name": "chou",
+    "series": 2,
+    "roman": "Chou",
+    "audio": "assets/audio/consonants/08-chou.mp3",
+    "image": "assets/images/letters/08-chou.jpg",
+    "legacy_swf": "legacy/flash/chou_8.swf"
+  },
+  {
+    "id": 9,
+    "char": "ឈ",
+    "name": "chhou",
+    "series": 2,
+    "roman": "Chhou",
+    "audio": "assets/audio/consonants/09-chhou.mp3",
+    "image": "assets/images/letters/09-chhou.jpg",
+    "legacy_swf": "legacy/flash/chhou_9.swf"
+  },
+  {
+    "id": 10,
+    "char": "ញ",
+    "name": "nhou",
+    "series": 2,
+    "roman": "Nhou",
+    "audio": "assets/audio/consonants/10-nhou.mp3",
+    "image": "assets/images/letters/10-nhou.jpg",
+    "legacy_swf": "legacy/flash/nhou_10.swf"
+  },
+  {
+    "id": 11,
+    "char": "ដ",
+    "name": "dor",
+    "series": 1,
+    "roman": "Dor",
+    "audio": "assets/audio/consonants/11-dor.mp3",
+    "image": "assets/images/letters/11-dor.jpg",
+    "legacy_swf": "legacy/flash/dor_11.swf"
+  },
+  {
+    "id": 12,
+    "char": "ឋ",
+    "name": "thor",
+    "series": 1,
+    "roman": "Thor",
+    "audio": "assets/audio/consonants/12-thor_siam.mp3",
+    "image": "assets/images/letters/12-thor_siam.jpg",
+    "legacy_swf": "legacy/flash/thor_12.swf"
+  },
+  {
+    "id": 13,
+    "char": "ឌ",
+    "name": "dou",
+    "series": 2,
+    "roman": "Dou",
+    "audio": "assets/audio/consonants/13-dou_siem.mp3",
+    "image": "assets/images/letters/13-dou_siem.jpg",
+    "legacy_swf": "legacy/flash/dou_13.swf"
+  },
+  {
+    "id": 14,
+    "char": "ឍ",
+    "name": "thou",
+    "series": 2,
+    "roman": "Thou",
+    "audio": "assets/audio/consonants/14-thou_siam.mp3",
+    "image": "assets/images/letters/14-thou_siam.jpg",
+    "legacy_swf": "legacy/flash/thou_14.swf"
+  },
+  {
+    "id": 15,
+    "char": "ណ",
+    "name": "nor",
+    "series": 1,
+    "roman": "Nor",
+    "audio": "assets/audio/consonants/15-nor.mp3",
+    "image": "assets/images/letters/15-nor.jpg",
+    "legacy_swf": "legacy/flash/nor_15.swf"
+  },
+  {
+    "id": 16,
+    "char": "ត",
+    "name": "tor",
+    "series": 1,
+    "roman": "Tor",
+    "audio": "assets/audio/consonants/16-tor.mp3",
+    "image": "assets/images/letters/16-tor.jpg",
+    "legacy_swf": "legacy/flash/tor_16.swf"
+  },
+  {
+    "id": 17,
+    "char": "ថ",
+    "name": "thor",
+    "series": 1,
+    "roman": "Thor",
+    "audio": "assets/audio/consonants/17-thor.mp3",
+    "image": "assets/images/letters/17-thor.jpg",
+    "legacy_swf": "legacy/flash/thor_17.swf"
+  },
+  {
+    "id": 18,
+    "char": "ទ",
+    "name": "tou",
+    "series": 2,
+    "roman": "Tou",
+    "audio": "assets/audio/consonants/18-tou.mp3",
+    "image": "assets/images/letters/18-tou.jpg",
+    "legacy_swf": "legacy/flash/tou_18.swf"
+  },
+  {
+    "id": 19,
+    "char": "ធ",
+    "name": "thou",
+    "series": 2,
+    "roman": "Thou",
+    "audio": "assets/audio/consonants/19-thou.mp3",
+    "image": "assets/images/letters/19-thou.jpg",
+    "legacy_swf": "legacy/flash/thou_19.swf"
+  },
+  {
+    "id": 20,
+    "char": "ន",
+    "name": "nou",
+    "series": 2,
+    "roman": "Nou",
+    "audio": "assets/audio/consonants/20-nou.mp3",
+    "image": "assets/images/letters/20-nou.jpg",
+    "legacy_swf": "legacy/flash/nou_20.swf"
+  },
+  {
+    "id": 21,
+    "char": "ប",
+    "name": "bor",
+    "series": 1,
+    "roman": "Bor",
+    "audio": "assets/audio/consonants/21-bor.mp3",
+    "image": "assets/images/letters/21-bor.jpg",
+    "legacy_swf": "legacy/flash/bor_21.swf"
+  },
+  {
+    "id": 22,
+    "char": "ផ",
+    "name": "phor",
+    "series": 1,
+    "roman": "Phor",
+    "audio": "assets/audio/consonants/22-phor.mp3",
+    "image": "assets/images/letters/22-phor.jpg",
+    "legacy_swf": "legacy/flash/phor_22.swf"
+  },
+  {
+    "id": 23,
+    "char": "ព",
+    "name": "pou",
+    "series": 2,
+    "roman": "Pou",
+    "audio": "assets/audio/consonants/23-pou.mp3",
+    "image": "assets/images/letters/23-pou.jpg",
+    "legacy_swf": "legacy/flash/pou_23.swf"
+  },
+  {
+    "id": 24,
+    "char": "ភ",
+    "name": "phou",
+    "series": 2,
+    "roman": "Phou",
+    "audio": "assets/audio/consonants/24-phou.mp3",
+    "image": "assets/images/letters/24-phou.jpg",
+    "legacy_swf": "legacy/flash/phou_24.swf"
+  },
+  {
+    "id": 25,
+    "char": "ម",
+    "name": "mou",
+    "series": 2,
+    "roman": "Mou",
+    "audio": "assets/audio/consonants/25-mou.mp3",
+    "image": "assets/images/letters/25-mou.jpg",
+    "legacy_swf": "legacy/flash/mou_25.swf"
+  },
+  {
+    "id": 26,
+    "char": "យ",
+    "name": "you",
+    "series": 2,
+    "roman": "You",
+    "audio": "assets/audio/consonants/26-you.mp3",
+    "image": "assets/images/letters/26-you.jpg",
+    "legacy_swf": "legacy/flash/you_26.swf"
+  },
+  {
+    "id": 27,
+    "char": "រ",
+    "name": "rou",
+    "series": 2,
+    "roman": "Rou",
+    "audio": "assets/audio/consonants/27-rou.mp3",
+    "image": "assets/images/letters/27-rou.jpg",
+    "legacy_swf": "legacy/flash/rou_27.swf"
+  },
+  {
+    "id": 28,
+    "char": "ល",
+    "name": "lou",
+    "series": 2,
+    "roman": "Lou",
+    "audio": "assets/audio/consonants/28-lou.mp3",
+    "image": "assets/images/letters/28-lou.jpg",
+    "legacy_swf": "legacy/flash/lou_28.swf"
+  },
+  {
+    "id": 29,
+    "char": "វ",
+    "name": "vou",
+    "series": 2,
+    "roman": "Vou",
+    "audio": "assets/audio/consonants/29-vou.mp3",
+    "image": "assets/images/letters/29-vou.jpg",
+    "legacy_swf": "legacy/flash/vou_29.swf"
+  },
+  {
+    "id": 30,
+    "char": "ស",
+    "name": "sor",
+    "series": 1,
+    "roman": "Sor",
+    "audio": "assets/audio/consonants/30-sor.mp3",
+    "image": "assets/images/letters/30-sor.jpg",
+    "legacy_swf": "legacy/flash/sor_30.swf"
+  },
+  {
+    "id": 31,
+    "char": "ហ",
+    "name": "hor",
+    "series": 1,
+    "roman": "Hor",
+    "audio": "assets/audio/consonants/31-hor.mp3",
+    "image": "assets/images/letters/31-hor.jpg",
+    "legacy_swf": "legacy/flash/hor_31.swf"
+  },
+  {
+    "id": 32,
+    "char": "ឡ",
+    "name": "lor",
+    "series": 1,
+    "roman": "Lor",
+    "audio": "assets/audio/consonants/32-lor.mp3",
+    "image": "assets/images/letters/32-lor.jpg",
+    "legacy_swf": "legacy/flash/lor_32.swf"
+  },
+  {
+    "id": 33,
+    "char": "អ",
+    "name": "or",
+    "series": 1,
+    "roman": "Or",
+    "audio": "assets/audio/consonants/33-or.mp3",
+    "image": "assets/images/letters/33-or.jpg",
+    "legacy_swf": "legacy/flash/or_33.swf"
+  }
+]

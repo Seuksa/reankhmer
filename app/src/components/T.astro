@@ -1,0 +1,6 @@
+---
+/** Bilingual text. Visibility follows <html data-lang>: both (default), km, en. */
+interface Props { km: string; en: string; stack?: boolean; class?: string }
+const { km, en, stack = false, class: cls = '' } = Astro.props;
+---
+<span class:list={['t', { 't-stack': stack }, cls]}><span lang="km" class="t-km">{km}</span><span lang="en" class="t-en">{en}</span></span>

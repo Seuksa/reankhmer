@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import T from '../components/T.astro';
+---
+
+<BaseLayout title="404">
+  <div class="py-16 text-center">
+    <p lang="km" class="font-khmer-serif text-7xl text-brand-700">អូ៎!</p>
+    <h1 class="mt-4 text-2xl font-semibold"><T km="រកទំព័រនេះមិនឃើញទេ" en="Page not found" stack /></h1>
+    <a href="/" class="btn mt-6"><T km="ត្រឡប់ទៅទំព័រដើម" en="Back home" /></a>
+  </div>
+</BaseLayout>

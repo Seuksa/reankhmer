@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import T from '../components/T.astro';
+import { CHAPTER_TITLE, chapters, khmerDigits, lessonHref } from '../lib/content';
+
+const starts = [
+  { href: '/letters', char: 'ក', km: 'ព្យញ្ជនៈ', en: 'Consonants', note: { km: `${khmerDigits(33)} តួ`, en: '33 letters, two series' } },
+  { href: '/vowels', char: 'ា', km: 'ស្រៈ', en: 'Vowels', note: { km: 'សំឡេងពីរ', en: 'each with two sounds' } },
+  { href: '/numbers', char: '៥', km: 'លេខ', en: 'Numbers', note: { km: 'ពី ០ ដល់ លាន', en: 'zero to a million' } },
+];
+---
+
+<BaseLayout>
+  <section class="mb-10 rounded-3xl bg-gradient-to-br from-brand-700 to-brand-900 px-6 py-10 text-white sm:px-10">
+    <h1 class="text-3xl font-semibold sm:text-4xl">
+      <span lang="km" class="block">រៀនអាន ស្តាប់ និងនិយាយខ្មែរ</span>
+      <span class="mt-1 block text-xl font-normal text-brand-100 sm:text-2xl">Learn to read, hear and speak Khmer</span>
+    </h1>
+    <p class="mt-4 max-w-2xl text-brand-50">
+      <T km="សម្រាប់ក្រុមគ្រួសារខ្មែរនៅក្រៅប្រទេស — ស្តាប់សំឡេងពិត ហាត់រៀនបានគ្រប់ទីកន្លែង ទោះគ្មានអ៊ីនធឺណិតក៏ដោយ។"
+         en="For Khmer families abroad — real voices, practice anywhere, even offline." stack />
+    </p>
+    <div class="mt-6 flex flex-wrap gap-3">
+      <a href="/letters" class="rounded-xl bg-white px-5 py-3 font-semibold text-brand-800 hover:bg-brand-50"><T km="ចាប់ផ្តើមពី ក ខ គ" en="Start with the alphabet" /></a>
+      <a href="/lessons" class="rounded-xl border border-white/50 px-5 py-3 font-semibold hover:bg-white/10"><T km="មេរៀនទាំងអស់" en="All lessons" /></a>
+    </div>
+  </section>
+
+  <h2 class="mb-4 text-xl font-semibold"><T km="មូលដ្ឋានគ្រឹះ" en="The basics" /></h2>
+  <ul class="mb-10 grid gap-4 sm:grid-cols-3">
+    {starts.map((s) => (
+      <li>
+        <a href={s.href} class="card flex items-center gap-4 hover:border-brand-500">
+          <span lang="km" class="font-khmer-serif grid size-16 place-items-center rounded-2xl bg-brand-50 text-4xl text-brand-800 dark:bg-brand-900/40 dark:text-brand-100">{s.char}</span>
+          <span>
+            <span class="block font-semibold"><T km={s.km} en={s.en} /></span>
+            <span class="text-sm text-slate-500"><T km={s.note.km} en={s.note.en} /></span>
+          </span>
+        </a>
+      </li>
+    ))}
+  </ul>
+
+  <h2 class="mb-4 text-xl font-semibold"><T km="ផ្លូវសិក្សា" en="Learning path" /></h2>
+  <ol class="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+    {chapters.map((ch) => (
+      <li>
+        <a href={lessonHref(ch.number, ch.lessons[0].number)} class="card block h-full hover:border-brand-500">
+          <span class="text-sm text-slate-500"><T km={`ជំពូក ${khmerDigits(ch.number)}`} en={`Chapter ${ch.number}`} /></span>
+          <span class="mt-1 block font-semibold"><T km={CHAPTER_TITLE[ch.number].km} en={CHAPTER_TITLE[ch.number].en} stack /></span>
+          <span class="mt-2 block text-sm text-slate-500"><T km={`${khmerDigits(ch.lessons.length)} មេរៀន`} en={`${ch.lessons.length} lessons`} /></span>
+        </a>
+      </li>
+    ))}
+  </ol>
+</BaseLayout>

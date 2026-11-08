@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "title": "Introduction",
+    "text": "Khmer Language:\n\nCambodian or Khmer is the native language of people living in Cambodia, South Vietnam, Thailand and Laos. Khmer is a member of the Mon-Khmer family of languages which extends from India to the South China Sea.\n\nSince at least the first century of the Christian era the Khmer people in what is today Cambodia have been subjected to the influence of Indian culture. This influence can be seen very clearly in Khmer art, religion, philosophy, and especially in Khmer Language. Two distinct Indo-European linguistic influences have modified and augmented the Khmer lexicon. The first of these, associated with the spread of the Brahman and Mahayana Buddhist religions, was Sanskrit. The second, associated with Hinayana Buddhism, was Pali, from which extensive borrowing was made starting in about the 15th century. To a much lesser extent Khmer has borrowed from Thai, Chinese, Vietnamese, Lao, and French. The Thai borrowings were often in the courtly or administrative spheres, and the Chinese were mainly terms associated with cooking or business. Most of the words borrowed from French relate to modern industrial technology and science."
+  },
+  {
+    "id": 1,
+    "title": "Cambodian System of Writing",
+    "text": "Cambodian is written across the page from left to right. The Cambodian alphabet, although unique to Cambodia, bears some close similarities to the Thai and Lao alphabets. All have developed from an alphabet that originated in south India.\n\nIn Camboda there are two distinct styles of script –uk-sor ch’ree-ung or ‘slanted script’ and uk-sor mool or ‘rounded script’. The former is the most common and that used in this book. Newspapers, books and all typewritten material use this form of script. The more ornate rounded script is used for headings in public notices, names of buildings, titles of books and so on.\n\nThere are no spaces between words in Cambodian; when spaces do occur in Cambodian writing, they serve as punctuation marks, rather like commas. Certain vowels symbols appear above the consonant, rather than after it, while others are written beneath, in front of, or even surrounding the consonant on three sides. A further unusual feature for the westerner is that when two consonants occur at the beginning of a word – for example in the word srok – the second consonant is written using a special subscript from beneath the first consonant."
+  },
+  {
+    "id": 2,
+    "title": "Consonants",
+    "text": "Cambodian consonants are classified as belonging to either the first series (sometimes called first register) or second series (or second register). Since the series or register of the initial consonant in a word will determine how that word is pronounced, it is essential to remember which series each consonant belongs to.\n\nThere are 33 consonants in Cambodian script."
+  },
+  {
+    "id": 3,
+    "title": "Vowels",
+    "text": "Nearly every vowel symbol or configuration has two possible pronunciations in Cambodian – a ‘first series pronunciation’ used when the preceding consonant belongs to the first series, and a ‘second series pronunciation’ used when the preceding consonant belongs to the second series. There are three vowel symbols that are pronounced the same regardless of the series of the initial consonant.\n\nThere are 24 vowels and 11 independent vowels."
+  },
+  {
+    "id": 4,
+    "title": "Numbers",
+    "text": "In our software, we provide you a reading system of number. You can see the number from 0 to 9 and you can put the amount of number from 0 to million to read in Khmer.\n\nNotice that the words for six, seven, eight etc. are literally ‘five-one’, ‘five-two’, ‘five-tree’ etc.\n\nThe number scripts are (0-9): ០, ១, ២, ៣,​៤, ៥, ៦, ៧, ៨, ៩"
+  },
+  {
+    "id": 5,
+    "title": "Words with no written vowel",
+    "text": "Many Khmer words consist of simply two consonants, with no vowel symbol appearing, eg. ដង, មក. These words are usually pronounced with an inherent –or sound. Some common words with an initial second series consonant are, however, pronounced with an inherent –oa sound."
+  },
+  {
+    "id": 6,
+    "title": "Consonant clusters and subscript",
+    "text": "When two consonant sounds occur together at the beginning of a word –e.g: t’wer, s’ray, kroo, etc. –the second consonant symbol is written underneath the initial consonant. Each consonant symbol in Cambodian has in addition to its normal form a subscript form. Thus, for every consonant symbol, it is also necessary to learn a subscript form. In some cases the subscript consonant are very similar to their ‘parent’ consonants; in other instances there is virtually no resemblance whatsoever."
+  },
+  {
+    "id": 7,
+    "title": "Consonant clusters and vowels",
+    "text": "If the initial consonant and subscript consonant both belong to the same series then the vowel will take that series. But if an initial consonant belonging to the first series is followed by one of the subscript consonants above, then the vowel takes the first series pronunciation.\n\nNote: Khmer words never end with an –s sound, although the letter ស occurs at the end of many words. In such cases the preceding vowel is pronounced with marked aspiration at the end, which is represented in the transcription by –h."
+  },
+  {
+    "id": 8,
+    "title": "Zero Consonant",
+    "text": "When we have learned vowel symbols, a dash has been used to represent the position of the consonant in relation to the vowel symbol. When a word begins with a vowel sound, a consonant symbol still has to be substituted in the appropriate position. Thus a word that begins with an –aa sound cannot simply start with the letter ា because, as we have already seen, this letter must always follow a consonant. The ‘zero consonant’ serves this function, producing no sound of its own when it occurs with a written vowel symbol."
+  },
+  {
+    "id": 9,
+    "title": "Independent vowel symbols",
+    "text": "There some words in Cambodian which begin with a vowel sound, but instead of being written with ‘zero consonant’ they are written with special ‘independent’ (because they do not appear on top of or underneath a consonant) vowel symbols. Some appear in very common words –others you may never come across."
+  },
+  {
+    "id": 10,
+    "title": "The Symbol (')",
+    "text": "This symbol is called bon-dtok. It occurs on the final consonant of a word. It can influence the pronunciation of a word in a number of different ways. If the word begins with a first series consonant and is written with the vowel ា , then the symbol has the effect of shortening the vowel sound. If the word begins with a second series consonant and is written with the vowel ា, then the symbol has the effect of changing the pronunciation a follows:\n\nIf the final consonant is ក, ខ, គ, ឃ, ង then the vowel is pronounced –ay-uk: នាក់  ពាក់\n\nWith any other final consonant, the vowel is pronounced –oa-u: មាន់   ទាន់\n\nIf the word begins with a first series consonant, then the symbol simply shortens the inherent vowel –or to –o: ដប  ដប់\n\nIf the word begins with a second series consonant and ends with ប, ផ, ព, ភ, ម then the vowel is pronounced –OO:  លប់\n\nIf the word begins with a second series consonant and ends with any consonant other than those in the last example, then the vowel is pronounced –oo-u: លក់"
+  },
+  {
+    "id": 11,
+    "title": "The Symbol ('')",
+    "text": "This symbol (called t’meun gon-dao – ‘rat’s teeth’) serves two distinct functions:\n\nIt changes the pronunciation of the consonants ប and បា from b to bp: ប៉ុន្មាន  ប៉ុន្តែ  ប៉ា\n\nIt converts the following second series consonants into first series consoants: ង, ញ, ម, យ, រ៖ យ៉ាង, ម៉ែត្រ, ម៉ោង, រ៉ៃ"
+  }
+]

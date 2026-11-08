@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import T from '../components/T.astro';
+import NumberList from '../components/NumberList.vue';
+import { numbers } from '../lib/content';
+---
+
+<BaseLayout title="លេខ Numbers">
+  <h1 class="mb-2 text-2xl font-semibold"><T km="លេខខ្មែរ" en="Khmer numbers" /></h1>
+  <p class="mb-6 max-w-3xl text-slate-600 dark:text-slate-400">
+    <T km="ចុចដើម្បីស្តាប់។ លេខខ្មែរ ០ ដល់ ៩ សរសេរដូចលេខអារ៉ាប់ ប៉ុន្តែប្រើរូបអក្សរខ្មែរ។"
+       en="Tap to listen. Khmer digits ០–៩ work exactly like 0–9; only the shapes differ." stack />
+  </p>
+  <NumberList client:visible numbers={numbers} />
+</BaseLayout>

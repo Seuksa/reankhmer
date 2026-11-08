@@ -1,0 +1,2457 @@
+{
+  "tblChapter": [
+    {
+      "ch_id": "1",
+      "ch_num": "1",
+      "ch_title": "Khmer Consonants and Vowels",
+      "ch_desc": "Modern Khmer uses a wrting system consisting of 44 independent consonant symbols (33 regular symbols and 11 others modified by the diacritics (៉) and ( ៊ ) ). The principle of the writing system is that each independent symbol represents, not an isolated consonant or vowel (as in a strictly alphabetic system), but a syllable. Thuseach consonant symbol represents a spoken consonant © followed by a spoken vowel (V). There are 12 independent vowel symbols and 16 conjunct (or dependent) vowel symbols which serve in various combinations with the consonant symbols. The vowel symbols are pronounced in two different ways, according to the set to which they belong. (Ref: Communicating in Khmer Software, by Chhany Sak Humphry)"
+    },
+    {
+      "ch_id": "2",
+      "ch_num": "2",
+      "ch_title": "Learn to spelling Khmer Script",
+      "ch_desc": "Words with no written vowel --\nMany Khmer words consist of simply two consonants, with no vowel symbol appearing, eg. ដង, មក. These words are usually pronounced with an inherent –or sound. Some common words with an initial second series consonant are, however, pronounced with an inherent –oa sound."
+    },
+    {
+      "ch_id": "3",
+      "ch_num": "3",
+      "ch_title": "More on spelling Khmer Script",
+      "ch_desc": "Consonant clusters and subscript\nWhen two consonant sounds occur together at the beginning of a word \u0013 e.g: t\u0019 wer, s\u0019 ray, kroo, etc. \u0013 the second consonant symbol is written underneath the initial consonant. Each consonant symbol in Cambodian has in addition to its normal form a subscript form. Thus, for every consonant symbol, it is also necessary to learn a subscript form. In some cases the subscript consonant are very similar to their \u0018 parent\u0019  consonants; in other instances there is virtually no resemblance whatsoever.\n\nConsonant clusters and vowels\nIf the initial consonant and subscript consonant both belong to the same series then the vowel will take that series. But if an initial consonant belonging to the first series is followed by one of the subscript consonants above, then the vowel takes the first series pronunciation."
+    },
+    {
+      "ch_id": "4",
+      "ch_num": "4",
+      "ch_title": "Learn reading Khmer",
+      "ch_desc": "Read Khmer"
+    },
+    {
+      "ch_id": "5",
+      "ch_num": "5",
+      "ch_title": "Khmer conversation,",
+      "ch_desc": "Conversation,"
+    }
+  ],
+  "tblDictionary": [
+    {
+      "ID": "1",
+      "Word": "ថ្ងៃច័ន្ទ",
+      "Meaning": "(n) Monday"
+    },
+    {
+      "ID": "2",
+      "Word": "ថ្ងៃអង្គារ",
+      "Meaning": "(n) Tuesday"
+    },
+    {
+      "ID": "3",
+      "Word": "ថ្ងៃពុធ",
+      "Meaning": "(n) Wednesday"
+    },
+    {
+      "ID": "4",
+      "Word": "ថ្ងៃព្រហស្បតិ",
+      "Meaning": "(n) Thursday"
+    },
+    {
+      "ID": "5",
+      "Word": "ថ្ងៃសុក្រ",
+      "Meaning": "(n) Friday"
+    },
+    {
+      "ID": "6",
+      "Word": "ថ្ងៃសៅរ៍",
+      "Meaning": "(n) Saturday"
+    },
+    {
+      "ID": "7",
+      "Word": "ថ្ងៃអាទិត្យ",
+      "Meaning": "(n) Sunday"
+    },
+    {
+      "ID": "8",
+      "Word": "អាហារពេលព្រឹក",
+      "Meaning": "(n) Breakfast"
+    },
+    {
+      "ID": "9",
+      "Word": "អាហារថ្ងៃត្រង់",
+      "Meaning": "(n) Lunch"
+    },
+    {
+      "ID": "10",
+      "Word": "អាហារពេលល្ងាច",
+      "Meaning": "(n) Dinner"
+    },
+    {
+      "ID": "11",
+      "Word": "កក",
+      "Meaning": "1- p.To be frozen; to become coagulated. 2-(in) បាយកក n. leftover rice (cooked). 3- p. crowded; a. en masse, in a crowd."
+    },
+    {
+      "ID": "12",
+      "Word": "កក់",
+      "Meaning": "1- p. to wash; to clean; to soak (in order to clean); to wet (of rain). 2- n. a type of reed used for weaving mats (Cyperus flatus). 3- n. showerhead"
+    },
+    {
+      "ID": "13",
+      "Word": "កង",
+      "Meaning": "1- p. Echoing, reverberating, resounding; loud; a. Loudly, very noisily, Ex: ផ្គរឮសូរកងរំពង​ (The thunder reverberates, The thunder rumbles) 2- p. to carry in the arms; n. one armful. 3- n. a round bracelet worn around the wrist as well as the ankle or neck. 4- n. unit or gathering of (troops); a mobile unit. 5- n. name for the human figure which is said to appear in the flames of a funeral pyre."
+    },
+    {
+      "ID": "14",
+      "Word": "កង់",
+      "Meaning": "1- n. wheel; bicycle (col.). 2- n. chop (of meal), piece (of fish), slice (of fish); round slice."
+    },
+    {
+      "ID": "15",
+      "Word": "កាច",
+      "Meaning": "p. bad, mean, cruel, vicious, nasty."
+    },
+    {
+      "ID": "16",
+      "Word": "កាច់",
+      "Meaning": "p. to break (something which is rigid)."
+    },
+    {
+      "ID": "17",
+      "Word": "កប",
+      "Meaning": "p. to be agreeable, in harmony; to be effective, successful, propitious. A. harmoniously, successfully."
+    },
+    {
+      "ID": "18",
+      "Word": "កប់",
+      "Meaning": "p. to bury (something); to be buried; to sink deeply (into). P. to be deeply involved in."
+    },
+    {
+      "ID": "19",
+      "Word": "កូន",
+      "Meaning": "n. child; I (speaking to one's parents). (n) person, under the control of someone else. (n) small one, of a kind, baby animal. (n) small member of a class or set, small member of a combination."
+    },
+    {
+      "ID": "20",
+      "Word": "កន្លះ",
+      "Meaning": "p. not full, incomplete, half (full, complete, etc); nn. Half a …"
+    },
+    {
+      "ID": "21",
+      "Word": "កញ្ជើ",
+      "Meaning": "n. A type of woven basket (about 12 inches in diameter)."
+    },
+    {
+      "ID": "22",
+      "Word": "កញ្ញា",
+      "Meaning": "n. young woman, unmarried girl, miss (n) name of the sign of the zodiac corresponding to September."
+    },
+    {
+      "ID": "23",
+      "Word": "ក្មេង",
+      "Meaning": "n. child, youngster."
+    },
+    {
+      "ID": "24",
+      "Word": "កញ្ឆែត",
+      "Meaning": "n. an edible aquatic plant."
+    },
+    {
+      "ID": "25",
+      "Word": "កុមារ",
+      "Meaning": "n. Young boy adolescent. កុមារា=young boy, កុមារី=young girl"
+    },
+    {
+      "ID": "26",
+      "Word": "កុមារភាព",
+      "Meaning": "childhood, infancy"
+    },
+    {
+      "ID": "27",
+      "Word": "កុមារាកុមារី",
+      "Meaning": "children"
+    },
+    {
+      "ID": "28",
+      "Word": "កម្មករ",
+      "Meaning": "n. Worker, workman, hired hand. (female::កម្មការនី)"
+    },
+    {
+      "ID": "29",
+      "Word": "កម្ពុជា",
+      "Meaning": "Cambodia"
+    },
+    {
+      "ID": "30",
+      "Word": "កញ្រ្ចែង",
+      "Meaning": "n. basket (in general)"
+    },
+    {
+      "ID": "31",
+      "Word": "កញ្រ្ជោង",
+      "Meaning": "n. fox."
+    },
+    {
+      "ID": "32",
+      "Word": "កញ្ចាញ់ចេក",
+      "Meaning": "n. a small green tree frog."
+    },
+    {
+      "ID": "33",
+      "Word": "កង្ហារ",
+      "Meaning": "n. pinwheel, wind wheel, fan, propeller, capstan."
+    },
+    {
+      "ID": "34",
+      "Word": "ក្រូច",
+      "Meaning": "n. generic term for citrus."
+    },
+    {
+      "ID": "35",
+      "Word": "ខ្ញុំ",
+      "Meaning": "np. I, me, my (the normal form of the first person singular pronoun). N. servant, slave."
+    },
+    {
+      "ID": "36",
+      "Word": "ខែ",
+      "Meaning": "n. month. (n) the moon"
+    },
+    {
+      "ID": "37",
+      "Word": "ខ្មែរ",
+      "Meaning": "p. Khmer, Cambodian."
+    },
+    {
+      "ID": "38",
+      "Word": "ខ្យល់",
+      "Meaning": "n. wind, air, breath. ('Wind' is believed to be the cause of many types of illnesses, such as fainting, dizziness stomache-ache etc..)"
+    },
+    {
+      "ID": "39",
+      "Word": "ខំ",
+      "Meaning": "p. To try hard, to make efforts. Ex: ខំឆ្លើយអោយញាប់បន្តិច (Try to answer a little faster)"
+    },
+    {
+      "ID": "40",
+      "Word": "គង់",
+      "Meaning": "p. Well kept, well maintained; safe (=គង់វង់) p. Invulnerable (cannot be cut or pierced -a belief by Khmer warriors that they may be rendered invulnerable by means of certain magical rites, prayers or charms) p. To reside to stay, to remain (royal, priest) (=គង់នៅ) Ex: លោកគង់នៅវត្តណា? (To which monastery are you attached?)"
+    },
+    {
+      "ID": "41",
+      "Word": "គង្គា",
+      "Meaning": "n. river."
+    },
+    {
+      "ID": "42",
+      "Word": "គាត់",
+      "Meaning": "np. He, him, his, she, her (polite form; វា​ is the more abrupt form). គាត់ឯង you. ពួកគាត់ they, them; his or her group. សៀវភៅគាត់ his book, her book."
+    },
+    {
+      "ID": "43",
+      "Word": "គាប់",
+      "Meaning": "p. Right, satisfied. Ex: ធ្វើអ្វីធ្វើអោយគាប់ (What ever you do, do it right)"
+    }
+  ],
+  "tblLesson": [
+    {
+      "les_id": "1",
+      "ch_id": "1",
+      "les_num": "1",
+      "les_title": "Consonants (ក, ខ,​ គ, ឃ, ង​)",
+      "article": null,
+      "getLink": null,
+      "vocabulary": null
+    },
+    {
+      "les_id": "2",
+      "ch_id": "1",
+      "les_num": "2",
+      "les_title": "Consonants (ច, ឆ,​ ជ, ឈ, ញ​)",
+      "article": null,
+      "getLink": null,
+      "vocabulary": null
+    },
+    {
+      "les_id": "3",
+      "ch_id": "1",
+      "les_num": "3",
+      "les_title": "Consonants (ដ, ឋ,​ ឌ, ឍ, ណ​)",
+      "article": null,
+      "getLink": null,
+      "vocabulary": null
+    },
+    {
+      "les_id": "4",
+      "ch_id": "1",
+      "les_num": "5",
+      "les_title": "Consonants (ប, ផ,​ ព, ភ, ម​)",
+      "article": null,
+      "getLink": null,
+      "vocabulary": null
+    },
+    {
+      "les_id": "5",
+      "ch_id": "2",
+      "les_num": "1",
+      "les_title": "[ ] ក​ and [ ] ក់, [ ] ង and [ ] ង់",
+      "article": "ខែ​នេះទឹក​​ព្រែក​​ឡើង​ខ្លាំង​។ ថ្មីៗ​នេះ​ កូន​ពូ​ម៉ុក​លង់​ទឹក តែ​សំ​ណាង​​ល្អវាទាក់​នឹងមែក​រាំង។ យើង​ពុំ​គួរ​ទៅលេង​ឯ​ទី​នោះទេ។",
+      "getLink": "example_les1.swf",
+      "vocabulary": "ទឹកព្រែក, លង់ទឹក, ទាក់, លេង។"
+    },
+    {
+      "les_id": "6",
+      "ch_id": "2",
+      "les_num": "2",
+      "les_title": "[ ] ច and [ ] ច់,​ [ ] ញ and [ ] ញ់",
+      "article": "ថ្ងៃ​សំ​រាក ខ្ញុំ​និង​មិត្ត​ទៅ​ផ្សារ​ធំ​ថ្មី។ ខ្ញុំ​ទិញ​ត្រ​លាច សាច់ ម្រេច និងខ្លាញ់។ មិត្ត​ខ្ញុំ​ទិញ​ត្រី​ក្រាញ់ និង​ស្ពី​ក្រ​ញ៉ាញ។",
+      "getLink": "example_les2.swf",
+      "vocabulary": "ថ្ងៃសំរាក, មិត្ត, ផ្សារ, ទិញ, ត្រលាច, សាច់, ខ្លាញ់, ត្រី។"
+    },
+    {
+      "les_id": "7",
+      "ch_id": "2",
+      "les_num": "3",
+      "les_title": "[ ] ត and [ ] ត់, [ ] ន and [ ] ន់",
+      "article": "តា​ប៊ន​ជា​ព្រាន​ព្រៃ។ ឆ្នាំ​នេះ គាត់​ឈប់​ទៅ​បរ​បាញ់។ គាត់​លែង​ពិ​ឃាត​ជី​វិត​សត្វទៀត​ហើយ។",
+      "getLink": "example_les3.swf",
+      "vocabulary": "ព្រានព្រៃ, បរបាញ់, ពិឃាត, ជីវិត, សត្វ។"
+    },
+    {
+      "les_id": "8",
+      "ch_id": "2",
+      "les_num": "4",
+      "les_title": "[ ] ប and [ ] ប់, [ ] ល and [ ] ល់",
+      "article": "ថ្ងៃ​ចូល​ឆ្នាំ​ខ្មែរ យើង​ទៅ​លេ​ង​អង្គ​រ​វត្ត។ បង​ខ្ញុំ​ឃើញ​នារី​ម្នាក់​ស្អាត និង​សុ​ភាព​រាប​សា។ គាត់​លប​ដាក់​ឈ្មោះ​ថា \"រំ​ដួល​សៀម​រាប\"។",
+      "getLink": "example_les4.swf",
+      "vocabulary": "ចូលឆ្នាំ, អង្គរវត្ត, ស្អាត, សុភាពរាបសា, លប, ឈ្មោះ។"
+    },
+    {
+      "les_id": "9",
+      "ch_id": "2",
+      "les_num": "5",
+      "les_title": "[ ] ម,​ [ ] ស, [ ] ស់",
+      "article": "សុ​ភី​ងូត​ទឹក ដុស​ក្អែល​រាល់​ថ្ងៃ។ សុ​ភី​ជា​ក្មេង​ស្អាត។ នា​ង​ពុំ​ដែល​កើត​រមាស់​ទេ។",
+      "getLink": "example_les5.swf",
+      "vocabulary": "ងូតទឹក, ក្អែល, រាល់ថ្ងៃ, រមាស់។"
+    },
+    {
+      "les_id": "10",
+      "ch_id": "3",
+      "les_num": "1",
+      "les_title": "ញ្ច, ញ្ឆ,​ ញ្ជ, ញ្ឈ, ញ្ញ",
+      "article": "មី​ង​ប្រេម​ជញ្ជាត់​ត្រី​បាន​កន្លះ​កញ្ជើ។ គាត់​ចុះ​បេះ​កញ្ឆែត តែ​កញ្ចាញ់​ចេ​ក​មួយ​លោត​ចេញ​មក គាត់​ក៏​ភ្ញាក់​ធ្លាក់​ឈ្នាង​ពី​ដៃ។",
+      "getLink": "example2_les1.swf",
+      "vocabulary": "ជញ្ជាត់ត្រី, កញ្ជើ, កញ្ឆែត, កញ្ចាញ់ចេក, លោត, ភ្ញាក់, ធ្លាក់, ឈ្នាង។"
+    },
+    {
+      "les_id": "11",
+      "ch_id": "3",
+      "les_num": "2",
+      "les_title": "ង្ក, ង្ខ, ង្គ, ង្រ, ង្វ, ង្ស, ង្ហ, ង្អ",
+      "article": "ខ្យល់​ធ្លាក់​ពី​ជើង កុមារ​បង្ហោះ​ខ្លែង។ ប្អូន​វា​ឈរ​លេង​កង្ហារ។ ម៉ែ​កុមារ​លាយ​ស្រូវ។ ឪ​ពុក​កុមារ​លី​អង្រុត​ចេញ​ទៅ​រុត​ត្រី។",
+      "getLink": "example2_les2.swf",
+      "vocabulary": "ខ្យល់, ជើង, ខ្លែង, កង្ហារ, ស្រូវ, អង្រុត។"
+    },
+    {
+      "les_id": "12",
+      "ch_id": "3",
+      "les_num": "3",
+      "les_title": "ណ្ត, ណ្ណ, ន្ត, ន្ទ, ន្ល, ន្ស",
+      "article": "ពូ​ប្រុក​ទៅ​កាប់​ដើម​ទន្រ្ទាន​ខែត្រ​នៅ​គុម្ពោត​ឯ​នាយ។​ គាត់​បាន​គោះ​ពង​អង្រ្កង​អោយ​ប្រ​ពន្ធ​គាត់​ធ្វើ​ជ្រក់។ គាត់​ពិ​សារ​វា​ជា​មួយ​ត្រី​កន្រ្តប់​អាំង។",
+      "getLink": "example2_les3.swf",
+      "vocabulary": "គុម្ពោត, គោះ, អង្រ្កង, ប្រពន្ធ, ជ្រក់, ពិសារ។"
+    },
+    {
+      "les_id": "13",
+      "ch_id": "3",
+      "les_num": "4",
+      "les_title": "ប្ប, ម្ព, ម្ម, ង្ក្រ, ង្គ្រ, ញ្ជ្រ, ន្ត្រ, ន្ទ្រ",
+      "article": "ពន្លក​មាន​សណ្តាប់​ធ្នាប់​ល្អ។ វា​ចេះ​រៀប​ចំ​បន្ទប់​ទុក​ដាក់​ប្រ​ដាប់​ប្រ​ដា​ត្រឹម​ត្រូវ​តាម​កន្លែង។ ពន្លក​ពុំ​ដែល​ទទួល​ការ​ស្តី​បន្ទោស​ឡើយ។",
+      "getLink": "example2_les4.swf",
+      "vocabulary": "សណ្តាប់ធ្នាប់, បន្ទប់, ទុកដាក់, ស្តីបន្ទោស។"
+    },
+    {
+      "les_id": "14",
+      "ch_id": "1",
+      "les_num": "6",
+      "les_title": "Consonants (យ, រ,​ ល, វ, ស, ហ, ឡ, អ​)",
+      "article": null,
+      "getLink": null,
+      "vocabulary": null
+    },
+    {
+      "les_id": "15",
+      "ch_id": "1",
+      "les_num": "4",
+      "les_title": "Consonants (ត, ថ, ទ, ធ, ន)",
+      "article": null,
+      "getLink": null,
+      "vocabulary": null
+    },
+    {
+      "les_id": "16",
+      "ch_id": "4",
+      "les_num": "1",
+      "les_title": "សាលារៀនយើង (Our School)",
+      "article": "សា​លា​រៀន​យើង​ សង់​នៅលើ​ទីធ្លា​មួយ ធំទូ​លាយ​។ សា​លា​រៀន​នេះ មាន​អា​គារ​ច្រើន​ខ្នង និង​មាន​របង​ព័ទ្ធ​ជុំ​វិញ។​ នៅ​កណ្តាល​ទី​ធ្លា លើ​បង្គោល​មួយ​ខ្ពស់ មាន​ចង​ទង​ជាតិ រូប​ប្រា​សាទ​អង្គរ​វត្ត។ យើង​ស្រ​លាញ់​សា​លា​រៀន​នេះ​ណាស់ ព្រោះ​ជា​កន្លែង​អប់​រំ​យើង​ខ្ញុំ អោយទៅ​​ជា​ពល​រដ្ឋ​ល្អ។",
+      "getLink": "ourschool",
+      "vocabulary": "សាលារៀន, សង់, ទីធ្លា, ធំទូលាយ, អគារ, របង, កណ្តាល, ទង់ជាតិ, ស្រលាញ់, ពលរដ្ឋ"
+    },
+    {
+      "les_id": "17",
+      "ch_id": "4",
+      "les_num": "2",
+      "les_title": "ផ្សារនៅកម្ពុជា (The markets in Cambodia)",
+      "article": "នៅ​គ្រប់​ខេត្ត ស្រុក ឃុំ ភូមិ​នៃ​ប្រ​ទេស​កម្ពុជា​តែង​មាន​ផ្សារ​ធំ​តូច​សំ​រាប់​អ្នក​រ​ក​ស៊ី​លក់​ដូរ​ទំ​និញ​ផ្សេងៗ។\nនៅ​ក្រុង​ភ្នំ​ពេញ ផ្សារ​ដែល​មាន​ឈ្មោះ​ល្បី​ជាង​គេ គឺ​ផ្សារ​ថ្មី ​ឬ​ផ្សារ​ធំ។ ក្រៅ​ពី​នេះ​មាន​ផ្សារ​កណ្តាល ផ្សារ​ចាស់ ផ្សារអូ​ឡាំ​ពិក និង​ផ្សារអូ​ឬស្សី​ជា​ដើម។\nនៅ​ផ្សារ​ទាំង​នោះ​គេ​លក់​របស់​ផ្សេងៗ​មាន ផ្លែឈើ បន្លែ ត្រី សាច់ សំ​លៀក​បំ​ពាក់ សៀវ​ភៅ ហើយ​នឹ​​ង​គ្រឿង​សំ​រាប់​ប្រើ​ក្នុង​ផ្ទះ។\nមុន​នឹង​ទិញ​រ​បស់​អ្វី​មួយ យើង​អាច​ត​ថ្លៃ​បា​ន តែ​បើ​ប្រ​គល់​ប្រាក់​ហើយៗ ចង់​ដូរ​របស់​ជា​ប្រាក់​វិញ​នឹង​មាន​ការ​ពិ​បាក​ច្រើន។",
+      "getLink": "market",
+      "vocabulary": "គ្រប់, ស្រុក, ឃុំ, នៃ, តែង, សំរាប់, អ្នករកស៊ី, លក់, ដូរ, ទំនិញ, ផ្សេងៗ, មានឈ្មោះល្បី, ក្រៅពី, ជាដើម, របស់, ផ្លែឈើរ, បន្លែ, សំលៀកបំពាក់, សៀវភៅ, គ្រឿង, ប្រើ, ក្នុង, ទិញ,​ អ្វីមួយ, តថ្លៃ, ប្រគល់, ប្រាក់, ដូរ...វិញ។"
+    },
+    {
+      "les_id": "18",
+      "ch_id": "5",
+      "les_num": "1",
+      "les_title": "និយាយពីខ្លួនឯង (Talking about yourself)",
+      "article": "If you are a foreigner in Cambodia, your most frequent conversations with Cambodians are likely to involve telling them your name, nationality and perhaps something about your work. These are the kind of statements you will probably need to be able to make about yourself.",
+      "getLink": "con_les1.jpg",
+      "vocabulary": "ខ្ញុំ, ឈ្មោះ, ត្រកូល, ជា, អង់គ្លេស, មក, ពី, ភ្នំពេញ, ធ្វើ, ធ្វើការ, នៅ, គ្រូពេទ្យ។"
+    },
+    {
+      "les_id": "19",
+      "ch_id": "5",
+      "les_num": "2",
+      "les_title": "នៅក្នុងភោជនីយដ្ឋាន (In the restaurant)",
+      "article": "Food is cheap in Cambodia and the larger restaurants offer a variety of local, Chinese and western dishes. Usually the menu will list foods in French, English and Cambodian. In Phnom Penh’s ‘dancing restaurants’ there will be a live band and girls can be hired as dancing partners. Customers are usually there for the dancing rather than the food. Cambodian food itself is rather less spicy than Thai food. Typically a meal will consist of rice with a number of side dishes consisting of soups, salads and stir-fried dishes. In the conversation, one of the popular Cambodian dishes Sopheap orders is som-lor m’joo which is a sour soup made from mixture of tomatoes, cucumbers and pineapples cooked with basil and tamarind juice.",
+      "getLink": "con_les2.jpg",
+      "vocabulary": "ហាងបាយ, ភោជនីយដ្ឋាន, ហៅ, ម្ហូប, ហៅម្ហូប, ហើយឬនៅ?, មិនទាន់ទេ, យក, មើល, តារាងម្ហូប, ចូលចិត្ត, ពិសារ, ហឹរ, ញ៉ាំ, សម្ល, សម្លកកូរ, សម្លម្ជូ, ត្រី, ឆា, បង្កង, ចាន, ឆ្ងាញ់, ក៏…ដែរ, ទឹក, ដប, កូកា កូឡា, បៀរ។ (A: waiter; B: Sopheap; C: Sally; D: Sokha)"
+    },
+    {
+      "les_id": "20",
+      "ch_id": "5",
+      "les_num": "3",
+      "les_title": "នៅឯផ្សារ (At the market)",
+      "article": "Generally speaking, markets are excellent places to practice your Cambodian, and often, for the cost of a very small purchase, you can get a valuable language lesson from vendors. This lesson gives you practice in two basic transactions – bargaining and asking names of things. See how much of the dialogue you can read in Cambodian script now! (A=Jill; B=Vendor)",
+      "getLink": "con_les3.jpg",
+      "vocabulary": "ក្រូច, លមើល, ឆ្ងាញ់មិនឆ្ងាញ់, គ្រាន់បើ, សូម, សូមសួរ, ហៅ, ហៅថា, ចុះថ្លៃ, បើ។"
+    },
+    {
+      "les_id": "21",
+      "ch_id": "5",
+      "les_num": "4",
+      "les_title": "និយាយភាសាខ្មែរ (Speaking Cambodian)",
+      "article": "Cambodians are generally surprised and pleased that westerners make the effort to learn their language. Even the clumsiest attempts to say something in Cambodian are likely to be greeted with enthusiastic praise. But don’t let fulsome praise go to your head!",
+      "getLink": "con_les5.jpg",
+      "vocabulary": "ចេះ, និយាយ, ឬទេ?, បាន, បន្តិចបន្តួច, ល្អ, មិន…ប៉ុន្មានទេ, សរសេរ, អក្សរ, អក្សរខ្មែរ, ស្តាប់បាន, ស្តាប់មិនបានទេ, សូម, ថា, ម្តង, ទៀត, អរគុណ, យល់, ចង់។"
+    }
+  ],
+  "tblPhrase": [
+    {
+      "phrase_id": "1",
+      "phrase": "សួស្តី",
+      "meaning": "Hello, Hi"
+    },
+    {
+      "phrase_id": "2",
+      "phrase": "តើអ្នកឈ្មោះអ្វី?",
+      "meaning": "What is your name?"
+    },
+    {
+      "phrase_id": "3",
+      "phrase": "ខ្ញុំទៅផ្សារ",
+      "meaning": "I go to market."
+    },
+    {
+      "phrase_id": "4",
+      "phrase": "ទៅដើរលេងទេ?",
+      "meaning": "Do you want to go for a walk?"
+    },
+    {
+      "phrase_id": "5",
+      "phrase": "ខ្ញុំទៅសាលា",
+      "meaning": "I go to school."
+    },
+    {
+      "phrase_id": "6",
+      "phrase": "ខ្ញុំទៅធ្វើការ",
+      "meaning": "I go to work."
+    },
+    {
+      "phrase_id": "7",
+      "phrase": "អ្នកឯងទៅណាដែរ?",
+      "meaning": "Where are you going?"
+    },
+    {
+      "phrase_id": "8",
+      "phrase": "សុខសប្បាយទេ?",
+      "meaning": "How are you?"
+    }
+  ],
+  "tblSubLesson": [
+    {
+      "sub_les_id": "1",
+      "les_id": "1",
+      "filename": "kor_1.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "2",
+      "les_id": "1",
+      "filename": "khor_2.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "3",
+      "les_id": "1",
+      "filename": "kou_3.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "4",
+      "les_id": "2",
+      "filename": "chor_6.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "5",
+      "les_id": "2",
+      "filename": "chhor_7.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "6",
+      "les_id": "3",
+      "filename": "dor_11.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "7",
+      "les_id": "4",
+      "filename": "bor_21.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "8",
+      "les_id": "5",
+      "filename": "spelling1_1.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "9",
+      "les_id": "6",
+      "filename": "spelling2_1.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "10",
+      "les_id": "7",
+      "filename": "spelling3_1.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "11",
+      "les_id": "8",
+      "filename": "spelling4_1.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "12",
+      "les_id": "9",
+      "filename": "spelling5_1.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "13",
+      "les_id": "10",
+      "filename": "2spelling1_1.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "14",
+      "les_id": "11",
+      "filename": "2spelling2_1.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "15",
+      "les_id": "12",
+      "filename": "2spelling3_1.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "16",
+      "les_id": "13",
+      "filename": "2spelling4_1.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "17",
+      "les_id": "14",
+      "filename": "you_26.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "18",
+      "les_id": "1",
+      "filename": "khou_4.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "19",
+      "les_id": "1",
+      "filename": "ngou_5.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "20",
+      "les_id": "2",
+      "filename": "chou_8.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "21",
+      "les_id": "2",
+      "filename": "chhou_9.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "22",
+      "les_id": "2",
+      "filename": "nhou_10.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "23",
+      "les_id": "3",
+      "filename": "thor_12.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "24",
+      "les_id": "3",
+      "filename": "dou_13.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "25",
+      "les_id": "3",
+      "filename": "thou_14.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "26",
+      "les_id": "3",
+      "filename": "nor_15.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "27",
+      "les_id": "15",
+      "filename": "tor_16.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "28",
+      "les_id": "15",
+      "filename": "thor_17.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "29",
+      "les_id": "15",
+      "filename": "tou_18.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "30",
+      "les_id": "15",
+      "filename": "thou_19.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "31",
+      "les_id": "15",
+      "filename": "nou_20.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "32",
+      "les_id": "4",
+      "filename": "phor_22.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "33",
+      "les_id": "4",
+      "filename": "pou_23.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "34",
+      "les_id": "4",
+      "filename": "phou_24.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "35",
+      "les_id": "4",
+      "filename": "mou_25.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "36",
+      "les_id": "14",
+      "filename": "rou_27.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "37",
+      "les_id": "14",
+      "filename": "lou_28.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "38",
+      "les_id": "14",
+      "filename": "vou_29.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "39",
+      "les_id": "14",
+      "filename": "sor_30.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "40",
+      "les_id": "14",
+      "filename": "hor_31.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "41",
+      "les_id": "14",
+      "filename": "lor_32.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "42",
+      "les_id": "14",
+      "filename": "or_33.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "43",
+      "les_id": "16",
+      "filename": "rupp.jpg",
+      "desc": "Royal University of Phnom Penh",
+      "getSound": null
+    },
+    {
+      "sub_les_id": "44",
+      "les_id": "16",
+      "filename": "students.jpg",
+      "desc": "In class, self-studying in group",
+      "getSound": null
+    },
+    {
+      "sub_les_id": "45",
+      "les_id": "17",
+      "filename": "people1.jpg",
+      "desc": "Cambodian people in Mondulkiri",
+      "getSound": null
+    },
+    {
+      "sub_les_id": "46",
+      "les_id": "17",
+      "filename": "people2.jpg",
+      "desc": "Cambodian people in Phnom Penh",
+      "getSound": null
+    },
+    {
+      "sub_les_id": "47",
+      "les_id": "5",
+      "filename": "spelling1_2.swf",
+      "desc": "dfadfa",
+      "getSound": null
+    },
+    {
+      "sub_les_id": "48",
+      "les_id": "6",
+      "filename": "spelling2_2.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "49",
+      "les_id": "7",
+      "filename": "spelling3_2.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "50",
+      "les_id": "8",
+      "filename": "spelling4_2.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "51",
+      "les_id": "9",
+      "filename": "spelling5_2.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "52",
+      "les_id": "10",
+      "filename": "2spelling1_2.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "53",
+      "les_id": "11",
+      "filename": "2spelling2_2.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "54",
+      "les_id": "12",
+      "filename": "2spelling3_2.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "55",
+      "les_id": "13",
+      "filename": "2spelling4_2.swf",
+      "desc": null,
+      "getSound": null
+    },
+    {
+      "sub_les_id": "56",
+      "les_id": "18",
+      "filename": "con_les1_1.jpg",
+      "desc": "ខ្ញុំឈ្មោះ Sally។ ត្រកូល Morris។",
+      "getSound": "con_les1_1"
+    },
+    {
+      "sub_les_id": "57",
+      "les_id": "18",
+      "filename": "con_les1_2.jpg",
+      "desc": "ជាជនជាតិអង់គ្លេស។ មកពី London។ ខ្ញុំជាគ្រូពេទ្យ។ ធ្វើការនៅភ្នំពេញ។",
+      "getSound": "con_les1_2"
+    },
+    {
+      "sub_les_id": "58",
+      "les_id": "19",
+      "filename": "con_les2_1.jpg",
+      "desc": "A- អត់ទោស លោកហៅម្ហូបហើយឬនៅ?",
+      "getSound": "con_les2_1"
+    },
+    {
+      "sub_les_id": "59",
+      "les_id": "19",
+      "filename": "con_les2_2.jpg",
+      "desc": "B- ខ្ញុំមិនទាន់ហៅទេ។ សូមមើលតារាងមុខម្ហូបបន្តិច។",
+      "getSound": "con_les2_2"
+    },
+    {
+      "sub_les_id": "60",
+      "les_id": "19",
+      "filename": "con_les2_3.jpg",
+      "desc": "D- Sally ចូលចិត្តម្ហូបអី? ញ៉ាំហឹរបានអត់?",
+      "getSound": "con_les2_3"
+    },
+    {
+      "sub_les_id": "61",
+      "les_id": "19",
+      "filename": "con_les2_4.jpg",
+      "desc": "C- ចា៎ ញ៉ាំបាន។",
+      "getSound": "con_les2_4"
+    },
+    {
+      "sub_les_id": "62",
+      "les_id": "19",
+      "filename": "con_les2_5.jpg",
+      "desc": "B- បើអញ្ចឹងសូមយកសម្លម្ជូត្រីមួយចាន។ សម្លកកូរមួយចាន។",
+      "getSound": "con_les2_5"
+    },
+    {
+      "sub_les_id": "63",
+      "les_id": "19",
+      "filename": "con_les2_6.jpg",
+      "desc": "C- ចុះ​ឆាបង្កងវិញ?",
+      "getSound": "con_les2_6"
+    },
+    {
+      "sub_les_id": "64",
+      "les_id": "19",
+      "filename": "con_les2_7.jpg",
+      "desc": "B- ល្អ សូមយកអោយខ្ញុំឆាបង្កងមួយចាន ហើយនិងបាយដែរ។",
+      "getSound": "con_les2_7"
+    },
+    {
+      "sub_les_id": "65",
+      "les_id": "19",
+      "filename": "con_les2_8.jpg",
+      "desc": "A- ចា៎ អញ្ចឹង​ពិសារទឹកអី​ដែរ?",
+      "getSound": "con_les2_8"
+    },
+    {
+      "sub_les_id": "66",
+      "les_id": "19",
+      "filename": "con_les2_9.jpg",
+      "desc": "B- ខ្ញុំចង់បានកូកា-កូឡាមួយដប ហើយនិងបៀរមួយដបផង។",
+      "getSound": "con_les2_9"
+    },
+    {
+      "sub_les_id": "67",
+      "les_id": "19",
+      "filename": "con_les2_10.jpg",
+      "desc": "C- ចំនែក​ខ្ញុំ​សុំតែទឹកកក។",
+      "getSound": "con_les2_10"
+    },
+    {
+      "sub_les_id": "68",
+      "les_id": "19",
+      "filename": "con_les2_11.jpg",
+      "desc": "D- ខ្ញុំយកតែទឹកកដែរ។",
+      "getSound": "con_les2_11"
+    },
+    {
+      "sub_les_id": "69",
+      "les_id": "19",
+      "filename": "con_les2_12.jpg",
+      "desc": "A- ចា៎ អញ្ចឹងសូមចាំមួយភ្លែត។ ខ្ញុំនឹងលើកជូនលោកនៅពេល​បន្តិចទៀតនេះ។",
+      "getSound": "con_les2_12"
+    },
+    {
+      "sub_les_id": "70",
+      "les_id": "20",
+      "filename": "con_les3_1.jpg",
+      "desc": "A- សូមសួរ នេះហៅថាអ្វី?",
+      "getSound": "con_les3_1"
+    },
+    {
+      "sub_les_id": "71",
+      "les_id": "20",
+      "filename": "con_les3_2.jpg",
+      "desc": "B- គេហៅថា ផ្លែក្រូច។",
+      "getSound": "con_les3_2"
+    },
+    {
+      "sub_les_id": "72",
+      "les_id": "20",
+      "filename": "con_les3_3.jpg",
+      "desc": "A- មួយគីឡូប៉ុន្មានរៀល?",
+      "getSound": "con_les3_3"
+    },
+    {
+      "sub_les_id": "73",
+      "les_id": "20",
+      "filename": "con_les3_4.jpg",
+      "desc": "B- មួយគីឡូបីពាន់រៀលប៉ុណ្ណោះ។",
+      "getSound": "con_les3_4"
+    },
+    {
+      "sub_les_id": "74",
+      "les_id": "20",
+      "filename": "con_les3_5.jpg",
+      "desc": "A- អូ៎ ថ្លៃណាស់។ ចុះថ្លៃបន្តិចបានទេ?",
+      "getSound": "con_les3_5"
+    },
+    {
+      "sub_les_id": "75",
+      "les_id": "20",
+      "filename": "con_les3_6.jpg",
+      "desc": "B- ទេ មិនថ្លៃទេ។ ក្រូចនេះឆ្ងាញ់ណាស់។ លមើល ឆ្ងាញ់មិនឆ្ងាញ់។",
+      "getSound": "con_les3_6"
+    },
+    {
+      "sub_les_id": "76",
+      "les_id": "20",
+      "filename": "con_les3_7.jpg",
+      "desc": "A- ឆ្ងាញ់គ្រាន់បើ។ ពីរពាន់រៀលបានទេ?",
+      "getSound": "con_les3_7"
+    },
+    {
+      "sub_les_id": "77",
+      "les_id": "20",
+      "filename": "con_les3_8.jpg",
+      "desc": "B- មិនបានទេ។ ចង់បានប៉ុន្មានគីឡូ?",
+      "getSound": "con_les3_8"
+    },
+    {
+      "sub_les_id": "78",
+      "les_id": "20",
+      "filename": "con_les3_9.jpg",
+      "desc": "A- ខ្ញុំចង់បានតែមួយគីឡូទេ។",
+      "getSound": "con_les3_9"
+    },
+    {
+      "sub_les_id": "79",
+      "les_id": "21",
+      "filename": "con_les5_1.jpg",
+      "desc": "A- លោកចេះនិយាយភាសាខ្មែរឬទេ?",
+      "getSound": "con_les5_1"
+    },
+    {
+      "sub_les_id": "80",
+      "les_id": "21",
+      "filename": "con_les5_2.jpg",
+      "desc": "B- ខ្ញុំនិយាយបានបន្តិចបន្តួច។",
+      "getSound": "con_les5_2"
+    },
+    {
+      "sub_les_id": "81",
+      "les_id": "21",
+      "filename": "con_les5_3.jpg",
+      "desc": "A- ទេ, លោកនិយាយបានល្អណាស់។ នៅស្រុកខ្មែរយូរទេ?",
+      "getSound": "con_les5_3"
+    },
+    {
+      "sub_les_id": "82",
+      "les_id": "21",
+      "filename": "con_les5_4.jpg",
+      "desc": "B- មិនយូរប៉ុន្មានទេ។",
+      "getSound": "con_les5_4"
+    },
+    {
+      "sub_les_id": "83",
+      "les_id": "21",
+      "filename": "con_les5_5.jpg",
+      "desc": "A- លោកសរសេរអក្សរខ្មែរបានទេ?",
+      "getSound": "con_les5_5"
+    },
+    {
+      "sub_les_id": "84",
+      "les_id": "21",
+      "filename": "con_les5_6.jpg",
+      "desc": "B- ខ្ញុំស្តាប់មិនបានទេ។ សូមថាម្តងទៀតបានទេ?",
+      "getSound": "con_les5_6"
+    },
+    {
+      "sub_les_id": "85",
+      "les_id": "21",
+      "filename": "con_les5_7.jpg",
+      "desc": "A- ចា៎។ លោកសរសេរអក្សរខ្មែរបានទេ?",
+      "getSound": "con_les5_7"
+    },
+    {
+      "sub_les_id": "86",
+      "les_id": "21",
+      "filename": "con_les5_8.jpg",
+      "desc": "B- “អក្សរ”? ខ្ញុំមិនយល់ទេ។ ភាសាអង់គ្លេសថាអ្វី?",
+      "getSound": "con_les5_8"
+    },
+    {
+      "sub_les_id": "87",
+      "les_id": "21",
+      "filename": "con_les5_9.jpg",
+      "desc": "A- ភាសាអង់គ្លេសថា ‘Letter’",
+      "getSound": "con_les5_9"
+    },
+    {
+      "sub_les_id": "88",
+      "les_id": "21",
+      "filename": "con_les5_10.jpg",
+      "desc": "B- បាទ, អរគុណ។ យល់ហើយ។ ខ្ញុំសរសេរខ្មែរមិនបានទេ ប៉ុន្តែចង់រៀន។",
+      "getSound": "con_les5_10"
+    },
+    {
+      "sub_les_id": "89",
+      "les_id": "20",
+      "filename": "con_les3.jpg",
+      "desc": "ទិញផ្លែក្រូចនៅផ្សារ",
+      "getSound": "endof_les3"
+    }
+  ],
+  "tblTest": [
+    {
+      "test_id": "1",
+      "les_id": "16",
+      "rang": "1",
+      "question": "១- តើសាលារៀននេះសង់យ៉ាងដូចម្តេច?"
+    },
+    {
+      "test_id": "2",
+      "les_id": "17",
+      "rang": "1",
+      "question": "១- តើនៅប្រទេសកម្ពុជាមានផ្សារនៅទីណាខ្លះ?"
+    },
+    {
+      "test_id": "3",
+      "les_id": "16",
+      "rang": "2",
+      "question": "២- តើសាលារៀននេះមានអគារប៉ុន្មានខ្នង?"
+    },
+    {
+      "test_id": "4",
+      "les_id": "16",
+      "rang": "3",
+      "question": "៣- ក្នុងអត្ថបទ ហេតុអ្វីបានជាគេស្រលាញ់សាលារៀននេះ?"
+    },
+    {
+      "test_id": "5",
+      "les_id": "17",
+      "rang": "2",
+      "question": "២- តើផ្សារណាល្បីជាងគេនៅក្រុងភ្នំពេញ?"
+    },
+    {
+      "test_id": "6",
+      "les_id": "17",
+      "rang": "3",
+      "question": "៣- នៅក្នុងផ្សារនៅប្រទេសកម្ពុជា មានលក់អ្វីខ្លះ?"
+    },
+    {
+      "test_id": "7",
+      "les_id": "18",
+      "rang": "1",
+      "question": "PART 1"
+    },
+    {
+      "test_id": "8",
+      "les_id": "18",
+      "rang": "2",
+      "question": "PART 2"
+    },
+    {
+      "test_id": "9",
+      "les_id": "19",
+      "rang": "1",
+      "question": "PART 1 :: A"
+    },
+    {
+      "test_id": "10",
+      "les_id": "19",
+      "rang": "2",
+      "question": "PART 2 :: B"
+    },
+    {
+      "test_id": "11",
+      "les_id": "19",
+      "rang": "3",
+      "question": "PART 3 :: D"
+    },
+    {
+      "test_id": "12",
+      "les_id": "19",
+      "rang": "4",
+      "question": "PART 4 :: C"
+    },
+    {
+      "test_id": "13",
+      "les_id": "19",
+      "rang": "5",
+      "question": "PART 5 :: B"
+    },
+    {
+      "test_id": "14",
+      "les_id": "19",
+      "rang": "6",
+      "question": "PART 6 :: C"
+    },
+    {
+      "test_id": "15",
+      "les_id": "19",
+      "rang": "7",
+      "question": "PART 7 :: B"
+    },
+    {
+      "test_id": "16",
+      "les_id": "19",
+      "rang": "8",
+      "question": "PART 8 :: A"
+    },
+    {
+      "test_id": "17",
+      "les_id": "19",
+      "rang": "9",
+      "question": "PART 9 :: B"
+    },
+    {
+      "test_id": "18",
+      "les_id": "19",
+      "rang": "10",
+      "question": "PART 10 :: C"
+    },
+    {
+      "test_id": "19",
+      "les_id": "19",
+      "rang": "11",
+      "question": "PART 11 :: D"
+    },
+    {
+      "test_id": "20",
+      "les_id": "19",
+      "rang": "12",
+      "question": "PART 12 :: A"
+    },
+    {
+      "test_id": "21",
+      "les_id": "20",
+      "rang": "1",
+      "question": "PART 1 :: A"
+    },
+    {
+      "test_id": "22",
+      "les_id": "20",
+      "rang": "2",
+      "question": "PART 2 :: B"
+    },
+    {
+      "test_id": "23",
+      "les_id": "20",
+      "rang": "3",
+      "question": "PART 3 :: A"
+    },
+    {
+      "test_id": "24",
+      "les_id": "20",
+      "rang": "4",
+      "question": "PART 4 :: B"
+    },
+    {
+      "test_id": "25",
+      "les_id": "20",
+      "rang": "5",
+      "question": "PART 5 :: A"
+    },
+    {
+      "test_id": "26",
+      "les_id": "20",
+      "rang": "6",
+      "question": "PART 6 :: B"
+    },
+    {
+      "test_id": "27",
+      "les_id": "20",
+      "rang": "7",
+      "question": "PART 7 :: A"
+    },
+    {
+      "test_id": "28",
+      "les_id": "20",
+      "rang": "8",
+      "question": "PART 8 :: B"
+    },
+    {
+      "test_id": "29",
+      "les_id": "20",
+      "rang": "9",
+      "question": "PART 9 :: A"
+    },
+    {
+      "test_id": "30",
+      "les_id": "21",
+      "rang": "1",
+      "question": "PART 1 :: A"
+    },
+    {
+      "test_id": "31",
+      "les_id": "21",
+      "rang": "2",
+      "question": "PART 2 :: B"
+    },
+    {
+      "test_id": "32",
+      "les_id": "21",
+      "rang": "3",
+      "question": "PART 3 :: A"
+    },
+    {
+      "test_id": "33",
+      "les_id": "21",
+      "rang": "4",
+      "question": "PART 4 :: B"
+    },
+    {
+      "test_id": "34",
+      "les_id": "21",
+      "rang": "5",
+      "question": "PART 5 :: A"
+    },
+    {
+      "test_id": "35",
+      "les_id": "21",
+      "rang": "6",
+      "question": "PART 6 :: B"
+    },
+    {
+      "test_id": "36",
+      "les_id": "21",
+      "rang": "7",
+      "question": "PART 7 :: A"
+    },
+    {
+      "test_id": "37",
+      "les_id": "21",
+      "rang": "8",
+      "question": "PART 8 :: B"
+    },
+    {
+      "test_id": "38",
+      "les_id": "21",
+      "rang": "9",
+      "question": "PART 9 :: A"
+    },
+    {
+      "test_id": "39",
+      "les_id": "21",
+      "rang": "10",
+      "question": "PART 10 :: B"
+    }
+  ],
+  "tblTest_res": [
+    {
+      "test_res_id": "1",
+      "test_id": "1",
+      "check": "0",
+      "answer": "សង់លើដីចង្អៀត"
+    },
+    {
+      "test_res_id": "2",
+      "test_id": "1",
+      "check": "1",
+      "answer": "សង់លើដីធំទូលាយ"
+    },
+    {
+      "test_res_id": "3",
+      "test_id": "1",
+      "check": "0",
+      "answer": "សង់លើថ្ម"
+    },
+    {
+      "test_res_id": "4",
+      "test_id": "2",
+      "check": "1",
+      "answer": "នៅគ្រប់ខេត្ត ស្រុក ឃុំ ភូមិ"
+    },
+    {
+      "test_res_id": "5",
+      "test_id": "2",
+      "check": "0",
+      "answer": "នៅតែក្នុងភ្នំពេញដែលជាទីប្រជុំជនធំ"
+    },
+    {
+      "test_res_id": "6",
+      "test_id": "2",
+      "check": "0",
+      "answer": "នៅតាមស្រុកស្រែ"
+    },
+    {
+      "test_res_id": "7",
+      "test_id": "3",
+      "check": "0",
+      "answer": "៤ខ្នង"
+    },
+    {
+      "test_res_id": "8",
+      "test_id": "3",
+      "check": "0",
+      "answer": "១២ខ្នង"
+    },
+    {
+      "test_res_id": "9",
+      "test_id": "3",
+      "check": "1",
+      "answer": "ច្រើនខ្នង"
+    },
+    {
+      "test_res_id": "10",
+      "test_id": "4",
+      "check": "0",
+      "answer": "ព្រោះគេអាចរៀនអក្សរ"
+    },
+    {
+      "test_res_id": "11",
+      "test_id": "4",
+      "check": "0",
+      "answer": "ព្រោះគេអាចជួបមិត្តភក្តិ"
+    },
+    {
+      "test_res_id": "12",
+      "test_id": "4",
+      "check": "1",
+      "answer": "ព្រោះជាកន្លែងអប់រំ"
+    },
+    {
+      "test_res_id": "13",
+      "test_id": "5",
+      "check": "0",
+      "answer": "ផ្សារអូឬស្សី"
+    },
+    {
+      "test_res_id": "14",
+      "test_id": "5",
+      "check": "0",
+      "answer": "ផ្សារអូឡាំពិក"
+    },
+    {
+      "test_res_id": "15",
+      "test_id": "5",
+      "check": "0",
+      "answer": "ផ្សារថ្មី"
+    },
+    {
+      "test_res_id": "16",
+      "test_id": "6",
+      "check": "0",
+      "answer": "លក់ផ្លែឈើ បន្លែ ត្រី សាច់ របស់ផ្សេងៗ (ក)"
+    },
+    {
+      "test_res_id": "17",
+      "test_id": "6",
+      "check": "0",
+      "answer": "លក់សៀវភៅ សំលៀកបំពាក់ (ខ)"
+    },
+    {
+      "test_res_id": "18",
+      "test_id": "6",
+      "check": "1",
+      "answer": "ចំលើយ ក និង ខ"
+    },
+    {
+      "test_res_id": "19",
+      "test_id": "7",
+      "check": "1",
+      "answer": "ខ្ញុំឈ្មោះ"
+    },
+    {
+      "test_res_id": "20",
+      "test_id": "7",
+      "check": "3",
+      "answer": "Morris"
+    },
+    {
+      "test_res_id": "21",
+      "test_id": "7",
+      "check": "2",
+      "answer": " Sally ត្រកូល"
+    },
+    {
+      "test_res_id": "22",
+      "test_id": "8",
+      "check": "3",
+      "answer": " ធ្វើការនៅភ្នំពេញ។"
+    },
+    {
+      "test_res_id": "23",
+      "test_id": "8",
+      "check": "1",
+      "answer": "ជាជនជាតិអង់គ្លេស។"
+    },
+    {
+      "test_res_id": "24",
+      "test_id": "8",
+      "check": "2",
+      "answer": "មកពី London។ ខ្ញុំជាគ្រូពេទ្យ។"
+    },
+    {
+      "test_res_id": "25",
+      "test_id": "9",
+      "check": "2",
+      "answer": "ម្ហូបហើយ"
+    },
+    {
+      "test_res_id": "26",
+      "test_id": "9",
+      "check": "1",
+      "answer": "អត់ទោសលោកហៅ"
+    },
+    {
+      "test_res_id": "27",
+      "test_id": "9",
+      "check": "3",
+      "answer": "ឬនៅ?"
+    },
+    {
+      "test_res_id": "28",
+      "test_id": "10",
+      "check": "3",
+      "answer": "តារាងមុខម្ហូបបន្តិច។"
+    },
+    {
+      "test_res_id": "29",
+      "test_id": "10",
+      "check": "1",
+      "answer": "ខ្ញុំមិនទាន់ហៅទេ។"
+    },
+    {
+      "test_res_id": "30",
+      "test_id": "10",
+      "check": "2",
+      "answer": "សូមមើល"
+    },
+    {
+      "test_res_id": "31",
+      "test_id": "11",
+      "check": "3",
+      "answer": "ញ៉ាំហឹរបានអត់?"
+    },
+    {
+      "test_res_id": "32",
+      "test_id": "11",
+      "check": "1",
+      "answer": "Sally"
+    },
+    {
+      "test_res_id": "33",
+      "test_id": "11",
+      "check": "2",
+      "answer": "ចូលចិត្តម្ហូបអី?"
+    },
+    {
+      "test_res_id": "34",
+      "test_id": "12",
+      "check": "2",
+      "answer": "ញ៉ាំ"
+    },
+    {
+      "test_res_id": "35",
+      "test_id": "12",
+      "check": "3",
+      "answer": "បាន"
+    },
+    {
+      "test_res_id": "36",
+      "test_id": "12",
+      "check": "1",
+      "answer": "ចា៎"
+    },
+    {
+      "test_res_id": "37",
+      "test_id": "13",
+      "check": "1",
+      "answer": "បើអញ្ចឹងសូមយក"
+    },
+    {
+      "test_res_id": "38",
+      "test_id": "13",
+      "check": "2",
+      "answer": "សម្លម្ជូត្រីមួយចាន"
+    },
+    {
+      "test_res_id": "39",
+      "test_id": "13",
+      "check": "3",
+      "answer": "សម្លកកូរមួយចាន"
+    },
+    {
+      "test_res_id": "40",
+      "test_id": "14",
+      "check": "2",
+      "answer": "ឆា"
+    },
+    {
+      "test_res_id": "41",
+      "test_id": "14",
+      "check": "3",
+      "answer": "បង្កងវិញ?"
+    },
+    {
+      "test_res_id": "42",
+      "test_id": "14",
+      "check": "1",
+      "answer": "ចុះ"
+    },
+    {
+      "test_res_id": "43",
+      "test_id": "15",
+      "check": "3",
+      "answer": "ហើយនិងបាយដែរ"
+    },
+    {
+      "test_res_id": "44",
+      "test_id": "15",
+      "check": "2",
+      "answer": "ខ្ញុំឆាបង្កងមួយចាន"
+    },
+    {
+      "test_res_id": "45",
+      "test_id": "15",
+      "check": "1",
+      "answer": "ល្អ សូមយក"
+    },
+    {
+      "test_res_id": "46",
+      "test_id": "16",
+      "check": "1",
+      "answer": "ចា៎"
+    },
+    {
+      "test_res_id": "47",
+      "test_id": "16",
+      "check": "2",
+      "answer": "អញ្ចឹង"
+    },
+    {
+      "test_res_id": "48",
+      "test_id": "16",
+      "check": "3",
+      "answer": "ពិសារទឹកអីដែរ?"
+    },
+    {
+      "test_res_id": "49",
+      "test_id": "17",
+      "check": "2",
+      "answer": "កូកាកូឡាមួយដប"
+    },
+    {
+      "test_res_id": "50",
+      "test_id": "17",
+      "check": "3",
+      "answer": "ហើយនិងបៀរមួយដបផង"
+    },
+    {
+      "test_res_id": "51",
+      "test_id": "17",
+      "check": "1",
+      "answer": "ខ្ញុំចង់បាន"
+    },
+    {
+      "test_res_id": "52",
+      "test_id": "18",
+      "check": "1",
+      "answer": "ចំនែកខ្ញុំសុំ"
+    },
+    {
+      "test_res_id": "53",
+      "test_id": "18",
+      "check": "3",
+      "answer": "ទឹកកក"
+    },
+    {
+      "test_res_id": "54",
+      "test_id": "18",
+      "check": "2",
+      "answer": "តែ"
+    },
+    {
+      "test_res_id": "55",
+      "test_id": "19",
+      "check": "3",
+      "answer": "ទឹកកក"
+    },
+    {
+      "test_res_id": "56",
+      "test_id": "19",
+      "check": "2",
+      "answer": "យកតែ"
+    },
+    {
+      "test_res_id": "57",
+      "test_id": "19",
+      "check": "1",
+      "answer": "ខ្ញុំក៏"
+    },
+    {
+      "test_res_id": "58",
+      "test_id": "20",
+      "check": "2",
+      "answer": "អញ្ចឹងសូមចាំមួយភ្លែត"
+    },
+    {
+      "test_res_id": "59",
+      "test_id": "20",
+      "check": "3",
+      "answer": "ខ្ញុំនឹងលើជូនលោកនៅពេលបន្តិចទៀតនេះ"
+    },
+    {
+      "test_res_id": "60",
+      "test_id": "20",
+      "check": "1",
+      "answer": "ចា៎ សូមចាំមួយភ្លែត"
+    },
+    {
+      "test_res_id": "61",
+      "test_id": "21",
+      "check": "1",
+      "answer": "សូមសួរ"
+    },
+    {
+      "test_res_id": "62",
+      "test_id": "21",
+      "check": "3",
+      "answer": "ថាអ្វី?"
+    },
+    {
+      "test_res_id": "63",
+      "test_id": "21",
+      "check": "2",
+      "answer": "នេះហៅ"
+    },
+    {
+      "test_res_id": "64",
+      "test_id": "22",
+      "check": "2",
+      "answer": "គេថា"
+    },
+    {
+      "test_res_id": "65",
+      "test_id": "22",
+      "check": "3",
+      "answer": "ក្រូច"
+    },
+    {
+      "test_res_id": "66",
+      "test_id": "22",
+      "check": "1",
+      "answer": "គេហៅ"
+    },
+    {
+      "test_res_id": "67",
+      "test_id": "23",
+      "check": "2",
+      "answer": "ប៉ុន្មាន"
+    },
+    {
+      "test_res_id": "68",
+      "test_id": "23",
+      "check": "3",
+      "answer": "រៀល?"
+    },
+    {
+      "test_res_id": "69",
+      "test_id": "23",
+      "check": "1",
+      "answer": "មួយគីឡូ"
+    },
+    {
+      "test_res_id": "70",
+      "test_id": "24",
+      "check": "3",
+      "answer": "ប៉ុណ្ណោះ"
+    },
+    {
+      "test_res_id": "71",
+      "test_id": "24",
+      "check": "1",
+      "answer": "មួយគីឡូ"
+    },
+    {
+      "test_res_id": "72",
+      "test_id": "24",
+      "check": "2",
+      "answer": "បីពាន់រៀល"
+    },
+    {
+      "test_res_id": "73",
+      "test_id": "25",
+      "check": "1",
+      "answer": "អូ៎ ថ្លៃណាស់។"
+    },
+    {
+      "test_res_id": "74",
+      "test_id": "25",
+      "check": "3",
+      "answer": "បានទេ?"
+    },
+    {
+      "test_res_id": "75",
+      "test_id": "25",
+      "check": "2",
+      "answer": "ចុះថ្លៃបន្តិច"
+    },
+    {
+      "test_res_id": "76",
+      "test_id": "26",
+      "check": "2",
+      "answer": "ក្រូចនេះឆ្ងាញ់ណាស់។"
+    },
+    {
+      "test_res_id": "77",
+      "test_id": "26",
+      "check": "1",
+      "answer": "ទេ មិនថ្លៃទេ។"
+    },
+    {
+      "test_res_id": "78",
+      "test_id": "26",
+      "check": "3",
+      "answer": "លមើល ឆ្ងាញ់មិនឆ្ងាញ់។"
+    },
+    {
+      "test_res_id": "79",
+      "test_id": "27",
+      "check": "2",
+      "answer": "ពីរពាន់រៀល"
+    },
+    {
+      "test_res_id": "80",
+      "test_id": "27",
+      "check": "3",
+      "answer": "បានទេ?"
+    },
+    {
+      "test_res_id": "81",
+      "test_id": "27",
+      "check": "1",
+      "answer": "ឆ្ងាញ់គ្រាន់បើ។"
+    },
+    {
+      "test_res_id": "82",
+      "test_id": "28",
+      "check": "2",
+      "answer": "ចង់បានប៉ុន្មាន"
+    },
+    {
+      "test_res_id": "83",
+      "test_id": "28",
+      "check": "3",
+      "answer": "គីឡូ?"
+    },
+    {
+      "test_res_id": "84",
+      "test_id": "28",
+      "check": "1",
+      "answer": "មិនបានទេ។"
+    },
+    {
+      "test_res_id": "85",
+      "test_id": "29",
+      "check": "2",
+      "answer": "ចង់បាន"
+    },
+    {
+      "test_res_id": "86",
+      "test_id": "29",
+      "check": "1",
+      "answer": "ខ្ញុំ"
+    },
+    {
+      "test_res_id": "87",
+      "test_id": "29",
+      "check": "3",
+      "answer": "តែមួយគីឡូទេ។"
+    },
+    {
+      "test_res_id": "88",
+      "test_id": "30",
+      "check": "1",
+      "answer": "លោកចេះ"
+    },
+    {
+      "test_res_id": "89",
+      "test_id": "30",
+      "check": "3",
+      "answer": "ភាសាខ្មែរឬទេ?"
+    },
+    {
+      "test_res_id": "90",
+      "test_id": "30",
+      "check": "2",
+      "answer": "និយាយ"
+    },
+    {
+      "test_res_id": "91",
+      "test_id": "31",
+      "check": "2",
+      "answer": "និយាយបាន"
+    },
+    {
+      "test_res_id": "92",
+      "test_id": "31",
+      "check": "1",
+      "answer": "ខ្ញុំ"
+    },
+    {
+      "test_res_id": "93",
+      "test_id": "31",
+      "check": "3",
+      "answer": "បន្តិចបន្តួច"
+    },
+    {
+      "test_res_id": "94",
+      "test_id": "32",
+      "check": "2",
+      "answer": "លោកនិយាយបានល្អណាស់"
+    },
+    {
+      "test_res_id": "95",
+      "test_id": "32",
+      "check": "1",
+      "answer": "ទេ,"
+    },
+    {
+      "test_res_id": "96",
+      "test_id": "32",
+      "check": "3",
+      "answer": "នៅស្រុកខ្មែរយូរទេ?"
+    },
+    {
+      "test_res_id": "97",
+      "test_id": "33",
+      "check": "3",
+      "answer": "ទេ"
+    },
+    {
+      "test_res_id": "98",
+      "test_id": "33",
+      "check": "2",
+      "answer": "ប៉ុន្មាន"
+    },
+    {
+      "test_res_id": "99",
+      "test_id": "33",
+      "check": "1",
+      "answer": "មិនយូរ"
+    },
+    {
+      "test_res_id": "100",
+      "test_id": "34",
+      "check": "2",
+      "answer": "សរសេរអក្សរខ្មែរ"
+    },
+    {
+      "test_res_id": "101",
+      "test_id": "34",
+      "check": "3",
+      "answer": "បានទេ?"
+    },
+    {
+      "test_res_id": "102",
+      "test_id": "34",
+      "check": "1",
+      "answer": "លោក"
+    },
+    {
+      "test_res_id": "103",
+      "test_id": "35",
+      "check": "1",
+      "answer": "ខ្ញុំស្តាប់"
+    },
+    {
+      "test_res_id": "104",
+      "test_id": "35",
+      "check": "3",
+      "answer": "សូមថាម្តងទៀតបានទេ"
+    },
+    {
+      "test_res_id": "105",
+      "test_id": "35",
+      "check": "2",
+      "answer": "មិនបានទេ"
+    },
+    {
+      "test_res_id": "106",
+      "test_id": "36",
+      "check": "1",
+      "answer": "ចា៎"
+    },
+    {
+      "test_res_id": "107",
+      "test_id": "36",
+      "check": "3",
+      "answer": "អក្សរខ្មែរបានទេ?"
+    },
+    {
+      "test_res_id": "108",
+      "test_id": "36",
+      "check": "2",
+      "answer": "លោកសរសេរ"
+    },
+    {
+      "test_res_id": "109",
+      "test_id": "37",
+      "check": "2",
+      "answer": "ខ្ញុំអត់យល់ទេ។"
+    },
+    {
+      "test_res_id": "110",
+      "test_id": "37",
+      "check": "1",
+      "answer": "អក្សរ?"
+    },
+    {
+      "test_res_id": "111",
+      "test_id": "37",
+      "check": "3",
+      "answer": "ភាសាអង់គ្លេសថាអ្វី?"
+    },
+    {
+      "test_res_id": "112",
+      "test_id": "38",
+      "check": "3",
+      "answer": "Letter"
+    },
+    {
+      "test_res_id": "113",
+      "test_id": "38",
+      "check": "2",
+      "answer": "ថា"
+    },
+    {
+      "test_res_id": "114",
+      "test_id": "38",
+      "check": "1",
+      "answer": "ភាសាអង់គ្លេស"
+    },
+    {
+      "test_res_id": "115",
+      "test_id": "39",
+      "check": "2",
+      "answer": "អរគុណ។ យល់ហើយ។"
+    },
+    {
+      "test_res_id": "116",
+      "test_id": "39",
+      "check": "1",
+      "answer": "បាទ,"
+    },
+    {
+      "test_res_id": "117",
+      "test_id": "39",
+      "check": "3",
+      "answer": "ខ្ញុំសរសេរខ្មែរមិនបានទេ ប៉ុន្តែចង់រៀន។"
+    }
+  ],
+  "tblTestLevel": [
+    {
+      "t_id": "1",
+      "check": "1",
+      "type": "1",
+      "t_name": "kor",
+      "t_latin": "Gor"
+    },
+    {
+      "t_id": "2",
+      "check": "1",
+      "type": "1",
+      "t_name": "khor",
+      "t_latin": "Khor"
+    },
+    {
+      "t_id": "3",
+      "check": "1",
+      "type": "1",
+      "t_name": "kou",
+      "t_latin": "Kou"
+    },
+    {
+      "t_id": "4",
+      "check": "1",
+      "type": "1",
+      "t_name": "khou",
+      "t_latin": "Khou"
+    },
+    {
+      "t_id": "5",
+      "check": "1",
+      "type": "1",
+      "t_name": "ngou",
+      "t_latin": "Ngou"
+    },
+    {
+      "t_id": "6",
+      "check": "2",
+      "type": "1",
+      "t_name": "chor",
+      "t_latin": "Chor"
+    },
+    {
+      "t_id": "7",
+      "check": "2",
+      "type": "1",
+      "t_name": "chhor",
+      "t_latin": "Chhor"
+    },
+    {
+      "t_id": "8",
+      "check": "2",
+      "type": "1",
+      "t_name": "chou",
+      "t_latin": "Chou"
+    },
+    {
+      "t_id": "9",
+      "check": "2",
+      "type": "1",
+      "t_name": "chhou",
+      "t_latin": "Chhou"
+    },
+    {
+      "t_id": "10",
+      "check": "2",
+      "type": "1",
+      "t_name": "nhou",
+      "t_latin": "Nhou"
+    },
+    {
+      "t_id": "11",
+      "check": "4",
+      "type": "1",
+      "t_name": "dor",
+      "t_latin": "Dor"
+    },
+    {
+      "t_id": "12",
+      "check": "4",
+      "type": "1",
+      "t_name": "thor_siam",
+      "t_latin": "Thor"
+    },
+    {
+      "t_id": "13",
+      "check": "4",
+      "type": "1",
+      "t_name": "dou",
+      "t_latin": "Dou"
+    },
+    {
+      "t_id": "14",
+      "check": "4",
+      "type": "1",
+      "t_name": "thou_siam",
+      "t_latin": "Thou"
+    },
+    {
+      "t_id": "15",
+      "check": "4",
+      "type": "1",
+      "t_name": "nor",
+      "t_latin": "Nor"
+    },
+    {
+      "t_id": "16",
+      "check": "5",
+      "type": "1",
+      "t_name": "bor",
+      "t_latin": "Bor"
+    },
+    {
+      "t_id": "17",
+      "check": "5",
+      "type": "1",
+      "t_name": "phor",
+      "t_latin": "Phor"
+    },
+    {
+      "t_id": "18",
+      "check": "5",
+      "type": "1",
+      "t_name": "pou",
+      "t_latin": "Pou"
+    },
+    {
+      "t_id": "19",
+      "check": "5",
+      "type": "1",
+      "t_name": "phou",
+      "t_latin": "Phou"
+    },
+    {
+      "t_id": "20",
+      "check": "5",
+      "type": "1",
+      "t_name": "mou",
+      "t_latin": "Mou"
+    },
+    {
+      "t_id": "21",
+      "check": "6",
+      "type": "1",
+      "t_name": "you",
+      "t_latin": "You"
+    },
+    {
+      "t_id": "22",
+      "check": "6",
+      "type": "1",
+      "t_name": "rou",
+      "t_latin": "Rou"
+    },
+    {
+      "t_id": "23",
+      "check": "6",
+      "type": "1",
+      "t_name": "lou",
+      "t_latin": "Lou"
+    },
+    {
+      "t_id": "24",
+      "check": "6",
+      "type": "1",
+      "t_name": "vou",
+      "t_latin": "Vou"
+    },
+    {
+      "t_id": "25",
+      "check": "6",
+      "type": "1",
+      "t_name": "sor",
+      "t_latin": "Sor"
+    },
+    {
+      "t_id": "26",
+      "check": "7",
+      "type": "1",
+      "t_name": "hor",
+      "t_latin": "Hor"
+    },
+    {
+      "t_id": "27",
+      "check": "7",
+      "type": "1",
+      "t_name": "lor",
+      "t_latin": "Lor"
+    },
+    {
+      "t_id": "28",
+      "check": "7",
+      "type": "1",
+      "t_name": "or",
+      "t_latin": "Or"
+    },
+    {
+      "t_id": "29",
+      "check": "3",
+      "type": "1",
+      "t_name": "tor",
+      "t_latin": "Tor"
+    },
+    {
+      "t_id": "30",
+      "check": "3",
+      "type": "1",
+      "t_name": "thor",
+      "t_latin": "Thor"
+    },
+    {
+      "t_id": "31",
+      "check": "3",
+      "type": "1",
+      "t_name": "tou",
+      "t_latin": "Tou"
+    },
+    {
+      "t_id": "32",
+      "check": "3",
+      "type": "1",
+      "t_name": "thou",
+      "t_latin": "Thou"
+    },
+    {
+      "t_id": "33",
+      "check": "3",
+      "type": "1",
+      "t_name": "nou",
+      "t_latin": "Nou"
+    },
+    {
+      "t_id": "34",
+      "check": "1",
+      "type": "2",
+      "t_name": "a",
+      "t_latin": "ar_2"
+    },
+    {
+      "t_id": "35",
+      "check": "2",
+      "type": "2",
+      "t_name": "2",
+      "t_latin": "i_1"
+    },
+    {
+      "t_id": "36",
+      "check": "3",
+      "type": "2",
+      "t_name": "3",
+      "t_latin": "ei_3"
+    },
+    {
+      "t_id": "37",
+      "check": "4",
+      "type": "2",
+      "t_name": "4",
+      "t_latin": "ie_4"
+    },
+    {
+      "t_id": "38",
+      "check": "5",
+      "type": "2",
+      "t_name": "5",
+      "t_latin": "er_5"
+    },
+    {
+      "t_id": "39",
+      "check": "6",
+      "type": "2",
+      "t_name": "6",
+      "t_latin": "o_6"
+    },
+    {
+      "t_id": "40",
+      "check": "7",
+      "type": "2",
+      "t_name": "7",
+      "t_latin": "ou_7"
+    },
+    {
+      "t_id": "41",
+      "check": "8",
+      "type": "2",
+      "t_name": "8",
+      "t_latin": "uo_8"
+    },
+    {
+      "t_id": "42",
+      "check": "9",
+      "type": "2",
+      "t_name": "9",
+      "t_latin": "erv_9"
+    },
+    {
+      "t_id": "43",
+      "check": "10",
+      "type": "2",
+      "t_name": "10",
+      "t_latin": "air_10"
+    },
+    {
+      "t_id": "44",
+      "check": "11",
+      "type": "2",
+      "t_name": "11",
+      "t_latin": "eur_11"
+    },
+    {
+      "t_id": "45",
+      "check": "12",
+      "type": "2",
+      "t_name": "12",
+      "t_latin": "e_12"
+    },
+    {
+      "t_id": "46",
+      "check": "13",
+      "type": "2",
+      "t_name": "13",
+      "t_latin": "ei_13"
+    },
+    {
+      "t_id": "47",
+      "check": "14",
+      "type": "2",
+      "t_name": "14",
+      "t_latin": "ai_14"
+    },
+    {
+      "t_id": "48",
+      "check": "15",
+      "type": "2",
+      "t_name": "15",
+      "t_latin": "ov_15"
+    },
+    {
+      "t_id": "49",
+      "check": "16",
+      "type": "2",
+      "t_name": "16",
+      "t_latin": "arv_16"
+    },
+    {
+      "t_id": "50",
+      "check": "17",
+      "type": "2",
+      "t_name": "17",
+      "t_latin": "om_17"
+    },
+    {
+      "t_id": "51",
+      "check": "18",
+      "type": "2",
+      "t_name": "18",
+      "t_latin": "arm_18"
+    },
+    {
+      "t_id": "52",
+      "check": "19",
+      "type": "2",
+      "t_name": "19",
+      "t_latin": "arm_19"
+    },
+    {
+      "t_id": "53",
+      "check": "20",
+      "type": "2",
+      "t_name": "20",
+      "t_latin": "is_20"
+    },
+    {
+      "t_id": "54",
+      "check": "21",
+      "type": "2",
+      "t_name": "21",
+      "t_latin": "os_21"
+    },
+    {
+      "t_id": "55",
+      "check": "22",
+      "type": "2",
+      "t_name": "22",
+      "t_latin": "as_22"
+    },
+    {
+      "t_id": "56",
+      "check": "23",
+      "type": "2",
+      "t_name": "23",
+      "t_latin": "es_23"
+    },
+    {
+      "t_id": "57",
+      "check": "24",
+      "type": "2",
+      "t_name": "24",
+      "t_latin": "ors_24"
+    },
+    {
+      "t_id": "58",
+      "check": "0",
+      "type": "0",
+      "t_name": null,
+      "t_latin": null
+    }
+  ]
+}

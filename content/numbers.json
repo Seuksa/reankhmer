@@ -1,0 +1,153 @@
+[
+  {
+    "key": "zero",
+    "audio": "assets/audio/numbers/zero.mp3",
+    "value": 0,
+    "digit": "០"
+  },
+  {
+    "key": "one",
+    "audio": "assets/audio/numbers/one.mp3",
+    "value": 1,
+    "digit": "១"
+  },
+  {
+    "key": "two",
+    "audio": "assets/audio/numbers/two.mp3",
+    "value": 2,
+    "digit": "២"
+  },
+  {
+    "key": "three",
+    "audio": "assets/audio/numbers/three.mp3",
+    "value": 3,
+    "digit": "៣"
+  },
+  {
+    "key": "four",
+    "audio": "assets/audio/numbers/four.mp3",
+    "value": 4,
+    "digit": "៤"
+  },
+  {
+    "key": "five",
+    "audio": "assets/audio/numbers/five.mp3",
+    "value": 5,
+    "digit": "៥"
+  },
+  {
+    "key": "six",
+    "audio": "assets/audio/numbers/six.mp3",
+    "value": 6,
+    "digit": "៦"
+  },
+  {
+    "key": "seven",
+    "audio": "assets/audio/numbers/seven.mp3",
+    "value": 7,
+    "digit": "៧"
+  },
+  {
+    "key": "eight",
+    "audio": "assets/audio/numbers/eight.mp3",
+    "value": 8,
+    "digit": "៨"
+  },
+  {
+    "key": "nine",
+    "audio": "assets/audio/numbers/nine.mp3",
+    "value": 9,
+    "digit": "៩"
+  },
+  {
+    "key": "ten",
+    "audio": "assets/audio/numbers/ten.mp3",
+    "value": 10
+  },
+  {
+    "key": "twenty",
+    "audio": "assets/audio/numbers/twenty.mp3",
+    "value": 20
+  },
+  {
+    "key": "thirty",
+    "audio": "assets/audio/numbers/thirty.mp3",
+    "value": 30
+  },
+  {
+    "key": "forty",
+    "audio": "assets/audio/numbers/forty.mp3",
+    "value": 40
+  },
+  {
+    "key": "fifty",
+    "audio": "assets/audio/numbers/fifty.mp3",
+    "value": 50
+  },
+  {
+    "key": "sixty",
+    "audio": "assets/audio/numbers/sixty.mp3",
+    "value": 60
+  },
+  {
+    "key": "seventy",
+    "audio": "assets/audio/numbers/seventy.mp3",
+    "value": 70
+  },
+  {
+    "key": "eighty",
+    "audio": "assets/audio/numbers/eighty.mp3",
+    "value": 80
+  },
+  {
+    "key": "ninety",
+    "audio": "assets/audio/numbers/ninety.mp3",
+    "value": 90
+  },
+  {
+    "key": "hundred",
+    "audio": "assets/audio/numbers/hundred.mp3",
+    "value": 100
+  },
+  {
+    "key": "onehundred",
+    "audio": "assets/audio/numbers/onehundred.mp3",
+    "value": 100
+  },
+  {
+    "key": "thousand",
+    "audio": "assets/audio/numbers/thousand.mp3",
+    "value": 1000
+  },
+  {
+    "key": "ten-thousand",
+    "audio": "assets/audio/numbers/ten-thousand.mp3",
+    "value": 10000
+  },
+  {
+    "key": "hundred_thousand",
+    "audio": "assets/audio/numbers/hundred_thousand.mp3",
+    "value": 100000
+  },
+  {
+    "key": "million",
+    "audio": "assets/audio/numbers/million.mp3",
+    "value": 1000000
+  },
+  {
+    "key": "cent",
+    "audio": "assets/audio/numbers/cent.mp3"
+  },
+  {
+    "key": "comma",
+    "audio": "assets/audio/numbers/comma.mp3"
+  },
+  {
+    "key": "minus",
+    "audio": "assets/audio/numbers/minus.mp3"
+  },
+  {
+    "key": "point",
+    "audio": "assets/audio/numbers/point.mp3"
+  }
+]

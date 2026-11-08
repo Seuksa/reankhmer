@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "khmer": "សួស្តី",
+    "english": "Hello, Hi"
+  },
+  {
+    "id": 2,
+    "khmer": "តើអ្នកឈ្មោះអ្វី?",
+    "english": "What is your name?"
+  },
+  {
+    "id": 3,
+    "khmer": "ខ្ញុំទៅផ្សារ",
+    "english": "I go to market."
+  },
+  {
+    "id": 4,
+    "khmer": "ទៅដើរលេងទេ?",
+    "english": "Do you want to go for a walk?"
+  },
+  {
+    "id": 5,
+    "khmer": "ខ្ញុំទៅសាលា",
+    "english": "I go to school."
+  },
+  {
+    "id": 6,
+    "khmer": "ខ្ញុំទៅធ្វើការ",
+    "english": "I go to work."
+  },
+  {
+    "id": 7,
+    "khmer": "អ្នកឯងទៅណាដែរ?",
+    "english": "Where are you going?"
+  },
+  {
+    "id": 8,
+    "khmer": "សុខសប្បាយទេ?",
+    "english": "How are you?"
+  }
+]
