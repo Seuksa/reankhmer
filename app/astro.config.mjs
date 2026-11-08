@@ -22,7 +22,7 @@ const media = (pattern, cacheName, maxEntries) => ({
 });
 
 export default defineConfig({
-  site: 'https://reankhmer.seuksa.com',
+  site: 'https://rean.seuksa.com',
   trailingSlash: 'ignore',
   // /letters -> letters.html: works on GitHub Pages and with Workbox cleanURLs offline.
   build: { format: 'file' },

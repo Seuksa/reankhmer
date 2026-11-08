@@ -34,7 +34,7 @@ Analysis and recommendations: https://claude.ai/artifact/6mXdHvT7vQSe4WgRn9wXAK
 
 ## The web app (`app/`)
 
-Offline-first PWA at **https://reankhmer.seuksa.com** — Astro 7 + Vue 3 islands + Tailwind 4, same fonts as seuksa.com.
+Offline-first PWA at **https://rean.seuksa.com** — Astro 7 + Vue 3 islands + Tailwind 4, same fonts as seuksa.com.
 Bilingual Khmer–English UI (toggle: both / ខ្មែរ / EN), progress kept on the device (IndexedDB) with backup/restore as a JSON file.
 
 ```sh
@@ -55,7 +55,7 @@ npm run preview  # test the PWA and offline mode
 | `/progress` | stats, backup/restore, "download for offline" per chapter |
 
 Deploy: push to GitHub; `.github/workflows/deploy.yml` builds `app/` and publishes to Pages.
-DNS: add a `CNAME` record `reankhmer` → `<github-user>.github.io` on seuksa.com, then set the custom
+DNS: add a `CNAME` record `rean` → `<github-user>.github.io` on seuksa.com, then set the custom
 domain in the repo's Pages settings (the build already ships `CNAME`).
 
 ## Re-running the export

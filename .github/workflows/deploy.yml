@@ -30,7 +30,7 @@ jobs:
           cache-dependency-path: app/package-lock.json
       - run: npm ci
       - run: npm run check
-      - run: npm run build # copies ../assets into public/ then builds; public/CNAME = reankhmer.seuksa.com
+      - run: npm run build # copies ../assets into public/ then builds; public/CNAME = rean.seuksa.com
       - uses: actions/upload-pages-artifact@v3
         with:
           path: app/dist
