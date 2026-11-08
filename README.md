@@ -5,10 +5,11 @@ Royal University of Phnom Penh Science Fair ([original binaries](https://github.
 
 ## Credits
 
-- **Sok Pongsametrey** — all content, project lead and management (2006 and today).
-- **Audio** — recorded in 2006 at the CSC Cambodia studio, where the project was part of Sok Pongsametrey's
-  work, with his colleagues there.
-- **Platform and Flash development** — Sok Pongsametrey, Sok Leaksmy, Ouk Sidavy · RUPP Science Fair 2006.
+- **The ReanKhmer team** — Sok Pongsametrey, Sok Leaksmy and Ouk Sidavy: the idea, the platform and the
+  Flash work, RUPP Science Fair 2006. ReanKhmer remains the work of all three.
+- **Sok Pongsametrey** — team lead, all lesson content and project management.
+- **Thanks** — colleagues at CSC Cambodia, who lent their studio and equipment and helped record the audio.
+  ReanKhmer was not a CSC Cambodia project.
 
 The 2006 app was a VB.NET + Flash 8 + Access program for Windows XP. Its source was lost, but the
 exe decompiles cleanly, and all lesson data and ~300 native-speaker recordings were recovered.
