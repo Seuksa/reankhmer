@@ -8,7 +8,7 @@ Royal University of Phnom Penh Science Fair ([original binaries](https://github.
 - **Sok Pongsametrey** — all content, project lead and management (2006 and today).
 - **Audio** — recorded in 2006 at the CSC Cambodia studio, where the project was part of Sok Pongsametrey's
   work, with his colleagues there.
-- **2006 platform and Flash development** — Sok Leaksmy, Ouk Sidavy and team.
+- **Platform and Flash development** — Sok Pongsametrey, Sok Leaksmey, Ouk Sidavy · RUPP Science Fair 2006.
 
 The 2006 app was a VB.NET + Flash 8 + Access program for Windows XP. Its source was lost, but the
 exe decompiles cleanly, and all lesson data and ~300 native-speaker recordings were recovered.
