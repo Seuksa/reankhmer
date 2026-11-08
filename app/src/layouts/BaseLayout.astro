@@ -7,7 +7,7 @@ import Toggles from '../components/Toggles.vue';
 interface Props { title?: string; description?: string }
 const { title, description = 'Learn to read, hear and speak Khmer — រៀនអាន ស្តាប់ និងនិយាយភាសាខ្មែរ' } = Astro.props;
 const fullTitle = title ? `${title} · រៀនខ្មែរ ReanKhmer` : 'រៀនខ្មែរ ReanKhmer – Learn Khmer';
-const path = Astro.url.pathname.replace(/\.html$/, '');
+const path = Astro.url.pathname.replace(/\.html$/, '').replace(/\/index$/, '/');
 
 const nav = [
   { href: '/letters', km: 'ព្យញ្ជនៈ', en: 'Letters', icon: 'M5 19V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v13M5 19h14M9 9h6M9 13h4' },
