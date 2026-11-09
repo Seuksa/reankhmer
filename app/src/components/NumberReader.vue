@@ -10,7 +10,12 @@ import T from './T.vue';
 const props = defineProps<{ numbers: NumberWord[] }>();
 const byKey = computed(() => new Map(props.numbers.map((n) => [n.key, n])));
 
-const text = ref('1250');
+const text = ref('១២៥០');
+// Digits are shown in Khmer; Latin digits typed on a normal keyboard are converted as you type.
+const toKhmer = (s: string) => s.replace(/[0-9]/g, (d) => khmerDigits(d));
+watch(text, (v) => { if (/[0-9]/.test(v)) text.value = toKhmer(v); });
+/** The same number in Latin digits, shown small beside the box: (1250). */
+const latin = computed(() => normalize(text.value) ?? '');
 const result = computed(() => readNumber(text.value));
 const words = computed(() => (result.value.ok ? result.value.words.map((k) => byKey.value.get(k)).filter((n): n is NumberWord => !!n) : []));
 const shown = computed(() => {
@@ -21,6 +26,41 @@ const shown = computed(() => {
   const grouped = Number(int.replace('-', '')).toLocaleString('en-US');
   return (s.startsWith('-') ? '−' : '') + khmerDigits(grouped) + (frac !== undefined ? '.' + khmerDigits(frac) : '') + (pct ? '%' : '');
 });
+
+// The number written out in Khmer words, which are joined without spaces: មួយពាន់ពីររយហាសិប.
+const khmerText = computed(() => words.value.map((w) => w.word ?? '').join(''));
+const copied = ref(false);
+let copiedTimer: ReturnType<typeof setTimeout> | undefined;
+const khmerEl = ref<HTMLElement | null>(null);
+
+/** Selects the Khmer line; returns true if the browser also copied it. */
+function selectAndCopy(): boolean {
+  if (!khmerEl.value) return false;
+  const r = document.createRange();
+  r.selectNodeContents(khmerEl.value);
+  getSelection()?.removeAllRanges();
+  getSelection()?.addRange(r);
+  let ok = false;
+  try { ok = document.execCommand('copy'); } catch { /* unsupported */ }
+  if (ok) getSelection()?.removeAllRanges(); // copied; otherwise leave it selected to copy by hand
+  return ok;
+}
+
+async function copyKhmer() {
+  if (!khmerText.value) return;
+  // The Clipboard API can be missing (plain http), refuse, or wait on a permission prompt.
+  // Give it a second, then fall back to copying the selected text.
+  const viaApi = navigator.clipboard
+    ? await Promise.race([
+        navigator.clipboard.writeText(khmerText.value).then(() => true, () => false),
+        new Promise<boolean>((r) => setTimeout(() => r(false), 1000)),
+      ])
+    : false;
+  if (!viaApi && !selectAndCopy()) return;
+  copied.value = true;
+  clearTimeout(copiedTimer);
+  copiedTimer = setTimeout(() => (copied.value = false), 2000);
+}
 
 const active = ref<number | null>(null);
 let run = 0;
@@ -60,7 +100,7 @@ function clear() { text.value = ''; }
 function togglePercent() { text.value = text.value.endsWith('%') ? text.value.slice(0, -1) : text.value + '%'; }
 function toggleMinus() { text.value = text.value.startsWith('-') ? text.value.slice(1) : '-' + text.value; }
 
-watch(text, () => { run++; active.value = null; });
+watch(text, () => { run++; active.value = null; copied.value = false; });
 onBeforeUnmount(() => { run++; stop(); });
 
 const key = 'font-khmer-serif grid h-12 place-items-center rounded-xl border-2 border-slate-200 bg-white text-2xl hover:border-brand-500 hover:bg-brand-50 dark:border-slate-700 dark:bg-slate-900 dark:hover:bg-brand-900/40';
@@ -72,9 +112,13 @@ const tool = 'grid h-12 place-items-center rounded-xl border-2 border-slate-200 
     <!-- input + keypad -->
     <div>
       <label for="num-in" class="mb-1 block text-sm font-medium"><T km="វាយលេខ" en="Type a number" /></label>
-      <input id="num-in" v-model="text" type="text" inputmode="decimal" autocomplete="off" spellcheck="false"
-        class="w-full rounded-xl border-2 border-slate-200 bg-white px-3 py-2 text-2xl tabular-nums dark:border-slate-700 dark:bg-slate-900"
-        @keydown.enter="readAll" />
+      <div class="relative">
+        <input id="num-in" v-model="text" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" lang="km"
+          aria-describedby="num-latin"
+          class="font-khmer-serif w-full rounded-xl border-2 border-slate-200 bg-white py-2 pl-3 pr-28 text-2xl tabular-nums dark:border-slate-700 dark:bg-slate-900"
+          @keydown.enter="readAll" />
+        <span v-if="latin" id="num-latin" class="pointer-events-none absolute right-3 top-1/2 max-w-24 -translate-y-1/2 truncate text-sm tabular-nums text-slate-500">({{ latin }})</span>
+      </div>
       <div class="mt-3 grid grid-cols-5 gap-1.5">
         <button v-for="k in KEYS" :key="k" type="button" lang="km" :class="key" :aria-label="`Digit ${KEYS.indexOf(k)}`" @click="press(k)">{{ k }}</button>
         <button type="button" :class="tool" aria-label="Minus" @click="toggleMinus">−</button>
@@ -104,6 +148,14 @@ const tool = 'grid h-12 place-items-center rounded-xl border-2 border-slate-200 
       <p v-else-if="result.reason === 'too-long'" class="text-sm text-amber-700 dark:text-amber-300">
         <T km="លេខវែងពេក — រហូតដល់ ១២ ខ្ទង់ និង ៦ ខ្ទង់ក្រោយក្បៀស។" en="That number is too long: up to 12 digits, and 6 after the point." />
       </p>
+
+      <div v-if="result.ok && khmerText" class="flex flex-wrap items-center gap-2 rounded-xl bg-slate-50 px-3 py-2 dark:bg-slate-800/60">
+        <span ref="khmerEl" lang="km" class="font-khmer-serif min-w-0 flex-1 break-all text-xl">{{ khmerText }}</span>
+        <button type="button" class="chip" :aria-label="`Copy ${khmerText}`" @click="copyKhmer">
+          <template v-if="copied">✓ <T km="បានចម្លង" en="Copied" /></template>
+          <template v-else>⧉ <T km="ចម្លង" en="Copy" /></template>
+        </button>
+      </div>
 
       <div>
         <button type="button" class="btn" :disabled="!result.ok" @click="readAll"><T km="អានលេខ" en="Read the number" /> ▶</button>
