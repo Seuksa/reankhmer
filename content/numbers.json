@@ -1,136 +1,161 @@
 [
   {
     "key": "zero",
+    "word": "សូន្យ",
     "audio": "assets/audio/numbers/zero.mp3",
     "value": 0,
     "digit": "០"
   },
   {
     "key": "one",
+    "word": "មួយ",
     "audio": "assets/audio/numbers/one.mp3",
     "value": 1,
     "digit": "១"
   },
   {
     "key": "two",
+    "word": "ពីរ",
     "audio": "assets/audio/numbers/two.mp3",
     "value": 2,
     "digit": "២"
   },
   {
     "key": "three",
+    "word": "បី",
     "audio": "assets/audio/numbers/three.mp3",
     "value": 3,
     "digit": "៣"
   },
   {
     "key": "four",
+    "word": "បួន",
     "audio": "assets/audio/numbers/four.mp3",
     "value": 4,
     "digit": "៤"
   },
   {
     "key": "five",
+    "word": "ប្រាំ",
     "audio": "assets/audio/numbers/five.mp3",
     "value": 5,
     "digit": "៥"
   },
   {
     "key": "six",
+    "word": "ប្រាំមួយ",
     "audio": "assets/audio/numbers/six.mp3",
     "value": 6,
     "digit": "៦"
   },
   {
     "key": "seven",
+    "word": "ប្រាំពីរ",
     "audio": "assets/audio/numbers/seven.mp3",
     "value": 7,
     "digit": "៧"
   },
   {
     "key": "eight",
+    "word": "ប្រាំបី",
     "audio": "assets/audio/numbers/eight.mp3",
     "value": 8,
     "digit": "៨"
   },
   {
     "key": "nine",
+    "word": "ប្រាំបួន",
     "audio": "assets/audio/numbers/nine.mp3",
     "value": 9,
     "digit": "៩"
   },
   {
     "key": "ten",
+    "word": "ដប់",
     "audio": "assets/audio/numbers/ten.mp3",
     "value": 10
   },
   {
     "key": "twenty",
+    "word": "ម្ភៃ",
     "audio": "assets/audio/numbers/twenty.mp3",
     "value": 20
   },
   {
     "key": "thirty",
+    "word": "សាមសិប",
     "audio": "assets/audio/numbers/thirty.mp3",
     "value": 30
   },
   {
     "key": "forty",
+    "word": "សែសិប",
     "audio": "assets/audio/numbers/forty.mp3",
     "value": 40
   },
   {
     "key": "fifty",
+    "word": "ហាសិប",
     "audio": "assets/audio/numbers/fifty.mp3",
     "value": 50
   },
   {
     "key": "sixty",
+    "word": "ហុកសិប",
     "audio": "assets/audio/numbers/sixty.mp3",
     "value": 60
   },
   {
     "key": "seventy",
+    "word": "ចិតសិប",
     "audio": "assets/audio/numbers/seventy.mp3",
     "value": 70
   },
   {
     "key": "eighty",
+    "word": "ប៉ែតសិប",
     "audio": "assets/audio/numbers/eighty.mp3",
     "value": 80
   },
   {
     "key": "ninety",
+    "word": "កៅសិប",
     "audio": "assets/audio/numbers/ninety.mp3",
     "value": 90
   },
   {
     "key": "hundred",
+    "word": "រយ",
     "audio": "assets/audio/numbers/hundred.mp3",
     "value": 100
   },
   {
     "key": "onehundred",
+    "word": "មួយរយ",
     "audio": "assets/audio/numbers/onehundred.mp3",
     "value": 100
   },
   {
     "key": "thousand",
+    "word": "ពាន់",
     "audio": "assets/audio/numbers/thousand.mp3",
     "value": 1000
   },
   {
     "key": "ten-thousand",
+    "word": "ម៉ឺន",
     "audio": "assets/audio/numbers/ten-thousand.mp3",
     "value": 10000
   },
   {
     "key": "hundred_thousand",
+    "word": "សែន",
     "audio": "assets/audio/numbers/hundred_thousand.mp3",
     "value": 100000
   },
   {
     "key": "million",
+    "word": "លាន",
     "audio": "assets/audio/numbers/million.mp3",
     "value": 1000000
   },
@@ -144,6 +169,7 @@
   },
   {
     "key": "minus",
+    "word": "ដក",
     "audio": "assets/audio/numbers/minus.mp3"
   },
   {

@@ -21,6 +21,7 @@ const totals = {
   cards: reviewItems().length,
 };
 const credit = 'ReanKhmer (រៀនខ្មែរ) @ Seuksa · https://rean.seuksa.com';
+const support = 'https://buymeacoffee.com/mtstuffs';
 ---
 
 <BaseLayout title="វឌ្ឍនភាព Progress">
@@ -44,6 +45,26 @@ const credit = 'ReanKhmer (រៀនខ្មែរ) @ Seuksa · https://rean.se
             <T km="ចម្លងឈ្មោះ" en="Copy credit" />
           </button>
           <span id="copy-done" class="hidden text-sm" aria-live="polite">✓ <T km="បានចម្លង" en="Copied" /></span>
+        </div>
+
+        <div class="mt-5 flex flex-wrap items-center gap-4 border-t border-amber-300/70 pt-4 dark:border-amber-800/70">
+          <a href={support} target="_blank" rel="noopener" class="shrink-0 rounded-xl bg-white p-1.5 shadow-sm" aria-label="Buy Me a Coffee QR code">
+            <img src="/support/buymeacoffee-qr.webp" alt="QR code: buymeacoffee.com/mtstuffs" width="112" height="112" loading="lazy" class="size-28" />
+          </a>
+          <div class="min-w-0 flex-1 basis-56">
+            <h3 class="font-semibold"><T km="គាំទ្រ រៀនខ្មែរ" en="Support ReanKhmer" /></h3>
+            <p class="mt-1 text-sm">
+              <T
+                km="រៀនខ្មែរ ឥតគិតថ្លៃ និងគ្មានពាណិជ្ជកម្ម។ បើវាមានប្រយោជន៍សម្រាប់អ្នក ឬគ្រួសាររបស់អ្នក កាហ្វេមួយកែវជួយយើងបន្តថតសំឡេង និងបង្កើតមេរៀនថ្មីៗ។"
+                en="ReanKhmer is free and ad-free. If it helps you or your family, a coffee helps us keep recording and building new lessons."
+                stack
+              />
+            </p>
+            <a href={support} target="_blank" rel="noopener" class="mt-2 inline-flex items-center gap-2 rounded-lg bg-amber-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-amber-700">
+              ☕ <T km="ទិញកាហ្វេឱ្យយើង" en="Buy us a coffee" />
+            </a>
+            <span class="ml-2 text-xs opacity-75">buymeacoffee.com/mtstuffs</span>
+          </div>
         </div>
       </div>
     </div>

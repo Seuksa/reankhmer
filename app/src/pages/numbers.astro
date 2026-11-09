@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import T from '../components/T.astro';
 import NumberList from '../components/NumberList.vue';
+import NumberReader from '../components/NumberReader.vue';
 import { numbers } from '../lib/content';
 ---
 
@@ -11,5 +12,14 @@ import { numbers } from '../lib/content';
     <T km="ចុចដើម្បីស្តាប់។ លេខខ្មែរ ០ ដល់ ៩ សរសេរដូចលេខអារ៉ាប់ ប៉ុន្តែប្រើរូបអក្សរខ្មែរ។"
        en="Tap to listen. Khmer digits ០–៩ work exactly like 0–9; only the shapes differ." stack />
   </p>
+  <section class="mb-10">
+    <h2 class="mb-1 text-xl font-semibold"><T km="អានលេខណាមួយ" en="Read any number" /></h2>
+    <p class="mb-4 max-w-3xl text-sm text-slate-600 dark:text-slate-400">
+      <T km="វាយលេខ ឬចុចលេខខ្មែរ រួចចុច «អានលេខ» ដើម្បីស្តាប់ពាក្យនីមួយៗតាមលំដាប់។ (ឧបករណ៍ឆ្នាំ ២០០៦ ធ្វើឡើងវិញ)"
+         en="Type a number or tap the Khmer digits, then press “Read the number” to hear it word by word. (The 2006 number tool, rebuilt.)" stack />
+    </p>
+    <NumberReader client:visible numbers={numbers} />
+  </section>
+  <h2 class="mb-4 text-xl font-semibold"><T km="ពាក្យលេខទាំងអស់" en="All number words" /></h2>
   <NumberList client:visible numbers={numbers} />
 </BaseLayout>

@@ -16,7 +16,7 @@ export interface Consonant {
 export interface Vowel {
   id: number; sign: string; roman_hint?: string; audio_series1?: string; audio_series2?: string;
 }
-export interface NumberWord { key: string; audio: string; value?: number; digit?: string }
+export interface NumberWord { key: string; word?: string; audio: string; value?: number; digit?: string }
 export interface Choice { text: string; correct: boolean }
 export interface Question { id: number; order: number; question: string; choices: Choice[] }
 export interface Item { image?: string; text?: string; speaker?: string; audio?: string; legacy_swf?: string }
