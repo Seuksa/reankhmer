@@ -16,9 +16,10 @@ const words = computed(() => (result.value.ok ? result.value.words.map((k) => by
 const shown = computed(() => {
   const s = normalize(text.value);
   if (!s) return '';
-  const [int, frac] = s.split('.');
+  const pct = s.endsWith('%');
+  const [int, frac] = s.replace('%', '').split('.');
   const grouped = Number(int.replace('-', '')).toLocaleString('en-US');
-  return (s.startsWith('-') ? '−' : '') + khmerDigits(grouped) + (frac !== undefined ? '.' + khmerDigits(frac) : '');
+  return (s.startsWith('-') ? '−' : '') + khmerDigits(grouped) + (frac !== undefined ? '.' + khmerDigits(frac) : '') + (pct ? '%' : '');
 });
 
 const active = ref<number | null>(null);
@@ -49,12 +50,14 @@ function press(k: string) {
   run++;
   active.value = null;
   if (text.value === '0') text.value = '';
-  text.value += k;
+  // Keep a trailing % at the end: ៥០% then ៥ gives ៥០៥%.
+  text.value = text.value.endsWith('%') ? text.value.slice(0, -1) + k + '%' : text.value + k;
   const d = KEYS.indexOf(k);
   if (d >= 0) void play(`/${byKey.value.get(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'][d])!.audio}`);
 }
 function back() { text.value = text.value.slice(0, -1); }
 function clear() { text.value = ''; }
+function togglePercent() { text.value = text.value.endsWith('%') ? text.value.slice(0, -1) : text.value + '%'; }
 function toggleMinus() { text.value = text.value.startsWith('-') ? text.value.slice(1) : '-' + text.value; }
 
 watch(text, () => { run++; active.value = null; });
@@ -76,8 +79,9 @@ const tool = 'grid h-12 place-items-center rounded-xl border-2 border-slate-200 
         <button v-for="k in KEYS" :key="k" type="button" lang="km" :class="key" :aria-label="`Digit ${KEYS.indexOf(k)}`" @click="press(k)">{{ k }}</button>
         <button type="button" :class="tool" aria-label="Minus" @click="toggleMinus">−</button>
         <button type="button" :class="tool" aria-label="Decimal point" @click="press('.')">.</button>
+        <button type="button" :class="tool" aria-label="Percent" @click="togglePercent">%</button>
         <button type="button" :class="tool" aria-label="Delete last" @click="back">⌫</button>
-        <button type="button" :class="[tool, 'col-span-2 text-sm']" @click="clear"><T km="លុប" en="Clear" /></button>
+        <button type="button" :class="[tool, 'text-xs']" @click="clear"><T km="លុប" en="Clear" stack /></button>
       </div>
     </div>
 
@@ -90,12 +94,12 @@ const tool = 'grid h-12 place-items-center rounded-xl border-2 border-slate-200 
           class="flex flex-col items-center rounded-xl border-2 px-3 py-1.5 transition"
           :class="active === i ? 'border-brand-600 bg-brand-600 text-white' : 'border-slate-200 bg-white hover:border-brand-500 dark:border-slate-700 dark:bg-slate-900'"
           @click="sayOne(i)">
-          <span lang="km" class="font-khmer-serif text-xl">{{ w.word ?? (w.key === 'point' ? '.' : '·') }}</span>
+          <span lang="km" class="font-khmer-serif text-xl">{{ w.word ?? '·' }}</span>
           <span class="text-xs opacity-75">{{ w.key.replace(/[_-]/g, ' ') }}</span>
         </button>
       </div>
       <p v-else-if="result.reason === 'invalid'" class="text-sm text-amber-700 dark:text-amber-300">
-        <T km="សូមវាយតែលេខ (អាចមាន − និង .)។" en="Please type only digits (a − sign and one . are fine)." />
+        <T km="សូមវាយតែលេខ (អាចមាន − . និង %)។" en="Please type only digits (a − sign, one . and a final % are fine)." />
       </p>
       <p v-else-if="result.reason === 'too-long'" class="text-sm text-amber-700 dark:text-amber-300">
         <T km="លេខវែងពេក — រហូតដល់ ១២ ខ្ទង់ និង ៦ ខ្ទង់ក្រោយក្បៀស។" en="That number is too long: up to 12 digits, and 6 after the point." />

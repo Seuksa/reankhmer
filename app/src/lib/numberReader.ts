@@ -2,7 +2,8 @@
 // left to right, each non-zero digit is said with its place word (១២៥០ = one thousand · two hundred · fifty),
 // the tens place uses twenty…ninety (១១ = ten one, ដប់មួយ) and zeros are silent.
 // Beyond 2006: numbers past a million are split at the million (១២ លាន = ten two million),
-// and leading zeros after the point are read (3.05 = three point zero five, not 3.5).
+// leading zeros after the point are read (3.05 = three point zero five, not 3.5), and a trailing % adds ភាគរយ.
+// The point is said ចុច.
 
 const DIGIT = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
 const TENS = ['', 'ten', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
@@ -19,8 +20,8 @@ export function normalize(input: string): string | null {
     .replace(/[០-៩]/g, (d) => String(KHMER_DIGITS.indexOf(d)))
     .replace(/[\s,]/g, '')
     .replace(/[−–]/g, '-')
-    .replace(/\.$/, ''); // a trailing point while typing
-  return /^-?\d+(\.\d+)?$/.test(s) ? s : null;
+    .replace(/\.(?=%?$)/, ''); // a trailing point while typing
+  return /^-?\d+(\.\d+)?%?$/.test(s) ? s : null;
 }
 
 function intWords(digits: string): string[] {
@@ -52,7 +53,8 @@ export function readNumber(input: string): ReadResult {
   const s = normalize(input);
   if (!s) return { ok: false, reason: 'invalid' };
   const neg = s.startsWith('-');
-  const [int, frac = ''] = s.replace('-', '').split('.');
+  const pct = s.endsWith('%');
+  const [int, frac = ''] = s.replace('-', '').replace('%', '').split('.');
   if (int.replace(/^0+(?=\d)/, '').length > MAX_INT_DIGITS || frac.length > MAX_FRACTION_DIGITS) return { ok: false, reason: 'too-long' };
   const words = neg && /[1-9]/.test(int + frac) ? ['minus'] : [];
   words.push(...intWords(int));
@@ -63,5 +65,6 @@ export function readNumber(input: string): ReadResult {
     words.push(...[...lead].map(() => 'zero'));
     if (rest) words.push(...intWords(rest));
   }
+  if (pct) words.push('percent');
   return { ok: true, words };
 }

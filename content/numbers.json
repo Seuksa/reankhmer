@@ -161,10 +161,17 @@
   },
   {
     "key": "cent",
+    "word": "សេន",
     "audio": "assets/audio/numbers/cent.mp3"
   },
   {
+    "key": "percent",
+    "word": "ភាគរយ",
+    "audio": "assets/audio/numbers/percent.mp3"
+  },
+  {
     "key": "comma",
+    "word": "ក្បៀស",
     "audio": "assets/audio/numbers/comma.mp3"
   },
   {
@@ -174,6 +181,7 @@
   },
   {
     "key": "point",
+    "word": "ចុច",
     "audio": "assets/audio/numbers/point.mp3"
   }
 ]

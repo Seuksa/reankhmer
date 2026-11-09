@@ -7,7 +7,8 @@ import { markHeard } from '../lib/progress';
 defineProps<{ numbers: NumberWord[] }>();
 
 const SYMBOLS: Record<string, { show: string; en: string }> = {
-  cent: { show: '%', en: 'percent' },
+  cent: { show: '¢', en: 'cent' },
+  percent: { show: '%', en: 'percent' },
   comma: { show: ',', en: 'comma' },
   minus: { show: '−', en: 'minus' },
   point: { show: '.', en: 'point' },
