@@ -10,6 +10,8 @@ import phrasesJson from '../../../content/phrases.json';
 export interface Consonant {
   id: number; char: string; name: string; series: 1 | 2; roman: string;
   audio?: string; audio_alt?: string; image?: string; legacy_swf?: string;
+  /** Known mistake in the 2006 animation, shown as a remark (the SWF itself can't be edited). */
+  legacy_swf_note?: { km: string; en: string };
 }
 export interface Vowel {
   id: number; sign: string; roman_hint?: string; audio_series1?: string; audio_series2?: string;

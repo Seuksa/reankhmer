@@ -181,6 +181,9 @@ onMounted(() => { void loadProgress(); void reset(); void showFlash(); });
         <p class="mt-2 text-xs text-slate-500">
           <T km="ចុច ▶ ក្នុងរូប ដើម្បីមើលការសរសេរម្តងមួយគូស។" en="Press ▶ inside the picture to watch the letter drawn stroke by stroke." />
         </p>
+        <p v-if="letter.legacy_swf_note" role="note" class="mt-2 rounded-xl border border-amber-300 bg-amber-50 p-3 text-sm text-amber-900 dark:border-amber-800 dark:bg-amber-950/40 dark:text-amber-100">
+          ⚠️ <T :km="letter.legacy_swf_note.km" :en="letter.legacy_swf_note.en" stack />
+        </p>
       </section>
 
       <section>

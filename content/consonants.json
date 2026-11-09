@@ -124,7 +124,11 @@
     "roman": "Thor",
     "audio": "assets/audio/consonants/12-thor_siam.mp3",
     "image": "assets/images/letters/12-thor_siam.jpg",
-    "legacy_swf": "legacy/flash/thor_12.swf"
+    "legacy_swf": "legacy/flash/thor_12.swf",
+    "legacy_swf_note": {
+      "km": "ចំណាំ៖ ចលនាឆ្នាំ ២០០៦ នេះសរសេរអក្សរ ឋ ត្រឹមត្រូវ ប៉ុន្តែការពន្យល់និយាយអំពីអក្សរ ញ អក្សរឡាតាំងបង្ហាញ /dor/ ហើយឧទាហរណ៍បង្ហាញអក្សរ ក។ នេះជាកំហុសក្នុងឯកសារដើម ដែលយើងមិនអាចកែបាន។ សូមមើលតែរបៀបសរសេរ។ ឋ អានថា «ថ» (thor)។",
+      "en": "Note: this 2006 animation writes ឋ correctly, but its description is about ញ, the Latin shows /dor/ and the example shows ក. These are mistakes in the original file, which we can't edit; follow the stroke order only. ឋ is read thor."
+    }
   },
   {
     "id": 13,
