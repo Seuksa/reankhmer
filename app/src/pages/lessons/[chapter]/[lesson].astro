@@ -3,6 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import T from '../../../components/T.astro';
 import AudioButton from '../../../components/AudioButton.vue';
 import LetterGrid from '../../../components/LetterGrid.vue';
+import WordCards from '../../../components/WordCards.vue';
 import Vocabulary from '../../../components/Vocabulary.vue';
 import DialoguePlayer from '../../../components/DialoguePlayer.vue';
 import Quiz from '../../../components/Quiz.vue';
@@ -94,11 +95,7 @@ const navLabel = (x: { ch: Chapter; les: Lesson }) => lessonTitle(x.ch.number, x
   {les.word_audio && les.word_audio.length > 0 && (
     <section class="mb-8">
       <h2 class="mb-3 text-lg font-semibold"><T km="ស្តាប់ពាក្យ" en="Listen to the words" /></h2>
-      <ul class="flex flex-wrap gap-2">
-        {les.word_audio.map((w) => (
-          <li><AudioButton client:visible src={`/${w.audio}`} size="sm" label={w.key} /></li>
-        ))}
-      </ul>
+      <WordCards client:visible words={les.word_audio} />
     </section>
   )}
 

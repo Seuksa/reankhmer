@@ -22,7 +22,7 @@ export interface Question { id: number; order: number; question: string; choices
 export interface Item { image?: string; text?: string; speaker?: string; audio?: string; legacy_swf?: string }
 export interface Lesson {
   id: number; number: number; title: string; article?: string; vocabulary?: string[];
-  items?: Item[]; article_audio?: string; word_audio?: { key: string; audio: string }[]; quiz?: Question[];
+  items?: Item[]; article_audio?: string; word_audio?: { key: string; km: string; en?: string; audio: string }[]; quiz?: Question[];
 }
 export interface Chapter { number: number; title: string; intro: string; lessons: Lesson[] }
 export interface Bi { km: string; en: string }

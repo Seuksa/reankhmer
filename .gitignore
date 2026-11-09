@@ -3,3 +3,4 @@
 .decomp/
 node_modules/
 dist/
+app/public/_review/
