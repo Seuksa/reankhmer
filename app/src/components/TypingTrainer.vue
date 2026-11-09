@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onBeforeUnmount, onMounted, ref } from 'vue';
+import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue';
 import { KEYS, display, strokes, typed, type KeyDef, type Stroke, type TypingLesson } from '../lib/nida';
 import { loadProgress, progress, saveTyping } from '../lib/progress';
 import KhmerKeyboard from './KhmerKeyboard.vue';
@@ -34,8 +34,27 @@ const flash = ref<string | null>(null);
 const result = ref<{ kpm: number; acc: number } | null>(null);
 let timer: ReturnType<typeof setInterval> | undefined;
 
-onMounted(() => { void loadProgress(); window.addEventListener('keydown', onKey); });
-onBeforeUnmount(() => { window.removeEventListener('keydown', onKey); clearInterval(timer); });
+// Focus mode: while practising, the page title, intro and install help are hidden (typing.astro CSS)
+// so only the text and the keyboard are on screen. The guide stays one tap away.
+const showGuide = ref(false);
+onMounted(() => {
+  void loadProgress();
+  window.addEventListener('keydown', onKey);
+  try { showGuide.value = localStorage.getItem('rk-typing-guide') === '1'; } catch {}
+});
+onBeforeUnmount(() => {
+  window.removeEventListener('keydown', onKey);
+  clearInterval(timer);
+  document.documentElement.removeAttribute('data-typing');
+});
+watch(() => !!active.value, (on) => {
+  document.documentElement.toggleAttribute('data-typing', on);
+  window.scrollTo({ top: 0 });
+});
+function toggleGuide() {
+  showGuide.value = !showGuide.value;
+  try { localStorage.setItem('rk-typing-guide', showGuide.value ? '1' : '0'); } catch {}
+}
 
 const next = computed(() => plan.value[pos.value] ?? null);
 const nextKey = computed(() => (next.value && next.value.code !== 'Space' ? KEYS.get(next.value.code) : null));
@@ -153,7 +172,14 @@ const best = (id: string) => progress.typing?.[id];
         <p class="font-semibold"><T :km="active.km" :en="active.en" /></p>
         <span v-if="isGame" class="rounded-full bg-amber-100 px-3 py-0.5 text-sm font-semibold text-amber-900 dark:bg-amber-900/50 dark:text-amber-100">⏱ {{ remaining }}s</span>
         <span class="text-sm text-slate-500">✓ {{ correct }} · ✗ {{ errors }}</span>
-        <button type="button" class="btn-quiet ml-auto !py-1 text-sm" @click="stop"><T km="ចេញ" en="Exit" /></button>
+        <button type="button" class="btn-quiet ml-auto !py-1 text-sm" :aria-expanded="showGuide" @click="toggleGuide">
+          <T km="ការណែនាំ" en="Guide" /> {{ showGuide ? '▴' : '▾' }}
+        </button>
+        <button type="button" class="btn-quiet !py-1 text-sm" @click="stop"><T km="ចេញ" en="Exit" /></button>
+      </div>
+      <div v-if="showGuide" class="card mb-3 space-y-1 text-sm text-slate-600 dark:text-slate-400">
+        <p><T km="ក្តារចុចខ្មែរ NiDA (KhmerOS) ដូចនៅលើ Windows។ ដាក់ម្រាមដៃលើ F និង J ហើយមើលអេក្រង់ កុំមើលដៃ។" en="Standard NiDA (KhmerOS) layout, as on Windows. Rest your fingers on F and J, and watch the screen, not your hands." stack /></p>
+        <p><T km="ចុចក្តារចុចកុំព្យូទ័រ ឬចុចលើក្តារចុចលើអេក្រង់ — មិនចាំបាច់ដំឡើងក្តារចុចខ្មែរទេ។ ចុច Esc ដើម្បីចេញ។" en="Type on your computer keyboard or tap the keys on screen; no Khmer keyboard install needed. Esc to exit." stack /></p>
       </div>
 
       <div v-if="result" class="card mb-4 text-center" aria-live="polite">
@@ -180,9 +206,6 @@ const best = (id: string) => progress.typing?.[id];
           <kbd class="rounded border border-slate-300 px-1.5 py-0.5 font-mono text-sm dark:border-slate-700">{{ next.shift ? 'Shift + ' : '' }}{{ next.code === 'Space' ? 'Space' : nextKey?.latin }}</kbd>
         </p>
         <KhmerKeyboard :next="next" :shift-on="shiftOn" :flash="flash" @press="press" @shift="shiftOn = !shiftOn" />
-        <p class="mt-2 text-center text-xs text-slate-500">
-          <T km="ប្រើក្តារចុចកុំព្យូទ័រ ឬចុចលើក្តារចុចខាងលើ។ មិនចាំបាច់ដំឡើងក្តារចុចខ្មែរទេ។" en="Type on your computer keyboard or tap the keys above. No Khmer keyboard install needed." />
-        </p>
       </template>
     </div>
   </div>

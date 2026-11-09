@@ -31,18 +31,20 @@ const gamePool = uniq([...vocab, ...phrases.map((p) => p.khmer)]);
 ---
 
 <BaseLayout title="ក្តារចុច Keyboard">
-  <h1 class="mb-2 text-2xl font-semibold"><T km="រៀនវាយអក្សរខ្មែរ" en="Learn Khmer typing" /></h1>
-  <p class="mb-6 max-w-3xl text-slate-600 dark:text-slate-400">
-    <T
-      km="ក្តារចុចខ្មែរយូនីកូដស្តង់ដារ NiDA (KhmerOS) — ដូចនៅលើ Windows, Mac និងទូរស័ព្ទ។ ចាប់ផ្តើមពីជួរកណ្តាល ដាក់ម្រាមដៃលើ F និង J។"
-      en="The standard NiDA (KhmerOS) Khmer Unicode layout. Start with the home row: rest your fingers on F and J."
-      stack
-    />
-  </p>
+  <div class="typing-intro mb-6">
+    <h1 class="mb-2 text-2xl font-semibold"><T km="រៀនវាយអក្សរខ្មែរ" en="Learn Khmer typing" /></h1>
+    <p class="max-w-3xl text-slate-600 dark:text-slate-400">
+      <T km="ជ្រើសមេរៀនមួយ។ ចាប់ផ្តើមពីជួរកណ្តាល ដាក់ម្រាមដៃលើ F និង J។" en="Pick a lesson. Start with the home row: fingers on F and J." stack />
+    </p>
+    <details class="mt-2 max-w-3xl text-sm text-slate-500">
+      <summary class="cursor-pointer"><T km="អំពីក្តារចុចនេះ" en="About this keyboard" /></summary>
+      <p class="mt-1"><T km="ក្តារចុចខ្មែរយូនីកូដស្តង់ដារ NiDA (KhmerOS) — ដូចនៅលើ Windows, Mac និងទូរស័ព្ទ។" en="The standard NiDA (KhmerOS) Khmer Unicode layout, the same as on Windows, Mac and phones." stack /></p>
+    </details>
+  </div>
 
   <TypingTrainer client:load lessons={lessons} gamePool={gamePool} />
 
-  <details class="card mt-10">
+  <details class="typing-intro card mt-10">
     <summary class="cursor-pointer font-medium"><T km="ដំឡើងក្តារចុចខ្មែរនៅលើឧបករណ៍របស់អ្នក" en="Add the Khmer keyboard to your own device" /></summary>
     <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-700 dark:text-slate-300">
       <li><b>Windows:</b> Settings → Time &amp; language → Language &amp; region → Add a language → Khmer, then choose the keyboard <i>Khmer (NIDA)</i>. Switch with <kbd>Win</kbd>+<kbd>Space</kbd>.</li>
@@ -53,3 +55,8 @@ const gamePool = uniq([...vocab, ...phrases.map((p) => p.khmer)]);
     <p class="mt-3 text-sm text-slate-500"><T km="ក្តារចុចទូរស័ព្ទមានទម្រង់ខុសពី NiDA បន្តិច។" en="Phone keyboards arrange keys differently from NiDA; this trainer teaches the computer layout." /></p>
   </details>
 </BaseLayout>
+
+<style is:global>
+  /* Focus mode while practising: only the text, the next key and the keyboard. */
+  html[data-typing] .typing-intro { display: none; }
+</style>
