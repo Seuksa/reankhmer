@@ -3,7 +3,7 @@ import { computed, onBeforeUnmount, ref, watch } from 'vue';
 import { onCircle, type Consonant, type Vowel } from '../lib/content';
 import { play, stop } from '../lib/audio';
 import { markHeard } from '../lib/progress';
-import { romanOf, seriesOf, syllableAudio, vowelRoman } from '../lib/syllable';
+import { SUBSCRIPT, romanOf, seriesOf, syllableAudio, vowelRoman } from '../lib/syllable';
 import T from './T.vue';
 
 const props = defineProps<{ consonants: Consonant[]; vowels: Vowel[] }>();
@@ -24,14 +24,20 @@ const clusterNote = computed(() => {
   return series.value === s.series ? 'sub' : 'head';
 });
 
-interface Step { key: string; char: string; label: string; note?: { km: string; en: string }; audio?: string; series?: 1 | 2 }
+interface Step { key: string; char: string; label: string; note?: { km: string; en: string }; audio: string[]; series?: 1 | 2 }
+const clips = (...a: (string | undefined)[]) => a.filter((x): x is string => !!x);
 const steps = computed<Step[]>(() => {
-  const list: Step[] = [{ key: 'c', char: c.value.char, label: c.value.name, audio: c.value.audio, series: c.value.series }];
-  if (sub.value) list.push({ key: 's', char: '◌្' + sub.value.char, label: sub.value.name, note: { km: 'ជើង', en: 'subscript' }, audio: sub.value.audio, series: sub.value.series });
+  const list: Step[] = [{ key: 'c', char: c.value.char, label: c.value.name, audio: clips(c.value.audio), series: c.value.series }];
+  // Said aloud as "cherng" + the letter's name: ្ញ = cherng nhou.
+  if (sub.value) list.push({
+    key: 's', char: '◌្' + sub.value.char, label: `${SUBSCRIPT.roman} ${sub.value.name}`,
+    note: { km: `${SUBSCRIPT.word}${sub.value.char}`, en: 'subscript' },
+    audio: clips(SUBSCRIPT.audio, sub.value.audio), series: sub.value.series,
+  });
   list.push({
     key: 'v', char: onCircle(v.value.sign), label: vowelRoman(v.value, series.value),
     note: v.value.sign ? { km: 'ស្រៈ', en: 'vowel' } : { km: 'គ្មានស្រៈ', en: 'no vowel sign' },
-    audio: audioFor(series.value),
+    audio: clips(audioFor(series.value)),
   });
   return list;
 });
@@ -44,24 +50,31 @@ const active = ref<string | null>(null);
 let run = 0; // bumps to cancel a "Spell it" sequence when something else starts
 const gap = () => new Promise((r) => setTimeout(r, 250));
 
-async function say(key: string, audio?: string) {
-  if (!audio) return;
-  const mine = ++run;
+const url = (p: string) => `/${p.replace(/^\//, '')}`;
+
+/** Plays one tile's clips back to back; false if something else interrupted. */
+async function sound(mine: number, key: string, audio: string[]) {
   active.value = key;
-  await play(`/${audio.replace(/^\//, '')}`);
-  if (mine === run) active.value = null;
+  for (const a of audio) {
+    if (mine !== run) return false;
+    await play(url(a));
+  }
+  return mine === run;
+}
+
+async function say(key: string, audio: string[]) {
+  if (!audio.length) return;
+  const mine = ++run;
+  if (await sound(mine, key, audio)) active.value = null;
 }
 
 async function spell() {
   const mine = ++run;
   markHeard(`s:${c.value.id}:${v.value.id}`);
-  const queue: [string, string | undefined][] = [...steps.value.map((s) => [s.key, s.audio] as [string, string | undefined]), ['all', wholeAudio.value]];
+  const queue = [...steps.value.map((s) => [s.key, s.audio] as const), ['all', clips(wholeAudio.value)] as const];
   for (const [key, audio] of queue) {
-    if (mine !== run) return;
-    if (!audio) continue;
-    active.value = key;
-    await play(`/${audio.replace(/^\//, '')}`);
-    if (mine !== run) return;
+    if (!audio.length) continue;
+    if (!(await sound(mine, key, audio))) return;
     await gap();
   }
   if (mine === run) active.value = null;
@@ -92,14 +105,14 @@ const on = (key: string) => active.value === key && 'ring-4 ring-brand-500 ring-
         <div class="flex min-w-28 flex-col items-center gap-1 rounded-3xl border-4 px-4 pb-2 pt-3 transition" :class="[ring(series), on('all')]">
           <span lang="km" class="font-khmer-serif text-6xl leading-tight">{{ text }}</span>
           <span class="text-lg font-semibold">{{ roman }}</span>
-          <button v-if="wholeAudio" type="button" class="chip" @click="say('all', wholeAudio)">🔊 <T km="ស្តាប់" en="Listen" /></button>
+          <button v-if="wholeAudio" type="button" class="chip" @click="say('all', clips(wholeAudio))">🔊 <T km="ស្តាប់" en="Listen" /></button>
           <span v-else class="text-xs opacity-70"><T km="មិនទាន់ថតសំឡេង" en="not recorded yet" /></span>
         </div>
       </div>
 
       <div class="mt-5 flex flex-wrap justify-center gap-2">
         <button type="button" class="btn" @click="spell"><T km="ប្រកប" en="Spell it" /> ▶</button>
-        <button v-if="otherAudio" type="button" class="btn-quiet" @click="say('other', otherAudio)">
+        <button v-if="otherAudio" type="button" class="btn-quiet" @click="say('other', clips(otherAudio))">
           <T km="សំឡេងស្រៈពីក្រុមម្ខាងទៀត" en="The vowel's other-series sound" />
         </button>
       </div>

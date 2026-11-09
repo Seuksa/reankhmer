@@ -4,7 +4,13 @@ import romJson from '../../../content/romanization.json';
 import syllablesJson from '../../../content/syllables.json';
 import type { Consonant, Vowel } from './content';
 
-const rom = romJson as { initials: Record<string, string>; vowels: Record<string, string[]>; sonorants: number[] };
+const rom = romJson as {
+  initials: Record<string, string>; vowels: Record<string, string[]>; sonorants: number[];
+  subscript: { word: string; roman: string; audio: string };
+};
+
+/** A subscript is read aloud as ជើង ("cherng") + the letter's name: ្ញ = "cherng nhou". */
+export const SUBSCRIPT = rom.subscript;
 const sonorants = new Set(rom.sonorants);
 
 /** A cluster takes the subscript's series, unless the subscript is a sonorant (then the head's). */

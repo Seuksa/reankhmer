@@ -38,5 +38,7 @@
     "24": ["aoh", "uoh"]
   },
   "_cluster_rule": "Series of a cluster: the subscript's series, unless the subscript is a sonorant (listed below), in which case the head consonant's series. E.g. ស្រី stays a-series; ស្ពាន takes o-series from ព; ល្ខោន takes a-series from ខ. needs_review.",
-  "sonorants": [5, 10, 15, 20, 25, 26, 27, 28, 29]
+  "sonorants": [5, 10, 15, 20, 25, 26, 27, 28, 29],
+  "_subscript": "A subscript is read aloud as ជើង (cherng, \"foot\") + the letter's name: ្ញ = cherng nhou. Cleaned from the original .ogg recording (kept outside the repo).",
+  "subscript": { "word": "ជើង", "roman": "cherng", "audio": "assets/audio/subscripts/cherng.mp3" }
 }
