@@ -4,6 +4,7 @@ import vowelsJson from '../../../content/vowels.json';
 import numbersJson from '../../../content/numbers.json';
 import chaptersJson from '../../../content/chapters.json';
 import dictionaryJson from '../../../content/dictionary.json';
+import { recordedSyllableMedia } from './syllable';
 import phrasesJson from '../../../content/phrases.json';
 
 export interface Consonant {
@@ -91,7 +92,8 @@ export function alphabetMedia(): string[] {
     ...vowels.flatMap((v) => [v.audio_series1, v.audio_series2]),
     ...numbers.map((n) => n.audio),
   ];
-  return urls.filter(Boolean).map((p) => `/${p}`);
+  // Syllables with no vowel sign reuse the letter clips, so drop duplicates.
+  return [...new Set([...urls.filter(Boolean).map((p) => `/${p}`), ...recordedSyllableMedia()])];
 }
 
 /** Everything the review deck can ask about (all items have a recording). */

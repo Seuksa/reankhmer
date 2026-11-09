@@ -1,0 +1,42 @@
+{
+  "_about": "ReanKhmer's simple romanization, used to show how a syllable sounds until it is recorded. Syllable = initial of the head consonant + initial of the subscript (if any) + the vowel for the syllable's series. Not a standard system (not UNGEGN or ALA-LC); it should read naturally to English speakers. needs_review: a Khmer teacher should check every vowel row.",
+  "needs_review": true,
+  "initials": {
+    "1": "k", "2": "kh", "3": "k", "4": "kh", "5": "ng",
+    "6": "ch", "7": "chh", "8": "ch", "9": "chh", "10": "nh",
+    "11": "d", "12": "th", "13": "d", "14": "th", "15": "n",
+    "16": "t", "17": "th", "18": "t", "19": "th", "20": "n",
+    "21": "b", "22": "ph", "23": "p", "24": "ph", "25": "m",
+    "26": "y", "27": "r", "28": "l", "29": "v",
+    "30": "s", "31": "h", "32": "l", "33": ""
+  },
+  "vowels": {
+    "0":  ["or", "ou"],
+    "1":  ["a", "ea"],
+    "2":  ["e", "i"],
+    "3":  ["ei", "i"],
+    "4":  ["oe", "ue"],
+    "5":  ["eu", "eu"],
+    "6":  ["o", "u"],
+    "7":  ["ou", "u"],
+    "8":  ["uo", "uo"],
+    "9":  ["ae", "eu"],
+    "10": ["oea", "oea"],
+    "11": ["ie", "ie"],
+    "12": ["e", "e"],
+    "13": ["ae", "ae"],
+    "14": ["ai", "ey"],
+    "15": ["ao", "o"],
+    "16": ["au", "ov"],
+    "17": ["om", "um"],
+    "18": ["am", "um"],
+    "19": ["am", "oam"],
+    "20": ["ah", "eah"],
+    "21": ["eh", "ih"],
+    "22": ["oh", "uh"],
+    "23": ["eh", "eh"],
+    "24": ["aoh", "uoh"]
+  },
+  "_cluster_rule": "Series of a cluster: the subscript's series, unless the subscript is a sonorant (listed below), in which case the head consonant's series. E.g. ស្រី stays a-series; ស្ពាន takes o-series from ព; ល្ខោន takes a-series from ខ. needs_review.",
+  "sonorants": [5, 10, 15, 20, 25, 26, 27, 28, 29]
+}

@@ -55,6 +55,8 @@ export default defineConfig({
         navigateFallback: null,
         cleanURLs: true,
         runtimeCaching: [
+          // Must precede rk-audio: the first matching route wins.
+          media(/\/assets\/audio\/syllables\//, 'rk-syllables', 900),
           media(/\/assets\/audio\//, 'rk-audio', 800),
           media(/\/assets\/images\//, 'rk-images', 300),
           media(/\/assets\/flash\//, 'rk-flash', 60),
