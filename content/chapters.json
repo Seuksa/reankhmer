@@ -176,89 +176,104 @@
           {
             "key": "kork",
             "km": "កក",
+            "roman": "kork",
             "en": "to freeze",
             "audio": "assets/audio/spelling/lesson01/kork_les1.mp3"
           },
           {
             "key": "kokk",
             "km": "កក់",
+            "roman": "kok",
             "en": "to shampoo, wash hair",
             "audio": "assets/audio/spelling/lesson01/kokk_les1.mp3"
           },
           {
             "key": "sork",
             "km": "សក",
+            "roman": "sork",
             "audio": "assets/audio/spelling/lesson01/sork_les1.mp3"
           },
           {
             "key": "sokk",
             "km": "សក់",
+            "roman": "sok",
             "en": "hair",
             "audio": "assets/audio/spelling/lesson01/sokk_les1.mp3"
           },
           {
             "key": "ngeark",
             "km": "ងាក",
+            "roman": "ngeak",
             "en": "to turn (the head)",
             "audio": "assets/audio/spelling/lesson01/ngeark_les1.mp3"
           },
           {
             "key": "touk",
             "km": "ទូក",
+            "roman": "touk",
             "en": "boat",
             "audio": "assets/audio/spelling/lesson01/touk_les1.mp3"
           },
           {
             "key": "louk",
             "km": "លូក",
+            "roman": "louk",
             "en": "to reach in (for something)",
             "audio": "assets/audio/spelling/lesson01/louk_les1.mp3"
           },
           {
             "key": "korng",
             "km": "កង",
+            "roman": "korng",
             "en": "bracelet",
             "audio": "assets/audio/spelling/lesson01/korng_les1.mp3"
           },
           {
             "key": "kong",
             "km": "កង់",
+            "roman": "kong",
             "en": "bicycle, wheel",
             "audio": "assets/audio/spelling/lesson01/kong_les1.mp3"
           },
           {
             "key": "choeng",
             "km": "ជើង",
+            "roman": "cheung",
             "en": "leg, foot",
             "audio": "assets/audio/spelling/lesson01/choeng_les1.mp3"
           },
           {
             "key": "young",
             "km": "យោង",
+            "roman": "yong",
             "en": "to pull up; to refer to",
             "audio": "assets/audio/spelling/lesson01/young_les1.mp3"
           },
           {
             "key": "nonong",
             "km": "ននោង",
+            "roman": "nou noung",
             "en": "sponge gourd",
             "audio": "assets/audio/spelling/lesson01/nonong_les1.mp3"
           },
           {
             "key": "thearngdoung",
             "km": "ធាងដូង",
+            "roman": "teang doung",
             "en": "coconut frond",
             "audio": "assets/audio/spelling/lesson01/thearngdoung_les1.mp3"
           },
           {
             "key": "paikmuok",
             "km": "ពាក់មួក",
+            "roman": "peak muok",
             "en": "to wear a hat",
             "audio": "assets/audio/spelling/lesson01/paikmuok_les1.mp3"
           },
           {
             "key": "trorsokk",
             "km": "ត្រសក់",
+            "roman": "tra sok",
             "en": "cucumber",
             "audio": "assets/audio/spelling/lesson01/trorsokk_les1.mp3"
           }
@@ -292,96 +307,112 @@
           {
             "key": "karch",
             "km": "កាច",
+            "roman": "karch",
             "en": "fierce, cruel",
             "audio": "assets/audio/spelling/lesson02/karch_les2.mp3"
           },
           {
             "key": "kach",
             "km": "កាច់",
+            "roman": "kach",
             "en": "to break (something stiff)",
             "audio": "assets/audio/spelling/lesson02/kach_les2.mp3"
           },
           {
             "key": "leich2",
             "km": "លិច",
+            "roman": "lech",
             "en": "to sink; (sun) to set",
             "audio": "assets/audio/spelling/lesson02/leich2_les2.mp3"
           },
           {
             "key": "leich",
             "km": "លេច",
+            "roman": "leich",
             "en": "to appear, to show up",
             "audio": "assets/audio/spelling/lesson02/leich_les2.mp3"
           },
           {
             "key": "ruoch",
             "km": "រួច",
+            "roman": "ruoch",
             "en": "finished; ready",
             "audio": "assets/audio/spelling/lesson02/ruoch_les2.mp3"
           },
           {
             "key": "touch",
             "km": "ទោច",
+            "roman": "touch",
             "en": "gibbon",
             "audio": "assets/audio/spelling/lesson02/touch_les2.mp3"
           },
           {
             "key": "degn",
             "km": "ដេញ",
+            "roman": "denh",
             "en": "to chase",
             "audio": "assets/audio/spelling/lesson02/degn.mp3"
           },
           {
             "key": "chegn",
             "km": "ចេញ",
+            "roman": "chenh",
             "en": "to go out, to leave",
             "audio": "assets/audio/spelling/lesson02/chegn_les2.mp3"
           },
           {
             "key": "sign",
             "km": "សាញ",
+            "roman": "sarnh",
             "en": "fibrous, streaked (wood)",
             "audio": "assets/audio/spelling/lesson02/sign_les2.mp3"
           },
           {
             "key": "rougn",
             "km": "រុញ",
+            "roman": "runh",
             "en": "to push",
             "audio": "assets/audio/spelling/lesson02/rougn_les2.mp3"
           },
           {
             "key": "dombagn",
             "km": "តំបាញ",
+            "roman": "dom banh",
             "en": "weaving",
             "audio": "assets/audio/spelling/lesson02/dombagn_les2.mp3"
           },
           {
             "key": "tomnegn",
             "km": "ទំនិញ",
+            "roman": "tom nenh",
             "en": "goods",
             "audio": "assets/audio/spelling/lesson02/tomnegn_les2.mp3"
           },
           {
             "key": "bach",
             "km": "បាច់",
+            "roman": "bach",
             "en": "bunch, bundle",
             "audio": "assets/audio/spelling/lesson02/bach_les2.mp3"
           },
           {
             "key": "romlech",
             "km": "រំលេច",
+            "roman": "rom leich",
             "en": "to make stand out",
             "audio": "assets/audio/spelling/lesson02/romlech_les2.mp3"
           },
           {
             "key": "touchyoum",
             "km": "ទោចយំ",
+            "roman": "touch yum",
             "en": "the gibbon cries",
             "audio": "assets/audio/spelling/lesson02/touchyoum_les2.mp3"
           },
           {
             "key": "vegnkhsei",
             "km": "វេញខ្សែ",
+            "roman": "venh khsae",
             "en": "to twist a rope",
             "audio": "assets/audio/spelling/lesson02/vegnkhsei_les2.mp3"
           }
@@ -412,96 +443,112 @@
           {
             "key": "chort",
             "km": "ចត",
+            "roman": "chort",
             "en": "to park",
             "audio": "assets/audio/spelling/lesson03/chort_les3.mp3"
           },
           {
             "key": "chott",
             "km": "ចត់",
+            "roman": "chot",
             "en": "bitter",
             "audio": "assets/audio/spelling/lesson03/chott_les3.mp3"
           },
           {
             "key": "leat",
             "km": "លាត",
+            "roman": "leat",
             "en": "to spread out, to unroll",
             "audio": "assets/audio/spelling/lesson03/leat_les3.mp3"
           },
           {
             "key": "leatt",
             "km": "លាត់",
+            "roman": "loat",
             "en": "to roll up",
             "audio": "assets/audio/spelling/lesson03/leatt_les3.mp3"
           },
           {
             "key": "kambett",
             "km": "កាំបិត",
+            "roman": "kam bet",
             "en": "knife",
             "audio": "assets/audio/spelling/lesson03/kambett_les3.mp3"
           },
           {
             "key": "settsorkk",
             "km": "សិតសក់",
+            "roman": "set sok",
             "en": "to comb (hair)",
             "audio": "assets/audio/spelling/lesson03/settsorkk_les3.mp3"
           },
           {
             "key": "born",
             "km": "បន",
+            "roman": "born",
             "en": "group, club",
             "audio": "assets/audio/spelling/lesson03/born_les3.mp3"
           },
           {
             "key": "bornn",
             "km": "បន់",
+            "roman": "bon",
             "en": "to pray, to make a wish",
             "audio": "assets/audio/spelling/lesson03/bornn_les3.mp3"
           },
           {
             "key": "mean",
             "km": "មាន",
+            "roman": "mean",
             "en": "to have",
             "audio": "assets/audio/spelling/lesson03/mean_les3.mp3"
           },
           {
             "key": "mornn",
             "km": "មាន់",
+            "roman": "moan",
             "en": "chicken",
             "audio": "assets/audio/spelling/lesson03/mornn_les3.mp3"
           },
           {
             "key": "khalean",
             "km": "ឃ្លាន",
+            "roman": "khlean",
             "en": "hungry",
             "audio": "assets/audio/spelling/lesson03/khalean_les3.mp3"
           },
           {
             "key": "buntean",
             "km": "បុណ្យទាន",
+            "roman": "bon tean",
             "en": "merit-making, almsgiving",
             "audio": "assets/audio/spelling/lesson03/buntean_les3.mp3"
           },
           {
             "key": "phaoun",
             "km": "ប្អូន",
+            "roman": "p'oun",
             "en": "younger sibling",
             "audio": "assets/audio/spelling/lesson03/phaoun_les3.mp3"
           },
           {
             "key": "phsortt",
             "km": "ផ្សោត",
+            "roman": "phsaot",
             "en": "dolphin",
             "audio": "assets/audio/spelling/lesson03/phsortt_les3.mp3"
           },
           {
             "key": "preanprey",
             "km": "ព្រានព្រៃ",
+            "roman": "prean prey",
             "en": "hunter",
             "audio": "assets/audio/spelling/lesson03/preanprey_les3.mp3"
           },
           {
             "key": "prortt",
             "km": "ព្រាត់",
+            "roman": "proat",
             "en": "to be separated",
             "audio": "assets/audio/spelling/lesson03/prortt_les3.mp3"
           }
@@ -533,96 +580,112 @@
           {
             "key": "korb",
             "km": "កប",
+            "roman": "korb",
             "en": "agreeable, in harmony",
             "audio": "assets/audio/spelling/lesson04/korb_les4.mp3"
           },
           {
             "key": "kobb",
             "km": "កប់",
+            "roman": "kob",
             "en": "to bury",
             "audio": "assets/audio/spelling/lesson04/kobb_les4.mp3"
           },
           {
             "key": "reab",
             "km": "រាប",
+            "roman": "reab",
             "en": "flat, level",
             "audio": "assets/audio/spelling/lesson04/reab_les4.mp3"
           },
           {
             "key": "rorbb",
             "km": "រាប់",
+            "roman": "roab",
             "en": "to count",
             "audio": "assets/audio/spelling/lesson04/rorbb_les4.mp3"
           },
           {
             "key": "rosoeb",
             "km": "រសើប",
+            "roman": "ro saeb",
             "en": "ticklish; sensitive",
             "audio": "assets/audio/spelling/lesson04/rosoeb_les4.mp3"
           },
           {
             "key": "orb_or",
             "km": "អបអរ",
+            "roman": "ob or",
             "en": "to congratulate",
             "audio": "assets/audio/spelling/lesson04/orb_or_les4.mp3"
           },
           {
             "key": "darl",
             "km": "ដាល",
+            "roman": "darl",
             "en": "to spread",
             "audio": "assets/audio/spelling/lesson04/darl_les4.mp3"
           },
           {
             "key": "dall",
             "km": "ដាល់",
+            "roman": "dal",
             "en": "to punch, to box",
             "audio": "assets/audio/spelling/lesson04/dall_les4.mp3"
           },
           {
             "key": "teal",
             "km": "ទាល",
+            "roman": "teal",
             "en": "blunt, dull",
             "audio": "assets/audio/spelling/lesson04/teal_les4.mp3"
           },
           {
             "key": "torll",
             "km": "ទាល់",
+            "roman": "toal",
             "en": "stuck; to run out of",
             "audio": "assets/audio/spelling/lesson04/torll_les4.mp3"
           },
           {
             "key": "heil",
             "km": "ហែល",
+            "roman": "hael",
             "en": "to swim",
             "audio": "assets/audio/spelling/lesson04/heil_les4.mp3"
           },
           {
             "key": "romduol",
             "km": "រំដួល",
+            "roman": "rom duol",
             "en": "Romduol (a forest flower)",
             "audio": "assets/audio/spelling/lesson04/romduol_les4.mp3"
           },
           {
             "key": "brognab_brognarl",
             "km": "ប្រញាប់ប្រញាល់",
+            "roman": "pra nhab pra nhal",
             "en": "in a hurry",
             "audio": "assets/audio/spelling/lesson04/brognab_brognarl_les4.mp3"
           },
           {
             "key": "phdorl",
             "km": "ផ្ដល់",
+            "roman": "phdol",
             "en": "to give, to provide",
             "audio": "assets/audio/spelling/lesson04/phdorl_les4.mp3"
           },
           {
             "key": "sroub",
             "km": "ស្រូប",
+            "roman": "sroub",
             "en": "to absorb, to suck in",
             "audio": "assets/audio/spelling/lesson04/sroub_les4.mp3"
           },
           {
             "key": "steab",
             "km": "ស្ទាប",
+            "roman": "steab",
             "en": "to feel by touch",
             "audio": "assets/audio/spelling/lesson04/steab_les4.mp3"
           }
@@ -652,96 +715,112 @@
           {
             "key": "thars",
             "km": "ថាស",
+            "roman": "thas",
             "en": "tray",
             "audio": "assets/audio/spelling/lesson05/thars_les5.mp3"
           },
           {
             "key": "chars",
             "km": "ចាស់",
+            "roman": "chas",
             "en": "old",
             "audio": "assets/audio/spelling/lesson05/chars_les5.mp3"
           },
           {
             "key": "chrars",
             "km": "ច្រាស",
+            "roman": "chras",
             "en": "brush",
             "audio": "assets/audio/spelling/lesson05/chrars_les5.mp3"
           },
           {
             "key": "dous",
             "km": "ដុស",
+            "roman": "dos",
             "en": "to scrub",
             "audio": "assets/audio/spelling/lesson05/dous_les5.mp3"
           },
           {
             "key": "romeas",
             "km": "រមាស",
+            "roman": "ro meas",
             "en": "rhinoceros",
             "audio": "assets/audio/spelling/lesson05/romeas_les5.mp3"
           },
           {
             "key": "ormbous",
             "km": "អំបោស",
+            "roman": "om baos",
             "en": "broom",
             "audio": "assets/audio/spelling/lesson05/ormbous_les5.mp3"
           },
           {
             "key": "boss",
             "km": "បោស",
+            "roman": "baos",
             "en": "to sweep",
             "audio": "assets/audio/spelling/lesson05/boss_les5.mp3"
           },
           {
             "key": "choerkous",
             "km": "ឈើគូស",
+            "roman": "chheu kous",
             "en": "matchstick",
             "audio": "assets/audio/spelling/lesson05/choerkous_les5.mp3"
           },
           {
             "key": "kous",
             "km": "គូស",
+            "roman": "kous",
             "en": "to draw a line",
             "audio": "assets/audio/spelling/lesson05/kous_les5.mp3"
           },
           {
             "key": "leas",
             "km": "លៀស",
+            "roman": "lias",
             "en": "clam",
             "audio": "assets/audio/spelling/lesson05/leas_les5.mp3"
           },
           {
             "key": "mous",
             "km": "មូស",
+            "roman": "mous",
             "en": "mosquito",
             "audio": "assets/audio/spelling/lesson05/mous_les5.mp3"
           },
           {
             "key": "roes",
             "km": "រើស",
+            "roman": "reus",
             "en": "to choose, to pick",
             "audio": "assets/audio/spelling/lesson05/roes_les5.mp3"
           },
           {
             "key": "romors",
             "km": "រមាស់",
+            "roman": "ro moas",
             "en": "itch, itchy",
             "audio": "assets/audio/spelling/lesson05/romors_les5.mp3"
           },
           {
             "key": "ronors",
             "km": "រនាស់",
+            "roman": "ro noas",
             "en": "harrow (farm tool)",
             "audio": "assets/audio/spelling/lesson05/ronors_les5.mp3"
           },
           {
             "key": "tous",
             "km": "ទោស",
+            "roman": "tous",
             "en": "fault, punishment",
             "audio": "assets/audio/spelling/lesson05/tous_les5.mp3"
           },
           {
             "key": "vors",
             "km": "វាស់",
+            "roman": "voas",
             "en": "to measure",
             "audio": "assets/audio/spelling/lesson05/vors_les5.mp3"
           }
@@ -782,54 +861,63 @@
           {
             "key": "kagnchoer",
             "km": "កញ្ជើ",
+            "roman": "kanh cheu",
             "en": "a woven basket",
             "audio": "assets/audio/spelling/lesson06/kagnchoer_les6.mp3"
           },
           {
             "key": "chignchean",
             "km": "ចិញ្ចៀន",
+            "roman": "chenh chean",
             "en": "ring",
             "audio": "assets/audio/spelling/lesson06/chignchean_les6.mp3"
           },
           {
             "key": "chugnching",
             "km": "ជញ្ជីង",
+            "roman": "chonh ching",
             "en": "scales (for weighing)",
             "audio": "assets/audio/spelling/lesson06/chugnching_les6.mp3"
           },
           {
             "key": "kagnchoet",
             "km": "កញ្ឆែត",
+            "roman": "kanh chhaet",
             "en": "an edible water plant",
             "audio": "assets/audio/spelling/lesson06/kagnchoet_les6.mp3"
           },
           {
             "key": "korgnchagnchek",
             "km": "កញ្ចាញ់ចេក",
+            "roman": "kanh chanh chek",
             "en": "a small green tree frog",
             "audio": "assets/audio/spelling/lesson06/korgnchagnchek_les6.mp3"
           },
           {
             "key": "chugnchang",
             "km": "ជញ្ជាំង",
+            "roman": "chonh cheang",
             "en": "wall",
             "audio": "assets/audio/spelling/lesson06/chugnchang_les6.mp3"
           },
           {
             "key": "borgnchhor",
             "km": "បញ្ឈរ",
+            "roman": "banh chhor",
             "en": "to stand something up",
             "audio": "assets/audio/spelling/lesson06/borgnchhor_les6.mp3"
           },
           {
             "key": "kagna",
             "km": "កញ្ញា",
+            "roman": "kanh nha",
             "en": "Miss (young woman)",
             "audio": "assets/audio/spelling/lesson06/kagna_les6.mp3"
           },
           {
             "key": "kagnche",
             "km": "កញ្ចែ",
+            "roman": "kanh chae",
             "en": "whistle",
             "audio": "assets/audio/spelling/lesson06/kagnche_les6.mp3"
           }
@@ -861,66 +949,77 @@
           {
             "key": "angkorr",
             "km": "អង្ករ",
+            "roman": "ang kor",
             "en": "rice (uncooked)",
             "audio": "assets/audio/spelling/lesson07/angkorr_les7.mp3"
           },
           {
             "key": "borngkhorm",
             "km": "បង្ខំ",
+            "roman": "bang khom",
             "en": "to force",
             "audio": "assets/audio/spelling/lesson07/borngkhorm_les7.mp3"
           },
           {
             "key": "borngkear",
             "km": "បង្គា",
+            "roman": "bang kea",
             "en": "prawn",
             "audio": "assets/audio/spelling/lesson07/borngkear_les7.mp3"
           },
           {
             "key": "angroeng",
             "km": "អង្រឹង",
+            "roman": "ang rueng",
             "en": "hammock; cradle",
             "audio": "assets/audio/spelling/lesson07/angroeng_les7.mp3"
           },
           {
             "key": "angrout",
             "km": "អង្រុត",
+            "roman": "ang rut",
             "en": "a basket fish trap",
             "audio": "assets/audio/spelling/lesson07/angrout_les7.mp3"
           },
           {
             "key": "angvor",
             "km": "អង្វរ",
+            "roman": "ang vor",
             "en": "to beg, to plead",
             "audio": "assets/audio/spelling/lesson07/angvor_les7.mp3"
           },
           {
             "key": "bornghou",
             "km": "បង្ហូរ",
+            "roman": "bang hour",
             "en": "to drain, to pour out",
             "audio": "assets/audio/spelling/lesson07/bornghou_les7.mp3"
           },
           {
             "key": "bornguoch",
             "km": "បង្អួច",
+            "roman": "bang uoch",
             "en": "window",
             "audio": "assets/audio/spelling/lesson07/bornguoch_les7.mp3"
           },
           {
             "key": "chornge",
             "km": "ចង្អេរ",
+            "roman": "chang er",
             "en": "grill (for grilling or smoking food)",
             "audio": "assets/audio/spelling/lesson07/chornge_les7.mp3"
           },
           {
             "key": "kanghar",
             "km": "កង្ហារ",
+            "roman": "kang har",
             "en": "fan",
             "audio": "assets/audio/spelling/lesson07/kanghar_les7.mp3"
           },
           {
             "key": "sangsar",
             "km": "សង្សារ",
+            "roman": "sang sar",
             "en": "sweetheart",
             "audio": "assets/audio/spelling/lesson07/sangsar_les7.mp3"
           }
@@ -950,54 +1049,63 @@
           {
             "key": "orndark",
             "km": "អណ្ដាត",
+            "roman": "on dat",
             "en": "tongue",
             "audio": "assets/audio/spelling/lesson09/orndark_les9.mp3"
           },
           {
             "key": "orndoerk",
             "km": "អណ្ដើក",
+            "roman": "on daeuk",
             "en": "turtle",
             "audio": "assets/audio/spelling/lesson09/orndoerk_les9.mp3"
           },
           {
             "key": "sandek",
             "km": "សណ្ដែកបណ្ដុះ",
+            "roman": "son daek bon doh",
             "en": "bean sprouts",
             "audio": "assets/audio/spelling/lesson09/sandek_les9.mp3"
           },
           {
             "key": "borntor",
             "km": "បន្ត",
+            "roman": "bon ta",
             "en": "to continue",
             "audio": "assets/audio/spelling/lesson09/borntor_les9.mp3"
           },
           {
             "key": "borntou",
             "km": "បន្ទរ",
+            "roman": "bon tor",
             "en": "to repeat after",
             "audio": "assets/audio/spelling/lesson09/borntou_les9.mp3"
           },
           {
             "key": "bornlar",
             "km": "បន្លា",
+            "roman": "bon la",
             "en": "thorn",
             "audio": "assets/audio/spelling/lesson09/bornlar_les9.mp3"
           },
           {
             "key": "tonlee",
             "km": "ទន្លេ",
+            "roman": "ton le",
             "en": "river",
             "audio": "assets/audio/spelling/lesson09/tonlee_les9.mp3"
           },
           {
             "key": "kantel",
             "km": "កន្ទេល",
+            "roman": "kon tel",
             "en": "woven mat",
             "audio": "assets/audio/spelling/lesson09/kantel_les9.mp3"
           },
           {
             "key": "ornsorm",
             "km": "អន្សម",
+            "roman": "on som",
             "en": "Num Ansom (sticky rice cake in banana leaf)",
             "audio": "assets/audio/spelling/lesson09/ornsorm_les9.mp3"
           }
@@ -1029,54 +1137,63 @@
           {
             "key": "doembey",
             "km": "ដើម្បី",
+            "roman": "daem bey",
             "en": "in order to; for",
             "audio": "assets/audio/spelling/lesson08/doembey_les8.mp3"
           },
           {
             "key": "kompy",
             "km": "គម្ពីរ",
+            "roman": "kom pi",
             "en": "scripture; holy book",
             "audio": "assets/audio/spelling/lesson08/kompy_les8.mp3"
           },
           {
             "key": "kamkor",
             "km": "កម្មករ",
+            "roman": "kam makor",
             "en": "worker",
             "audio": "assets/audio/spelling/lesson08/kamkor_les8.mp3"
           },
           {
             "key": "kampuchea",
             "km": "កម្ពុជា",
+            "roman": "kam pu chea",
             "en": "Cambodia",
             "audio": "assets/audio/spelling/lesson08/kampuchea_les8.mp3"
           },
           {
             "key": "sangkruos",
             "km": "សង្គ្រោះ",
+            "roman": "song kruoh",
             "en": "to rescue",
             "audio": "assets/audio/spelling/lesson08/sangkruos_les8.mp3"
           },
           {
             "key": "treykorntrobb",
             "km": "ត្រីកន្ត្រប់",
+            "roman": "trey kon trob",
             "en": "a kind of fish",
             "audio": "assets/audio/spelling/lesson08/treykorntrobb_les8.mp3"
           },
           {
             "key": "tontrean",
             "km": "ទន្ទ្រាន",
+            "roman": "ton trean",
             "en": "to invade, to encroach",
             "audio": "assets/audio/spelling/lesson08/tontrean_les8.mp3"
           },
           {
             "key": "kagnchreng",
             "km": "កញ្ច្រែង",
+            "roman": "kanh chraeng",
             "en": "basket",
             "audio": "assets/audio/spelling/lesson08/kagnchreng_les8.mp3"
           },
           {
             "key": "kagnchroung",
             "km": "កញ្ជ្រោង",
+            "roman": "kanh chrong",
             "en": "fox",
             "audio": "assets/audio/spelling/lesson08/kagnchroung_les8.mp3"
           }

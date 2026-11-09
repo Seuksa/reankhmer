@@ -4,7 +4,7 @@ import { ref } from 'vue';
 import { play, playing, stop } from '../lib/audio';
 import T from './T.vue';
 
-const props = defineProps<{ words: { key: string; km: string; en?: string; audio: string }[] }>();
+const props = defineProps<{ words: { key: string; km: string; roman?: string; en?: string; audio: string }[] }>();
 const src = (w: { audio: string }) => `/${w.audio}`;
 const all = ref(false);
 
@@ -44,12 +44,16 @@ async function playAll() {
           :aria-pressed="playing === src(w)"
           @click="tap(w)"
         >
-          <span class="flex w-full items-start justify-between gap-2">
-            <span lang="km" class="font-khmer-serif text-2xl leading-[1.7] sm:text-3xl">{{ w.km }}</span>
-            <svg viewBox="0 0 24 24" class="mt-2 size-5 shrink-0 text-brand-700 dark:text-brand-200" fill="currentColor" aria-hidden="true">
-              <path v-if="playing === src(w)" d="M7 6h3v12H7zM14 6h3v12h-3z" />
-              <path v-else d="M4 9v6h4l5 4V5L8 9zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z" />
-            </svg>
+          <span class="flex w-full min-w-0 items-start justify-between gap-2">
+            <span lang="km" class="min-w-0 flex-1 font-khmer-serif text-2xl leading-[1.7] sm:text-3xl">{{ w.km }}</span>
+            <!-- Sound icon with the Latin reading under it, right-aligned; long readings wrap inside this column. -->
+            <span class="mt-2 flex max-w-[48%] shrink-0 flex-col items-end gap-0.5 text-right">
+              <svg viewBox="0 0 24 24" class="size-5 text-brand-700 dark:text-brand-200" fill="currentColor" aria-hidden="true">
+                <path v-if="playing === src(w)" d="M7 6h3v12H7zM14 6h3v12h-3z" />
+                <path v-else d="M4 9v6h4l5 4V5L8 9zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z" />
+              </svg>
+              <span v-if="w.roman" lang="en" class="text-xs leading-tight text-slate-500 dark:text-slate-400">({{ w.roman }})</span>
+            </span>
           </span>
           <span v-if="w.en" lang="en" class="text-sm text-slate-500 dark:text-slate-400">{{ w.en }}</span>
         </button>
