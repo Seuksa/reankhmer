@@ -108,10 +108,30 @@ export function reviewItems() {
       if (a) items.push({ id: `v:${v.id}:${s}`, kind: 'vowel', audio: `/${a}`, answer: (s === 1 ? 'ក' : 'គ') + v.sign, pool: `v${s}`, series: s });
     }
   }
+  for (const set of spellSets()) {
+    for (const w of set.words) items.push({ id: w.id, kind: 'word', audio: w.audio, answer: w.km, pool: set.id });
+  }
   for (const n of numbers) {
     if (n.value !== undefined && (n.value < 10 || (n.value < 100 && n.value % 10 === 0)) && !items.some((i) => i.answer === khmerDigits(n.value!))) {
       items.push({ id: `n:${n.key}`, kind: 'number', audio: `/${n.audio}`, answer: khmerDigits(n.value), pool: 'n' });
     }
   }
   return items;
+}
+
+/** Word sets for the spelling games: every lesson with recorded word cards (chapters 2–3). */
+export function spellSets(): import('./spelling').SpellSet[] {
+  return chapters.flatMap((ch) =>
+    ch.lessons
+      .filter((l) => l.word_audio?.length)
+      .map((l) => ({
+        id: `${ch.number}-${l.number}`,
+        chapter: ch.number,
+        lesson: l.number,
+        title: lessonTitle(ch.number, l),
+        words: l.word_audio!.map((w) => ({
+          id: `w:${w.key}`, key: w.key, km: w.km, roman: w.roman, en: w.en, audio: `/${w.audio}`, set: `${ch.number}-${l.number}`,
+        })),
+      })),
+  );
 }

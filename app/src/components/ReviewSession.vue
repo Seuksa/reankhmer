@@ -73,6 +73,7 @@ async function choose(c: string) {
 const label = (it: ReviewItem) =>
   it.kind === 'consonant' ? { km: 'ព្យញ្ជនៈណា?', en: 'Which consonant?' }
   : it.kind === 'vowel' ? { km: 'សំឡេងណា?', en: 'Which sound?' }
+  : it.kind === 'word' ? { km: 'សរសេរយ៉ាងដូចម្តេច?', en: 'Which spelling?' }
   : { km: 'លេខណា?', en: 'Which number?' };
 const fmtDate = (iso: string) => new Date(iso).toLocaleString(undefined, { weekday: 'short', hour: '2-digit', minute: '2-digit' });
 </script>
@@ -113,11 +114,12 @@ const fmtDate = (iso: string) => new Date(iso).toLocaleString(undefined, { weekd
           :key="c"
           type="button"
           lang="km"
-          class="font-khmer-serif aspect-[4/3] rounded-2xl border-2 text-5xl transition"
+          class="font-khmer-serif aspect-[4/3] rounded-2xl border-2 transition"
           :class="[
+            current.kind === 'word' ? 'text-2xl sm:text-3xl px-2' : 'text-5xl',
             picked && c === current.answer ? 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/50' :
             picked === c ? 'border-rose-500 bg-rose-50 dark:bg-rose-950/40' :
-            current.series === 2 ? 'border-amber-200 hover:border-amber-400 dark:border-amber-900' : 'border-teal-200 hover:border-teal-400 dark:border-teal-900',
+            current.kind === 'word' ? 'border-slate-200 hover:border-brand-500 dark:border-slate-700' : current.series === 2 ? 'border-amber-200 hover:border-amber-400 dark:border-amber-900' : 'border-teal-200 hover:border-teal-400 dark:border-teal-900',
           ]"
           @click="choose(c)"
         >{{ c }}</button>

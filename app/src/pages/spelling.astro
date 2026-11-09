@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import T from '../components/T.astro';
+import SpellingGame from '../components/SpellingGame.vue';
+import { spellSets } from '../lib/content';
+---
+
+<BaseLayout title="ប្រកបពាក្យ Spelling games">
+  <h1 class="mb-2 text-2xl font-semibold"><T km="ល្បែងប្រកបពាក្យ" en="Spelling games" /></h1>
+  <p class="mb-6 max-w-3xl text-slate-600 dark:text-slate-400">
+    <T
+      km="ស្តាប់ពាក្យពីមេរៀនប្រកប ហើយរកអក្ខរាវិរុទ្ធត្រឹមត្រូវ។ ពាក្យដែលអ្នកខុស នឹងមកវិញក្នុងការរំលឹកប្រចាំថ្ងៃ។"
+      en="Hear words from the spelling lessons and find the right spelling. Words you miss come back in your daily review."
+      stack
+    />
+  </p>
+  <SpellingGame client:load sets={spellSets()} />
+</BaseLayout>

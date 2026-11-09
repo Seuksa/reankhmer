@@ -96,6 +96,7 @@ const navLabel = (x: { ch: Chapter; les: Lesson }) => lessonTitle(x.ch.number, x
     <section class="mb-8">
       <h2 class="mb-3 text-lg font-semibold"><T km="ស្តាប់ពាក្យ" en="Listen to the words" /></h2>
       <WordCards client:visible words={les.word_audio} />
+      <a href={`/spelling?set=${ch.number}-${les.number}`} class="btn-quiet mt-4"><T km="ហាត់ប្រកបពាក្យទាំងនេះ" en="Practise spelling these words" /> →</a>
     </section>
   )}
 
