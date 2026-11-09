@@ -224,7 +224,7 @@
     "with_series1": "អះ",
     "with_series2": null,
     "needs_review": true,
-    "audio_series1": "assets/audio/vowels/series1/20-is.mp3",
+    "audio_series1": "assets/audio/vowels/series1/20-ass.mp3",
     "roman_hint": "as",
     "audio_series2": "assets/audio/vowels/series2/20-as.mp3",
     "image": "assets/images/vowels/20.jpg"
@@ -235,7 +235,7 @@
     "with_series1": "អិះ",
     "with_series2": null,
     "needs_review": true,
-    "audio_series1": "assets/audio/vowels/series1/21-os.mp3",
+    "audio_series1": "assets/audio/vowels/series1/21-iss.mp3",
     "roman_hint": "is",
     "audio_series2": "assets/audio/vowels/series2/21-is.mp3",
     "image": "assets/images/vowels/21.jpg"
@@ -246,7 +246,7 @@
     "with_series1": "អុះ",
     "with_series2": null,
     "needs_review": true,
-    "audio_series1": "assets/audio/vowels/series1/22-as.mp3",
+    "audio_series1": "assets/audio/vowels/series1/22-oss.mp3",
     "roman_hint": "os",
     "audio_series2": "assets/audio/vowels/series2/22-os.mp3",
     "image": "assets/images/vowels/22.jpg"

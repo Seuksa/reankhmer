@@ -78,18 +78,19 @@ const tone = (c: Consonant) => c.series === 1
       <T v-else km="តើអក្សរណា?" en="Which letter did you hear?" />
     </p>
 
-    <ul class="grid gap-3" :class="mode === 'find' ? 'grid-cols-2 sm:grid-cols-4' : 'grid-cols-3 sm:grid-cols-5 lg:grid-cols-6'">
+    <!-- Khmer consonants are taught in sets of five (ក ខ គ ឃ ង …), so learn mode is always 5 per row: 6 rows + 3 -->
+    <ul class="grid" :class="mode === 'find' ? 'grid-cols-2 gap-3 sm:grid-cols-4' : 'grid-cols-5 gap-2 sm:gap-3 lg:max-w-3xl'">
       <li v-for="c in mode === 'find' ? options : shown" :key="c.id">
         <button
           type="button"
-          class="relative flex aspect-square w-full flex-col items-center justify-center rounded-2xl border-2 transition hover:scale-[1.03] active:scale-95"
+          class="relative flex aspect-square w-full flex-col items-center justify-center rounded-xl border-2 sm:rounded-2xl transition hover:scale-[1.03] active:scale-95"
           :class="[tone(c), mode === 'find' && feedback === 'right' && c.id === target?.id && 'ring-4 ring-brand-500']"
           :aria-label="mode === 'find' ? `Option ${c.char}` : `${c.char} ${c.roman}`"
           @click="tap(c)"
         >
-          <span lang="km" class="font-khmer-serif text-5xl leading-none sm:text-6xl">{{ c.char }}</span>
-          <span v-if="mode === 'learn'" class="mt-2 text-sm opacity-75">{{ c.roman }}</span>
-          <span v-if="mode === 'learn' && progress.heard[`c:${c.id}`]" class="absolute top-2 right-2 text-xs text-brand-700 dark:text-brand-200" aria-label="heard">✓</span>
+          <span lang="km" class="font-khmer-serif text-4xl leading-none sm:text-6xl">{{ c.char }}</span>
+          <span v-if="mode === 'learn'" class="mt-1 text-xs opacity-75 sm:mt-2 sm:text-sm">{{ c.roman }}</span>
+          <span v-if="mode === 'learn' && progress.heard[`c:${c.id}`]" class="absolute top-1 right-1.5 text-xs sm:top-2 sm:right-2 text-brand-700 dark:text-brand-200" aria-label="heard">✓</span>
         </button>
       </li>
     </ul>
