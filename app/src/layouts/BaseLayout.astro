@@ -46,6 +46,8 @@ const active = (href: string) => [href, ...(nav.find((n) => n.href === href)?.al
     <script>
       import { registerSW } from 'virtual:pwa-register';
       registerSW({ immediate: true });
+      // Old audio cache from before the consonant clips were fixed (2026-11): drop it so letters re-download.
+      if ('caches' in window) caches.delete('rk-audio').catch(() => {});
     </script>
   </head>
   <body class="flex min-h-dvh flex-col pb-[calc(4.5rem+env(safe-area-inset-bottom))] md:pb-0">

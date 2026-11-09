@@ -57,7 +57,8 @@ export default defineConfig({
         runtimeCaching: [
           // Must precede rk-audio: the first matching route wins.
           media(/\/assets\/audio\/syllables\//, 'rk-syllables', 900),
-          media(/\/assets\/audio\//, 'rk-audio', 800),
+          // Bump the name when audio files are replaced in place (same URL, new sound); BaseLayout deletes the old cache.
+          media(/\/assets\/audio\//, 'rk-audio-2', 800),
           media(/\/assets\/images\//, 'rk-images', 300),
           media(/\/assets\/flash\//, 'rk-flash', 60),
           media(/\/ruffle\//, 'rk-ruffle', 10),
