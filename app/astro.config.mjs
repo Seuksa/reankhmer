@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import vue from '@astrojs/vue';
+import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 import { AstroPWAIntegration as AstroPWA } from '@vite-pwa/astro';
 
@@ -28,6 +29,8 @@ export default defineConfig({
   build: { format: 'file' },
   integrations: [
     vue(),
+    // sitemap-index.xml for search engines; robots.txt and llms.txt point to it.
+    sitemap({ filter: (page) => !/\/(404|keyboard)(\.html)?$/.test(page) && !page.includes('/_review') }), // keyboard = redirect to /typing
     AstroPWA({
       registerType: 'autoUpdate',
       includeAssets: ['icons/apple-touch-icon.png'],

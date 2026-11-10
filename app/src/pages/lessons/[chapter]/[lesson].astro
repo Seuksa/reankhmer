@@ -34,9 +34,12 @@ const photos = (les.items ?? []).filter((i) => i.image && !i.audio);
 const meanings = Object.fromEntries((les.vocabulary ?? []).flatMap((w) => (dictionary.has(w) ? [[w, dictionary.get(w)!]] : [])));
 const intro = les.number === ch.lessons[0].number && ch.intro.length > 40 ? ch.intro : null;
 const navLabel = (x: { ch: Chapter; les: Lesson }) => lessonTitle(x.ch.number, x.les);
+// Search result text: the lesson's own article when it has one, else what the lesson covers.
+const clip = (t: string) => (t.length > 160 ? t.slice(0, t.lastIndexOf(' ', 157)) + '…' : t);
+const description = clip(les.article?.trim() || `Khmer lesson, chapter ${ch.number}: ${title.en}. Learn with audio by native speakers. ${title.km}`);
 ---
 
-<BaseLayout title={`${title.km} ${title.en}`}>
+<BaseLayout title={`${title.km} ${title.en}`} description={description}>
   <nav class="mb-4 text-sm text-slate-500" aria-label="Breadcrumb">
     <a href="/lessons" class="hover:underline"><T km="មេរៀន" en="Lessons" /></a>
     <span aria-hidden="true"> / </span>

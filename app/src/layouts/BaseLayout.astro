@@ -8,6 +8,26 @@ interface Props { title?: string; description?: string }
 const { title, description = 'Learn to read, hear and speak Khmer — រៀនអាន ស្តាប់ និងនិយាយភាសាខ្មែរ' } = Astro.props;
 const fullTitle = title ? `${title} · រៀនខ្មែរ ReanKhmer` : 'រៀនខ្មែរ ReanKhmer – Learn Khmer';
 const path = Astro.url.pathname.replace(/\.html$/, '').replace(/\/index$/, '/');
+const url = new URL(path || '/', Astro.site);
+const shareImage = new URL('/icons/icon-512.png', Astro.site);
+// Google Analytics (same property as seuksa.com; filter by hostname rean.seuksa.com). Live site only.
+const GA_ID = 'G-PZSG2H7HY3';
+const analytics = import.meta.env.PROD;
+// Structured data on the home page, so search engines and AI assistants know what the site is.
+const jsonLd = path === '/' ? JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    { '@type': 'WebSite', '@id': `${Astro.site}#site`, url: String(Astro.site), name: 'ReanKhmer', alternateName: 'រៀនខ្មែរ', inLanguage: ['km', 'en'], description },
+    {
+      '@type': 'Course', name: 'ReanKhmer – Learn Khmer', alternateName: 'រៀនខ្មែរ', url: String(Astro.site),
+      description: 'Free course to read, hear, write and speak Khmer (Cambodian): 33 consonants, vowels, spelling, numbers, typing and everyday dialogues, with recordings by native speakers. Bilingual Khmer–English, works offline.',
+      inLanguage: ['km', 'en'], teaches: 'Khmer language (Cambodian): reading, writing, listening and speaking', educationalLevel: 'Beginner',
+      isAccessibleForFree: true, provider: { '@type': 'Organization', name: 'Seuksa', url: 'https://seuksa.com' },
+      hasCourseInstance: { '@type': 'CourseInstance', courseMode: 'online', courseWorkload: 'PT10H' },
+      offers: { '@type': 'Offer', price: 0, priceCurrency: 'USD', category: 'Free' },
+    },
+  ],
+}) : null;
 
 const nav = [
   { href: '/letters', km: 'ព្យញ្ជនៈ', en: 'Letters', icon: 'M5 19V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v13M5 19h14M9 9h6M9 13h4', also: [] as string[] },
@@ -27,12 +47,30 @@ const active = (href: string) => [href, ...(nav.find((n) => n.href === href)?.al
     <meta name="google" content="notranslate" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={new URL(path || '/', Astro.site)} />
+    <link rel="canonical" href={url} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
     <meta name="theme-color" content="#0f766e" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="រៀនខ្មែរ ReanKhmer" />
+    <meta property="og:url" content={url} />
     <meta property="og:title" content={title ?? 'រៀនខ្មែរ ReanKhmer'} />
     <meta property="og:description" content={description} />
+    <meta property="og:image" content={shareImage} />
+    <meta property="og:locale" content="km_KH" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    {jsonLd && <script type="application/ld+json" set:html={jsonLd} />}
+    {analytics && <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>}
+    {analytics && (
+      <script is:inline define:vars={{ GA_ID }}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', GA_ID);
+      </script>
+    )}
     {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
     <script is:inline>
       try {
