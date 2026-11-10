@@ -44,10 +44,17 @@ const nativeVoice = ref<Voice | null>(null);
 const myVoice = ref<Voice | null>(null);
 const comparing = ref(false);
 let meter = 0;
+// The intro and tips live behind a Guide toggle so the practice card sits near the top.
+const showGuide = ref(false);
+function toggleGuide() {
+  showGuide.value = !showGuide.value;
+  try { localStorage.setItem('rk-speak-guide', showGuide.value ? '1' : '0'); } catch {}
+}
 let loadToken = 0;
 
 onMounted(async () => {
   supported.value = micSupported();
+  try { showGuide.value = localStorage.getItem('rk-speak-guide') === '1'; } catch {}
   const q = new URLSearchParams(location.search).get('set');
   if (q && props.sets.some((s) => s.id === q)) setId.value = q;
   saved.value = new Set(await takeIds());
@@ -152,25 +159,42 @@ watch(index, () => nextTick(() => document.querySelector('[data-current-chip]')?
 </script>
 
 <template>
-  <div v-if="set" class="space-y-5">
-    <label class="block max-w-xl">
-      <span class="mb-1 block text-sm font-medium"><T km="ជ្រើសអ្វីដែលត្រូវហាត់" en="What to practise" /></span>
-      <select v-model="setId" class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-slate-900">
-        <optgroup v-for="g in GROUPS" :key="g.key" :label="`${g.km} · ${g.en}`">
-          <option v-for="s in sets.filter((x) => x.group === g.key)" :key="s.id" :value="s.id">{{ s.km }}{{ s.en !== s.km ? ` · ${s.en}` : '' }} ({{ s.items.length }})</option>
-        </optgroup>
-      </select>
-    </label>
+  <div v-if="set" class="space-y-3">
+    <div class="flex items-center gap-3">
+      <label class="block min-w-0 max-w-xl flex-1">
+        <span class="sr-only"><T km="ជ្រើសអ្វីដែលត្រូវហាត់" en="What to practise" /></span>
+        <select v-model="setId" class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-slate-900">
+          <optgroup v-for="g in GROUPS" :key="g.key" :label="`${g.km} · ${g.en}`">
+            <option v-for="s in sets.filter((x) => x.group === g.key)" :key="s.id" :value="s.id">{{ s.km }}{{ s.en !== s.km ? ` · ${s.en}` : '' }} ({{ s.items.length }})</option>
+          </optgroup>
+        </select>
+      </label>
+      <button type="button" class="btn-quiet shrink-0 !py-1.5 text-sm" :aria-expanded="showGuide" @click="toggleGuide">
+        <T km="ការណែនាំ" en="Guide" /> {{ showGuide ? '▴' : '▾' }}
+      </button>
+    </div>
+    <div v-if="showGuide" class="card space-y-2 text-sm text-slate-600 dark:text-slate-400">
+      <p><T km="ស្តាប់គ្រូ ថតសំឡេងខ្លួនឯង រួចប្រៀបធៀប។ សំឡេងរបស់អ្នកនៅលើឧបករណ៍នេះតែប៉ុណ្ណោះ។" en="Listen to the teacher, record yourself, then compare. Your voice stays on this device." stack /></p>
+      <ul class="list-disc space-y-1 pl-5">
+        <li><T km="ស្តាប់គ្រូ ២-៣ ដង រួចថតសំឡេងខ្លួនឯង ហើយចុចប្រៀបធៀប៖ គ្រូ រួចអ្នក។ ថតម្តងទៀតរហូតដល់ស្តាប់ទៅដូចគ្នា។" en="Listen to the teacher 2–3 times, record yourself, then Compare: teacher first, then you. Record again until they sound alike." /></li>
+        <li><T km="រូបភាព៖ ផ្ទៃពណ៌ជាសំឡេងខ្លាំង/ខ្សោយ ខ្សែជាសំឡេងឡើង/ចុះ។ ព្យាយាមឲ្យរាង និងប្រវែងប្រហាក់ប្រហែលគ្នា។" en="The picture: the shaded shape is loud and soft, the line is the voice going up and down. Try to match the shape and the length." /></li>
+        <li><T km="ក្តារចុច៖ Space ថត/ឈប់ · L ស្តាប់ · C ប្រៀបធៀប · ← → មុន/បន្ទាប់" en="Keyboard: Space record/stop · L listen · C compare · ← → previous/next" /></li>
+        <li><T :km="`សំឡេងរបស់អ្នកនៅលើឧបករណ៍នេះតែប៉ុណ្ណោះ មិនផ្ញើទៅណាទេ។ រក្សាទុកតែ ${KEEP} ចុងក្រោយ។`" :en="`Your voice stays on this device and is never sent anywhere. Only the last ${KEEP} recordings are kept.`" /></li>
+      </ul>
+      <button v-if="saved.size" type="button" class="btn-quiet mt-3 !py-1 text-sm" @click="forget">
+        <T km="លុបការថតរបស់ខ្ញុំទាំងអស់" en="Delete all my recordings" /> ({{ saved.size }})
+      </button>
+    </div>
 
     <div v-if="item" class="card text-center">
-      <div class="mb-2 flex items-center justify-between text-sm text-slate-500">
+      <div class="flex items-center justify-between text-sm text-slate-500">
         <button type="button" class="btn-quiet !px-3 !py-1" aria-label="Previous" @click="go(index - 1)">←</button>
         <span>{{ index + 1 }} / {{ set.items.length }}</span>
         <button type="button" class="btn-quiet !px-3 !py-1" aria-label="Next" @click="go(index + 1)">→</button>
       </div>
 
-      <p lang="km" class="font-khmer-serif py-4 leading-snug text-slate-900 dark:text-slate-50" :class="textSize">{{ item.text }}</p>
-      <p v-if="item.roman || item.en" class="-mt-1 mb-4 text-slate-500">
+      <p lang="km" class="font-khmer-serif py-1 leading-snug text-slate-900 dark:text-slate-50" :class="textSize">{{ item.text }}</p>
+      <p v-if="item.roman || item.en" class="mb-3 text-slate-500">
         <span v-if="item.roman">({{ item.roman }})</span><span v-if="item.roman && item.en"> · </span><span v-if="item.en">{{ item.en }}</span>
       </p>
 
@@ -238,18 +262,6 @@ watch(index, () => nextTick(() => document.querySelector('[data-current-chip]')?
       </button>
     </div>
 
-    <details class="text-sm text-slate-600 dark:text-slate-400">
-      <summary class="cursor-pointer font-medium"><T km="របៀបហាត់ និងឯកជនភាព" en="How to practise, and privacy" /></summary>
-      <ul class="mt-2 list-disc space-y-1 pl-5">
-        <li><T km="ស្តាប់គ្រូ ២-៣ ដង រួចថតសំឡេងខ្លួនឯង ហើយចុចប្រៀបធៀប៖ គ្រូ រួចអ្នក។ ថតម្តងទៀតរហូតដល់ស្តាប់ទៅដូចគ្នា។" en="Listen to the teacher 2–3 times, record yourself, then Compare: teacher first, then you. Record again until they sound alike." /></li>
-        <li><T km="រូបភាព៖ ផ្ទៃពណ៌ជាសំឡេងខ្លាំង/ខ្សោយ ខ្សែជាសំឡេងឡើង/ចុះ។ ព្យាយាមឲ្យរាង និងប្រវែងប្រហាក់ប្រហែលគ្នា។" en="The picture: the shaded shape is loud and soft, the line is the voice going up and down. Try to match the shape and the length." /></li>
-        <li><T km="ក្តារចុច៖ Space ថត/ឈប់ · L ស្តាប់ · C ប្រៀបធៀប · ← → មុន/បន្ទាប់" en="Keyboard: Space record/stop · L listen · C compare · ← → previous/next" /></li>
-        <li><T :km="`សំឡេងរបស់អ្នកនៅលើឧបករណ៍នេះតែប៉ុណ្ណោះ មិនផ្ញើទៅណាទេ។ រក្សាទុកតែ ${KEEP} ចុងក្រោយ។`" :en="`Your voice stays on this device and is never sent anywhere. Only the last ${KEEP} recordings are kept.`" /></li>
-      </ul>
-      <button v-if="saved.size" type="button" class="btn-quiet mt-3 !py-1 text-sm" @click="forget">
-        <T km="លុបការថតរបស់ខ្ញុំទាំងអស់" en="Delete all my recordings" /> ({{ saved.size }})
-      </button>
-    </details>
   </div>
 </template>
 
