@@ -89,6 +89,7 @@ const navLabel = (x: { ch: Chapter; les: Lesson }) => lessonTitle(x.ch.number, x
       {les.article && <p class="mb-4 max-w-3xl text-slate-700 dark:text-slate-300" lang="en">{les.article}</p>}
       <h2 class="mb-3 text-lg font-semibold"><T km="សន្ទនា" en="Dialogue" /></h2>
       <DialoguePlayer client:visible lessonId={les.id} lines={lines} />
+      <a href={`/speak?set=${ch.number}-${les.number}`} class="btn-quiet mt-4"><T km="ហាត់និយាយប្រយោគទាំងនេះ" en="Say these sentences" /> →</a>
     </section>
   )}
 
@@ -96,7 +97,10 @@ const navLabel = (x: { ch: Chapter; les: Lesson }) => lessonTitle(x.ch.number, x
     <section class="mb-8">
       <h2 class="mb-3 text-lg font-semibold"><T km="ស្តាប់ពាក្យ" en="Listen to the words" /></h2>
       <WordCards client:visible words={les.word_audio} />
-      <a href={`/spelling?set=${ch.number}-${les.number}`} class="btn-quiet mt-4"><T km="ហាត់ប្រកបពាក្យទាំងនេះ" en="Practise spelling these words" /> →</a>
+      <div class="mt-4 flex flex-wrap gap-3">
+        <a href={`/spelling?set=${ch.number}-${les.number}`} class="btn-quiet"><T km="ហាត់ប្រកបពាក្យទាំងនេះ" en="Practise spelling these words" /> →</a>
+        <a href={`/speak?set=${ch.number}-${les.number}`} class="btn-quiet"><T km="ហាត់និយាយពាក្យទាំងនេះ" en="Say these words" /> →</a>
+      </div>
     </section>
   )}
 

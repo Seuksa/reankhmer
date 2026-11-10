@@ -135,3 +135,34 @@ export function spellSets(): import('./spelling').SpellSet[] {
       })),
   );
 }
+
+/** Everything that can be practised aloud: letters, vowels, word cards and dialogue lines. */
+export function speakSets(): import('./speak').SpeakSet[] {
+  const sets: import('./speak').SpeakSet[] = [
+    {
+      id: 'letters', group: 'letters', km: 'ព្យញ្ជនៈ', en: 'Consonants',
+      items: consonants.filter((c) => c.audio).map((c) => ({ id: `c:${c.id}`, text: c.char, roman: c.name, audio: `/${c.audio}` })),
+    },
+  ];
+  for (const s of [1, 2] as const) {
+    sets.push({
+      id: `vowels-${s}`, group: 'vowels', km: `ស្រៈ ${s === 1 ? 'ក' : 'គ'}`, en: `Vowels with ${s === 1 ? 'ក (series 1)' : 'គ (series 2)'}`,
+      items: vowels.flatMap((v) => {
+        const a = s === 1 ? v.audio_series1 : v.audio_series2;
+        return a ? [{ id: `v:${v.id}:${s}`, text: (s === 1 ? 'ក' : 'គ') + v.sign, audio: `/${a}` }] : [];
+      }),
+    });
+  }
+  for (const set of spellSets()) {
+    sets.push({ id: set.id, group: 'words', km: set.title.km, en: set.title.en, items: set.words.map((w) => ({ id: w.id, text: w.km, roman: w.roman, en: w.en, audio: w.audio })) });
+  }
+  for (const ch of chapters) {
+    for (const l of ch.lessons) {
+      const lines = (l.items ?? []).filter((i) => i.audio && i.text);
+      if (ch.number < 5 || !lines.length) continue;
+      const t = lessonTitle(ch.number, l);
+      sets.push({ id: `${ch.number}-${l.number}`, group: 'sentences', km: t.km, en: t.en, items: lines.map((i, n) => ({ id: `l:${l.id}:${n + 1}`, text: i.text!, audio: `/${i.audio}` })) });
+    }
+  }
+  return sets.filter((s) => s.items.length);
+}

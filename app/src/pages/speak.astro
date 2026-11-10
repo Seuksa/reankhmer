@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import T from '../components/T.astro';
+import SpeakPractice from '../components/SpeakPractice.vue';
+import { speakSets } from '../lib/content';
+---
+
+<BaseLayout title="និយាយ Speaking practice">
+  <h1 class="mb-2 text-2xl font-semibold"><T km="ហាត់និយាយ" en="Speaking practice" /></h1>
+  <p class="mb-6 max-w-3xl text-slate-600 dark:text-slate-400">
+    <T
+      km="ស្តាប់គ្រូ ថតសំឡេងខ្លួនឯង រួចប្រៀបធៀប។ សំឡេងរបស់អ្នកនៅលើឧបករណ៍នេះតែប៉ុណ្ណោះ។"
+      en="Listen to the teacher, record yourself, then compare. Your voice stays on this device."
+      stack
+    />
+  </p>
+  <SpeakPractice client:load sets={speakSets()} />
+</BaseLayout>
