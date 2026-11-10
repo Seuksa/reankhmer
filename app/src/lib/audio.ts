@@ -1,44 +1,59 @@
-// One shared player. Clips are fetched whole (not streamed with Range requests) so the service
-// worker stores a complete copy and the clip plays offline next time.
+// One shared player. iPhones (every iOS browser is Safari inside) only start sound from a tap, so
+// play() must call el.play() straight away, with no await before it, on one element that is reused:
+// once a tap has started it, Safari lets later clips (Play all, Compare) start on it too.
+// The first time, the clip streams from its URL (the service worker answers Range requests); in the
+// background it is also fetched whole, so the service worker stores a complete copy for offline use
+// and later plays come from memory.
 import { ref } from 'vue';
 
 export const playing = ref<string | null>(null);
-let current: HTMLAudioElement | null = null;
 const blobs = new Map<string, string>();
+let el: HTMLAudioElement | null = null;
+let finish: (() => void) | null = null;
 
-async function load(url: string): Promise<string> {
-  const cached = blobs.get(url);
-  if (cached) return cached;
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`audio ${res.status}: ${url}`);
-  const obj = URL.createObjectURL(await res.blob());
-  blobs.set(url, obj);
-  return obj;
+function keep(url: string) {
+  if (blobs.has(url) || url.startsWith('blob:')) return;
+  blobs.set(url, url); // placeholder: don't fetch twice
+  fetch(url)
+    .then((r) => (r.ok ? r.blob() : Promise.reject(new Error(String(r.status)))))
+    .then((b) => blobs.set(url, URL.createObjectURL(b)))
+    .catch(() => blobs.delete(url));
 }
 
 export function stop() {
-  current?.pause();
-  current = null;
+  el?.pause();
+  const f = finish;
+  finish = null;
+  f?.();
   playing.value = null;
 }
 
 /** Plays a clip and resolves when it ends (or is interrupted). */
-export async function play(url: string): Promise<void> {
+export function play(url: string): Promise<void> {
   stop();
   playing.value = url;
-  try {
-    const el = new Audio(await load(url));
-    current = el;
-    await el.play();
-    await new Promise<void>((done) => {
-      el.addEventListener('ended', () => done(), { once: true });
-      el.addEventListener('pause', () => done(), { once: true });
-    });
-  } catch (err) {
-    console.warn('[reankhmer] audio', err);
-  } finally {
-    if (playing.value === url) playing.value = null;
-  }
+  el ??= new Audio();
+  const a = el;
+  a.src = blobs.get(url) ?? url;
+  return new Promise<void>((resolve) => {
+    const onPause = () => { if (a.paused && !a.ended) done(); };
+    const done = () => {
+      if (finish !== done) return;
+      finish = null;
+      a.removeEventListener('ended', done);
+      a.removeEventListener('error', done);
+      a.removeEventListener('pause', onPause);
+      if (playing.value === url) playing.value = null;
+      resolve();
+    };
+    finish = done;
+    a.addEventListener('ended', done);
+    a.addEventListener('error', done);
+    a.play()
+      .then(() => { if (finish === done) a.addEventListener('pause', onPause); }) // paused from outside (e.g. a call)
+      .catch((err) => { console.warn('[reankhmer] audio', err); done(); });
+    keep(url);
+  });
 }
 
 /** Fetches files so the service worker caches them; reports progress. */

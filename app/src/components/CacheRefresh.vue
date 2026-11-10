@@ -1,7 +1,8 @@
 <script setup lang="ts">
 /**
  * Re-downloads every sound, picture and animation this device has saved for offline use,
- * so files that were replaced on the site (same name, new recording) are picked up.
+ * so files that were replaced on the site (same name, new recording) are picked up, then reloads
+ * the page with the newest app code: the button version of Ctrl+Shift+R.
  * Each file is swapped one at a time and put back if the download fails, so going offline
  * half-way never loses anything.
  */
@@ -58,6 +59,8 @@ async function refresh() {
     if ((await cache.keys()).length === 0) await caches.delete(name);
   }
   state.value = 'done';
+  // Like Ctrl+Shift+R: load the page again so it uses the new files and the newest app code.
+  if (!failed.value) setTimeout(() => location.reload(), 1200);
 }
 </script>
 
@@ -67,9 +70,9 @@ async function refresh() {
       <h2 class="font-semibold"><T km="ធ្វើបច្ចុប្បន្នភាពសំឡេង និងរូបភាព" en="Refresh sounds and pictures" stack /></h2>
       <p class="mt-1 text-sm text-slate-500">
         <T v-if="state === 'working'" :km="`កំពុងទាញយកឡើងវិញ ${done}/${total}…`" :en="`Downloading again ${done}/${total}…`" />
-        <T v-else-if="state === 'done' && total === 0" km="មិនទាន់មានឯកសាររក្សាទុកនៅលើឧបករណ៍នេះទេ។" en="Nothing saved on this device yet." />
+        <T v-else-if="state === 'done' && total === 0" km="មិនទាន់មានឯកសាររក្សាទុកនៅលើឧបករណ៍នេះទេ។ កំពុងបើកទំព័រឡើងវិញ…" en="Nothing saved on this device yet. Reloading…" />
         <T v-else-if="state === 'done' && failed" :km="`បានធ្វើរួច ${total - failed}/${total}។ ឯកសារ ${failed} មិនទាន់បាន — សាកម្តងទៀតពេលអ៊ីនធឺណិតល្អ។`" :en="`Updated ${total - failed} of ${total}. ${failed} kept the old copy; try again on a better connection.`" />
-        <T v-else-if="state === 'done'" :km="`រួចរាល់! បានទាញយកឡើងវិញ ${total} ឯកសារ។`" :en="`Done! ${total} files downloaded again.`" />
+        <T v-else-if="state === 'done'" :km="`រួចរាល់! បានទាញយកឡើងវិញ ${total} ឯកសារ។`" :en="`Done! ${total} files downloaded again.`" /> <T km="កំពុងបើកទំព័រឡើងវិញ…" en="Reloading…" />
         <T v-else-if="state === 'offline'" km="សូមភ្ជាប់អ៊ីនធឺណិតជាមុនសិន។" en="Connect to the internet first." />
         <T v-else-if="state === 'unsupported'" km="កម្មវិធីរុករកនេះមិនរក្សាទុកឯកសារទេ — គ្មានអ្វីត្រូវធ្វើ។" en="This browser doesn't save files offline, so there is nothing to refresh." />
         <T v-else km="បើសំឡេងហាក់ដូចជាចាស់ ឬខុស ចុចដើម្បីទាញយកឯកសារដែលបានរក្សាទុកឡើងវិញ។" en="If a sound seems old or wrong, download the saved files again." />
