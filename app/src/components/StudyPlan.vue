@@ -5,7 +5,8 @@
  */
 import { computed, onMounted, ref } from 'vue';
 import { kd, lessonCount, lessonsDone, nextStep, stepDone, useStudyDay, type PlanStep } from '../lib/plan';
-import { loadProgress, profileChanged, progress, setPlan } from '../lib/progress';
+import { loadProgress, markSeen, profileChanged, progress, setPlan } from '../lib/progress';
+import { badges } from '../lib/awards';
 import { addProfile, readProfiles, removeProfile, renameProfile, setActive, type Profile } from '../lib/profiles';
 import T from './T.vue';
 
@@ -18,6 +19,9 @@ const { steps, step, stepOk, reviewOk, done, week, weekCount, goal, finishedCour
 const upNext = computed(() => nextStep(steps.value));
 const lessons = computed(() => ({ done: lessonsDone(steps.value), total: lessonCount(steps.value) }));
 const pathPct = computed(() => (steps.value.length ? Math.round((steps.value.filter((s) => stepDone(s)).length / steps.value.length) * 100) : 0));
+const earned = computed(() => (steps.value.length ? badges(steps.value).filter((b) => b.earned) : []));
+const newBadges = computed(() => earned.value.filter((b) => !progress.seen?.[b.id]));
+const badgeHref = (b: { id: string; chapter?: number }) => (b.chapter ? `/report?certificate=${b.id}#certificate` : '/report#badges');
 const continueHere = computed(() => {
   const l = progress.last;
   return l && l.path !== step.value?.href && Date.now() - l.at < 30 * 864e5 ? l : null;
@@ -178,7 +182,17 @@ const lessonLabel = (s: PlanStep) => ({ km: `មេរៀន ${kd(s.ch)}.${kd(s.
         <a v-if="upNext && upNext.id !== step?.id" :href="upNext.href" class="ml-1 underline"><T km="ចង់រៀនបន្តទៀត?" en="Want to keep going?" /> →</a>
       </p>
 
-      <a v-if="continueHere" :href="continueHere.path" class="mb-4 inline-block text-sm text-brand-700 underline underline-offset-2 dark:text-brand-300">
+      <div v-for="b in newBadges" :key="b.id" class="mb-4 flex flex-wrap items-center gap-3 rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 dark:border-amber-800 dark:bg-amber-950/30" aria-live="polite">
+        <span class="font-khmer-serif grid size-12 place-items-center rounded-full bg-brand-700 text-xl text-white" aria-hidden="true">{{ b.icon }}</span>
+        <span class="flex-1">
+          <span class="block font-semibold">🎉 <T km="មេដាយថ្មី!" en="New badge!" /> <T :km="b.title.km" :en="b.title.en" /></span>
+          <span v-if="b.chapter" class="text-sm text-slate-600 dark:text-slate-400"><T km="អ្នកទទួលបានវិញ្ញាបនបត្រ។ បង្ហាញឪពុកម្តាយ!" en="You earned a certificate. Show your parents!" /></span>
+        </span>
+        <a :href="badgeHref(b)" class="btn !py-1.5" @click="markSeen([b.id])"><T :km="b.chapter ? 'មើលវិញ្ញាបនបត្រ' : 'មើល'" :en="b.chapter ? 'See the certificate' : 'See it'" /></a>
+        <button type="button" class="text-sm text-slate-500 underline" @click="markSeen([b.id])"><T km="យល់ហើយ" en="OK" /></button>
+      </div>
+
+      <a v-if="continueHere" :href="continueHere.path" class="mb-4 inline-block text-sm text-brand-700 underline underline-offset-2 dark:text-brand-200">
         ↩ <T km="ត្រឡប់ទៅកន្លែងដែលអ្នកឈប់៖" en="Back to where you stopped:" /> {{ continueHere.en }}
       </a>
 
@@ -188,7 +202,7 @@ const lessonLabel = (s: PlanStep) => ({ km: `មេរៀន ${kd(s.ch)}.${kd(s.
           <p class="mb-1 text-sm font-medium"><T :km="`សប្តាហ៍នេះ៖ ${kd(weekCount)}/${kd(goal)} ថ្ងៃ`" :en="`This week: ${weekCount} of ${goal} days`" /></p>
           <ol class="flex gap-1.5" aria-label="This week">
             <li v-for="(d, i) in week" :key="d.date" class="grid size-8 place-items-center rounded-full border-2 text-xs"
-                :class="[d.done ? 'border-emerald-600 bg-emerald-600 text-white' : 'border-slate-300 dark:border-slate-700', d.today ? 'ring-2 ring-brand-300 dark:ring-brand-800' : '']"
+                :class="[d.done ? 'border-emerald-600 bg-emerald-600 text-white' : 'border-slate-300 dark:border-slate-700', d.today ? 'ring-2 ring-brand-200 dark:ring-brand-800' : '']"
                 :title="d.date">
               <span lang="km" class="t-km">{{ DAY[i].km }}</span><span lang="en" class="t-en">{{ DAY[i].en }}</span>
             </li>
@@ -199,6 +213,9 @@ const lessonLabel = (s: PlanStep) => ({ km: `មេរៀន ${kd(s.ch)}.${kd(s.
           <p class="mb-1 text-sm font-medium"><T :km="`មេរៀនចប់ ${kd(lessons.done)}/${kd(lessons.total)}`" :en="`Lessons finished: ${lessons.done} of ${lessons.total}`" /></p>
           <div class="h-2 rounded-full bg-slate-100 dark:bg-slate-800"><div class="h-2 rounded-full bg-brand-600" :style="{ width: `${pathPct}%` }" /></div>
         </div>
+        <a v-if="earned.length" href="/report#badges" class="flex -space-x-2" :aria-label="`${earned.length} badges`">
+          <span v-for="b in earned.slice(-5)" :key="b.id" class="font-khmer-serif grid size-9 place-items-center rounded-full border-2 border-white bg-brand-700 text-sm text-white dark:border-slate-900" :title="b.title.en">{{ b.icon }}</span>
+        </a>
         <a href="/report" class="btn-quiet"><T km="បង្ហាញឪពុកម្តាយ" en="Show my parents" /> →</a>
       </div>
     </div>

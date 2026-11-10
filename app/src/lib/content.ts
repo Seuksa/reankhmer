@@ -43,13 +43,7 @@ export const asset = (p?: string) => (p ? `/${p}` : undefined);
 const KHMER_DIGITS = '០១២៣៤៥៦៧៨៩';
 export const khmerDigits = (n: number | string) => String(n).replace(/\d/g, (d) => KHMER_DIGITS[+d]);
 
-export const CHAPTER_TITLE: Record<number, Bi> = {
-  1: { km: 'ព្យញ្ជនៈ និង ស្រៈ', en: 'Consonants & vowels' },
-  2: { km: 'ការប្រកបពាក្យ', en: 'Spelling with final consonants' },
-  3: { km: 'ជើងអក្សរ', en: 'Subscript consonants' },
-  4: { km: 'អំណាន', en: 'Reading' },
-  5: { km: 'សន្ទនា', en: 'Conversation' },
-};
+export { CHAPTER_TITLE } from './chapter-titles';
 
 /** Khmer vowel signs are shown on a dotted circle (◌) when written alone. */
 export const onCircle = (sign: string) => (sign ? `◌${sign}` : '◌');

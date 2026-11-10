@@ -27,7 +27,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div v-if="show" class="border-b border-slate-200 bg-brand-50/70 text-sm dark:border-slate-800 dark:bg-brand-950/40">
+  <div v-if="show" class="border-b border-slate-200 bg-brand-50/70 text-sm dark:border-slate-800 dark:bg-brand-900/40">
     <div class="mx-auto flex max-w-5xl flex-wrap items-center gap-x-4 gap-y-1 px-4 py-1.5">
       <a href="/" class="flex items-center gap-1.5 font-medium">
         <span class="inline-block size-2.5 rounded-full" :style="{ background: me!.color }" aria-hidden="true" />{{ me!.name }}

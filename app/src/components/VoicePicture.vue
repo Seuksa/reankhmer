@@ -63,6 +63,6 @@ const secs = (v: Voice | null) => (v ? `${v.dur.toFixed(1)} s` : '');
 .voice-mine { color: var(--color-amber-500); }
 .voice-mine .voice-area { fill: var(--color-amber-400); }
 .voice-mine .voice-line { stroke: var(--color-amber-600); }
-:global(.dark) .voice-native .voice-line { stroke: var(--color-brand-300); }
+:global(.dark) .voice-native .voice-line { stroke: var(--color-brand-200); }
 :global(.dark) .voice-mine .voice-line { stroke: var(--color-amber-300); }
 </style>

@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import { computed, onMounted } from 'vue';
+import { computed, onMounted, ref } from 'vue';
 import { loadProgress, markLessonDone, progress } from '../lib/progress';
 import T from './T.vue';
 
 const props = defineProps<{ lessonId: number }>();
-onMounted(loadProgress);
-const done = computed(() => !!progress.lessons[props.lessonId]?.done);
+const ready = ref(false); // show progress only after mounting (first render matches the built page)
+onMounted(async () => { await loadProgress(); ready.value = true; });
+const done = computed(() => ready.value && !!progress.lessons[props.lessonId]?.done);
 </script>
 
 <template>

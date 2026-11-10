@@ -35,6 +35,8 @@ export interface Progress {
   days?: Record<string, StudyDay>;
   /** the last lesson or practice page opened, for "Continue" */
   last?: { path: string; km: string; en: string; at: number };
+  /** badges the learner has already been shown (awards.ts), so a new one can be celebrated once */
+  seen?: Record<string, number>;
   updatedAt: number;
 }
 
@@ -141,6 +143,14 @@ export function setLast(path: string, km: string, en: string) {
   void save();
 }
 
+export function markSeen(ids: string[]) {
+  const s = (progress.seen ??= {});
+  const fresh = ids.filter((id) => !s[id]);
+  if (!fresh.length) return;
+  for (const id of fresh) s[id] = Date.now();
+  void save();
+}
+
 export const heardCount = (prefix: string) => Object.keys(progress.heard).filter((k) => k.startsWith(prefix)).length;
 
 // ---------- backup: every learner on this device ----------
@@ -188,6 +198,7 @@ function merge(into: Progress, from: Progress) {
     const mine = all[d] ?? {};
     all[d] = { step: mine.step ?? day.step, review: mine.review || day.review, done: mine.done ?? day.done };
   }
+  for (const [id, at] of Object.entries(from.seen ?? {})) (into.seen ??= {})[id] ??= at;
   if (from.plan && !into.plan) into.plan = from.plan;
   if (from.last && (!into.last || from.last.at > into.last.at)) into.last = from.last;
 }

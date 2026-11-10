@@ -235,7 +235,7 @@ watch(index, () => nextTick(() => document.querySelector('[data-current-chip]')?
       </div>
 
       <p v-if="take && !recording" class="mt-3 text-sm">
-        <button type="button" class="text-brand-700 underline underline-offset-2 dark:text-brand-300" :aria-pressed="isPlayingMine" @click="playMine">
+        <button type="button" class="text-brand-700 underline underline-offset-2 dark:text-brand-200" :aria-pressed="isPlayingMine" @click="playMine">
           <T km="ស្តាប់តែសំឡេងខ្ញុំ" en="Play only my voice" />
         </button>
       </p>

@@ -7,6 +7,7 @@
 import { computed, onMounted, ref } from 'vue';
 import { goalWeeks, kd, lessonCount, lessonsDone, loadSteps, nextStep, studied, studyDays, weekDates, type PlanStep } from '../lib/plan';
 import { heardCount, loadProgress, progress } from '../lib/progress';
+import { badges } from '../lib/awards';
 import { activeProfile, type Profile } from '../lib/profiles';
 import T from './T.vue';
 
@@ -33,12 +34,14 @@ const quizzes = computed(() => Object.entries(progress.lessons)
   .map(([id, l]) => ({ s: lessonTitle.value.get(+id), q: l.quiz! }))
   .filter((x) => x.s));
 const next = computed(() => nextStep(steps.value));
+const badgeCount = computed(() => { const b = steps.value.length ? badges(steps.value) : []; return { got: b.filter((x) => x.earned).length, all: b.length }; });
 const stats = computed(() => [
   { km: 'ថ្ងៃបានរៀនសរុប', en: 'Study days in total', v: `${studyDays()}`, kv: kd(studyDays()) },
   { km: 'សប្តាហ៍សម្រេចគោលដៅជាប់ៗគ្នា', en: 'Weeks in a row on goal', v: `${goalWeeks()}`, kv: kd(goalWeeks()) },
   { km: 'មេរៀនចប់', en: 'Lessons finished', v: `${lessonsDone(steps.value)} / ${lessonCount(steps.value)}`, kv: `${kd(lessonsDone(steps.value))} / ${kd(lessonCount(steps.value))}` },
   { km: 'ព្យញ្ជនៈបានស្តាប់', en: 'Letters heard', v: `${heardCount('c:')} / ${props.totals.letters}`, kv: `${kd(heardCount('c:'))} / ${kd(props.totals.letters)}` },
   { km: 'សំឡេងស្រៈបានស្តាប់', en: 'Vowel sounds heard', v: `${heardCount('v:')} / ${props.totals.vowels}`, kv: `${kd(heardCount('v:'))} / ${kd(props.totals.vowels)}` },
+  { km: 'មេដាយ', en: 'Badges', v: `${badgeCount.value.got} / ${badgeCount.value.all}`, kv: `${kd(badgeCount.value.got)} / ${kd(badgeCount.value.all)}` },
   { km: 'ពាក្យ និងអក្សរកំពុងរំលឹក', en: 'Letters and words in review', v: `${Object.keys(progress.cards ?? {}).length}`, kv: kd(Object.keys(progress.cards ?? {}).length) },
 ]);
 const dateStr = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
@@ -84,8 +87,8 @@ async function draw(): Promise<Blob> {
     text(s.km, 60, y, 30, '#0f172a', 600);
     text(s.en, 60, y + 36, 24, '#64748b');
     text(s.v, W - 60, y + 18, 44, brand, 700, 'right');
-    g.fillStyle = '#e2e8f0'; g.fillRect(60, y + 56, W - 120, 2);
-    y += 92;
+    g.fillStyle = '#e2e8f0'; g.fillRect(60, y + 54, W - 120, 2);
+    y += 84;
   }
   if (next.value) {
     text('បន្ទាប់ · Next', 60, y + 30, 26, '#64748b', 600);
@@ -157,7 +160,7 @@ function save(f: File) {
         <dl class="grid gap-3 sm:grid-cols-2">
           <div v-for="s in stats" :key="s.en" class="rounded-xl bg-slate-50 px-4 py-3 dark:bg-slate-900">
             <dt class="text-sm text-slate-500"><T :km="s.km" :en="s.en" /></dt>
-            <dd class="text-2xl font-semibold text-brand-700 dark:text-brand-300"><span lang="km" class="t-km">{{ s.kv }}</span><span lang="en" class="t-en">{{ s.v }}</span></dd>
+            <dd class="text-2xl font-semibold text-brand-700 dark:text-brand-200"><span lang="km" class="t-km">{{ s.kv }}</span><span lang="en" class="t-en">{{ s.v }}</span></dd>
           </div>
         </dl>
 

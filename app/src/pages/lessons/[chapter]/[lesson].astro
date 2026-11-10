@@ -7,6 +7,7 @@ import WordCards from '../../../components/WordCards.vue';
 import Vocabulary from '../../../components/Vocabulary.vue';
 import DialoguePlayer from '../../../components/DialoguePlayer.vue';
 import Quiz from '../../../components/Quiz.vue';
+import LessonStars from '../../../components/LessonStars.vue';
 import LessonDone from '../../../components/LessonDone.vue';
 import {
   CHAPTER_TITLE, chapters, dictionary, khmerDigits, lessonHref, lessonLetters, lessonTitle,
@@ -46,7 +47,10 @@ const description = clip(les.article?.trim() || `Khmer lesson, chapter ${ch.numb
     <T km={`ជំពូក ${khmerDigits(ch.number)} · ${CHAPTER_TITLE[ch.number].km}`} en={`Chapter ${ch.number} · ${CHAPTER_TITLE[ch.number].en}`} />
   </nav>
 
-  <h1 class="mb-6 text-2xl font-semibold sm:text-3xl"><T km={title.km} en={title.en} stack /></h1>
+  <div class="mb-6 flex flex-wrap items-end justify-between gap-3">
+    <h1 class="text-2xl font-semibold sm:text-3xl"><T km={title.km} en={title.en} stack /></h1>
+    <LessonStars client:idle lessonId={les.id} size="lg" />
+  </div>
 
   {intro && (
     <details class="card mb-8" open={ch.number !== 1}>
