@@ -72,7 +72,7 @@ async function refresh() {
         <T v-if="state === 'working'" :km="`កំពុងទាញយកឡើងវិញ ${done}/${total}…`" :en="`Downloading again ${done}/${total}…`" />
         <T v-else-if="state === 'done' && total === 0" km="មិនទាន់មានឯកសាររក្សាទុកនៅលើឧបករណ៍នេះទេ។ កំពុងបើកទំព័រឡើងវិញ…" en="Nothing saved on this device yet. Reloading…" />
         <T v-else-if="state === 'done' && failed" :km="`បានធ្វើរួច ${total - failed}/${total}។ ឯកសារ ${failed} មិនទាន់បាន — សាកម្តងទៀតពេលអ៊ីនធឺណិតល្អ។`" :en="`Updated ${total - failed} of ${total}. ${failed} kept the old copy; try again on a better connection.`" />
-        <T v-else-if="state === 'done'" :km="`រួចរាល់! បានទាញយកឡើងវិញ ${total} ឯកសារ។`" :en="`Done! ${total} files downloaded again.`" /> <T km="កំពុងបើកទំព័រឡើងវិញ…" en="Reloading…" />
+        <T v-else-if="state === 'done'" :km="`រួចរាល់! បានទាញយកឡើងវិញ ${total} ឯកសារ។ កំពុងបើកទំព័រឡើងវិញ…`" :en="`Done! ${total} files downloaded again. Reloading…`" />
         <T v-else-if="state === 'offline'" km="សូមភ្ជាប់អ៊ីនធឺណិតជាមុនសិន។" en="Connect to the internet first." />
         <T v-else-if="state === 'unsupported'" km="កម្មវិធីរុករកនេះមិនរក្សាទុកឯកសារទេ — គ្មានអ្វីត្រូវធ្វើ។" en="This browser doesn't save files offline, so there is nothing to refresh." />
         <T v-else km="បើសំឡេងហាក់ដូចជាចាស់ ឬខុស ចុចដើម្បីទាញយកឯកសារដែលបានរក្សាទុកឡើងវិញ។" en="If a sound seems old or wrong, download the saved files again." />
