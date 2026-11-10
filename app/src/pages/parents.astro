@@ -1,0 +1,130 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import T from '../components/T.astro';
+import { CHAPTER_TITLE, chapters, khmerDigits, lessonHref } from '../lib/content';
+
+const first = (ch: number) => lessonHref(ch, chapters.find((c) => c.number === ch)!.lessons[0].number);
+
+const day = [
+  { min: 2, km: 'ចាប់ផ្តើមដោយការរំលឹកប្រចាំថ្ងៃ។', en: 'Start with the Daily review.', href: '/review' },
+  { min: 5, km: 'រៀនអ្វីថ្មី៖ អក្សរពីរបីតួ ឬមេរៀនមួយ។', en: 'Learn something new: a few letters or one lesson.', href: '/letters' },
+  { min: 3, km: 'លេងល្បែងជាមួយគ្នា៖ ស្តាប់ ហើយរក ប្រកបពាក្យ ឬហាត់និយាយ។', en: 'Play a game together: Listen & find, spelling or speaking.', href: '/practice' },
+];
+
+const order = [
+  { href: '/letters', char: 'ក', km: 'ព្យញ្ជនៈ', en: 'Letters', note: { km: 'ព្យញ្ជនៈ ៣៣ តួ រៀនម្តង ៥ តួ', en: 'The 33 consonants, five at a time' } },
+  { href: '/vowels', char: 'កា', km: 'ស្រៈ', en: 'Vowels', note: { km: 'ស្រៈនីមួយៗមានសំឡេងពីរ', en: 'Every vowel has two sounds' } },
+  { href: first(2), char: 'កក', km: CHAPTER_TITLE[2].km, en: 'Spelling', note: { km: 'ព្យញ្ជនៈ + ស្រៈ + ព្យញ្ជនៈខាងចុង', en: 'Consonant + vowel + final consonant' } },
+  { href: first(4), char: 'អាន', km: CHAPTER_TITLE[4].km, en: CHAPTER_TITLE[4].en, note: { km: 'អានរឿងខ្លីៗ ជាមួយសំឡេង', en: 'Short stories with audio' } },
+  { href: first(5), char: 'សួស្តី', km: CHAPTER_TITLE[5].km, en: 'Dialogues', note: { km: 'ការសន្ទនាប្រចាំថ្ងៃ', en: 'Everyday conversations' } },
+];
+
+const tips = [
+  { icon: '👂', km: 'ស្តាប់ជាមួយគ្នា', en: 'Listen together', body: { km: 'អង្គុយជាមួយកូន ហើយស្តាប់ជាមួយគ្នា។ និយាយតាមសំឡេងឲ្យឮៗ។', en: 'Sit with your child and listen together. Say the sounds out loud.' } },
+  { icon: '🌱', km: 'សរសើរការខិតខំ', en: 'Praise effort', body: { km: 'សរសើរការខិតខំ មិនមែនតែចម្លើយត្រូវទេ។ ការភ្លេចជារឿងធម្មតា។', en: 'Praise the effort, not only right answers. Forgetting is normal.' } },
+  { icon: '📅', km: 'តិចៗ តែរាល់ថ្ងៃ', en: 'Little and often', body: { km: 'រៀនតិចៗរាល់ថ្ងៃ ល្អជាងរៀនច្រើនតែម្តង។', en: 'A little every day is better than a lot at once.' } },
+  { icon: '🏠', km: 'និយាយខ្មែរនៅផ្ទះ', en: 'Use Khmer at home', body: { km: 'និយាយខ្មែរនៅផ្ទះ ហើយរកអក្សរខ្មែរជុំវិញខ្លួន ដូចជានៅលើកញ្ចប់ម្ហូប ឬនៅវត្ត។', en: 'Speak Khmer at home and look for Khmer writing around you, on food packets or at the temple.' } },
+  { icon: '🖨', km: 'បិទតារាងអក្សរលើជញ្ជាំង', en: 'Put the alphabet on the wall', body: { km: 'បោះពុម្ពតារាងព្យញ្ជនៈ ហើយបិទនៅកន្លែងដែលកូនឃើញរាល់ថ្ងៃ។', en: 'Print the letter chart and put it where your child sees it every day.' }, href: '/letters/chart' },
+  { icon: '🌐', km: 'ជ្រើសភាសា', en: 'Choose the language', body: { km: 'ប្រើប៊ូតុងភាសានៅខាងលើ ដើម្បីបង្ហាញតែខ្មែរ តែអង់គ្លេស ឬទាំងពីរ។', en: 'Use the language button at the top to show Khmer, English or both.' } },
+];
+---
+
+<BaseLayout title="សម្រាប់ឪពុកម្តាយ For parents" description="How to help your child learn Khmer with ReanKhmer in 10 minutes a day: what to learn first, simple tips, and keeping progress safe. Free, no ads, no account. សម្រាប់ឪពុកម្តាយ។">
+  <h1 class="mb-2 text-2xl font-semibold sm:text-3xl"><T km="សម្រាប់ឪពុកម្តាយ" en="For parents" /></h1>
+  <p class="mb-8 max-w-3xl text-slate-600 dark:text-slate-400">
+    <T
+      km="រៀនខ្មែរ ជួយកូនរបស់អ្នកឲ្យចេះអាន ស្តាប់ និងនិយាយភាសាខ្មែរ។ មិនចាំបាច់ចំណាយពេលច្រើនទេ។ ១០ នាទីក្នុងមួយថ្ងៃ គឺគ្រប់គ្រាន់ហើយ។"
+      en="ReanKhmer helps your child read, hear and speak Khmer. You don't need much time: ten minutes a day is enough."
+      stack
+    />
+  </p>
+
+  <section class="mb-10">
+    <h2 class="mb-3 text-lg font-semibold"><T km="១០ នាទីក្នុងមួយថ្ងៃ" en="Ten minutes a day" /></h2>
+    <ol class="grid gap-3 sm:grid-cols-3">
+      {day.map((d) => (
+        <li>
+          <a href={d.href} class="card flex h-full items-start gap-3 hover:border-brand-500">
+            <span class="grid size-12 shrink-0 place-items-center rounded-2xl bg-brand-50 text-center text-sm leading-tight font-semibold text-brand-800 dark:bg-brand-900/40 dark:text-brand-100">
+              <T km={`${khmerDigits(d.min)} នាទី`} en={`${d.min} min`} stack />
+            </span>
+            <span><T km={d.km} en={d.en} stack /></span>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="mb-1 text-lg font-semibold"><T km="រៀនតាមលំដាប់នេះ" en="A good order" /></h2>
+    <p class="mb-3 text-sm text-slate-500"><T km="ទៅជំហានបន្ទាប់ ពេលកូនស្គាល់ជំហានមុនច្បាស់។" en="Move on when your child knows the step before well." /></p>
+    <ol class="grid gap-3">
+      {order.map((o, i) => (
+        <li>
+          <a href={o.href} class="card flex items-center gap-4 hover:border-brand-500">
+            <span class="w-6 shrink-0 text-center text-lg font-semibold text-slate-400">{i + 1}</span>
+            <span lang="km" class="font-khmer-serif grid h-14 min-w-14 shrink-0 place-items-center rounded-2xl bg-brand-50 px-2 text-2xl text-brand-800 dark:bg-brand-900/40 dark:text-brand-100">{o.char}</span>
+            <span class="min-w-0 flex-1">
+              <span class="block font-semibold"><T km={o.km} en={o.en} /></span>
+              <span class="block text-sm text-slate-500"><T km={o.note.km} en={o.note.en} /></span>
+            </span>
+            <span aria-hidden="true" class="text-slate-400">→</span>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="mb-3 text-lg font-semibold"><T km="គន្លឹះតូចៗ" en="Tips" /></h2>
+    <ul class="grid gap-3 sm:grid-cols-2">
+      {tips.map((t) => (
+        <li class="card">
+          <p class="font-semibold"><span aria-hidden="true">{t.icon} </span><T km={t.km} en={t.en} /></p>
+          <p class="mt-1 text-slate-600 dark:text-slate-400"><T km={t.body.km} en={t.body.en} stack /></p>
+          {t.href && <a href={t.href} class="mt-2 inline-block text-sm text-brand-700 underline dark:text-brand-200"><T km="តារាងសម្រាប់បោះពុម្ព" en="Printable chart" /> →</a>}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="card mb-6">
+    <h2 class="mb-2 text-lg font-semibold"><T km="វឌ្ឍនភាពនៅលើឧបករណ៍របស់អ្នក" en="Progress stays on your device" /></h2>
+    <div class="space-y-2 text-slate-600 dark:text-slate-400">
+      <p>
+        <T
+          km="មិនត្រូវការគណនីទេ។ វឌ្ឍនភាពរបស់កូន រក្សាទុកតែនៅលើទូរស័ព្ទ ឬកុំព្យូទ័រនេះប៉ុណ្ណោះ ហើយមិនត្រូវបានផ្ញើមកយើងទេ។"
+          en="There is no account. Your child's progress is kept only on this phone or computer and is not sent to us."
+          stack
+        />
+      </p>
+      <p>
+        <T
+          km="នៅទំព័រ «វឌ្ឍនភាព» អ្នកអាចទាញយកឯកសារបម្រុងទុក ឬបម្រុងទុកទៅ Google Drive ដើម្បីកុំឲ្យបាត់ និងដើម្បីប្តូរទៅឧបករណ៍ថ្មី។ អ្នកក៏អាចទាញយកសំឡេងទុកជាមុន ដើម្បីរៀនពេលគ្មានអ៊ីនធឺណិត។"
+          en="On the Progress page you can download a backup file or back up to Google Drive, so nothing is lost and you can move to a new device. You can also download the audio in advance to learn without internet."
+          stack
+        />
+      </p>
+    </div>
+    <a href="/progress" class="btn-quiet mt-3"><T km="ទៅទំព័រវឌ្ឍនភាព" en="Open Progress" /> →</a>
+  </section>
+
+  <section class="card mb-6 border-brand-200 bg-brand-50 dark:border-brand-900 dark:bg-brand-900/30">
+    <h2 class="mb-2 text-lg font-semibold"><T km="ឥតគិតថ្លៃ គ្មានពាណិជ្ជកម្ម គ្មានគណនី" en="Free, no ads, no account" /></h2>
+    <p class="text-slate-700 dark:text-slate-300">
+      <T
+        km="រៀនខ្មែរ ឥតគិតថ្លៃ ហើយនឹងនៅតែឥតគិតថ្លៃជានិច្ច។ គ្មានពាណិជ្ជកម្ម ហើយមិនចាំបាច់ចុះឈ្មោះទេ។"
+        en="ReanKhmer is free and always will be. There are no ads and nothing to sign up for."
+        stack
+      />
+    </p>
+    <p class="mt-3 text-sm text-slate-600 dark:text-slate-400">
+      <T
+        km="នៅលើទំព័រដើម កូនអាចចាប់ផ្តើមផែនការសិក្សា៖ កិច្ចការប្រហែល ១០ នាទីក្នុងមួយថ្ងៃ និងគោលដៅប្រចាំសប្តាហ៍ (៣ ៥ ឬ ៧ ថ្ងៃ)។ កូនម្នាក់ៗមានឈ្មោះ និងវឌ្ឍនភាពផ្ទាល់ខ្លួន។"
+        en="On the home page your child can start a study plan: about 10 minutes of tasks a day and a weekly goal (3, 5 or 7 days). Each child has their own name and progress."
+        stack
+      />
+    </p>
+    <p class="mt-3"><a href="/report" class="btn-quiet"><T km="មើលរបាយការណ៍វឌ្ឍនភាព" en="See the progress report" /> →</a></p>
+  </section>
+</BaseLayout>

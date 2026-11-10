@@ -9,7 +9,7 @@
 import { computed, onMounted, ref } from 'vue';
 import { play } from '../lib/audio';
 import { grade, ratingFor, Rating } from '../lib/review';
-import { loadProgress, markHeard, progress } from '../lib/progress';
+import { loadProgress, markHeard, markStep, progress } from '../lib/progress';
 import { buildTiles, isMarkPiece, pieces, spellingChoices, tileLabel, type SpellSet, type SpellWord } from '../lib/spelling';
 import T from './T.vue';
 
@@ -87,7 +87,11 @@ function solved() {
 }
 
 function next() {
-  if (index.value + 1 >= queue.value.length) { finished.value = true; return; }
+  if (index.value + 1 >= queue.value.length) {
+    finished.value = true;
+    for (const set of new Set(queue.value.map((w) => w.set))) markStep(`spell:${set}`); // study plan
+    return;
+  }
   index.value++;
   void show();
 }

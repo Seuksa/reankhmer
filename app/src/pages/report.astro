@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import T from '../components/T.astro';
+import ParentReport from '../components/ParentReport.vue';
+import { consonants, vowels } from '../lib/content';
+
+const vowelSounds = vowels.reduce((n, v) => n + (v.audio_series1 ? 1 : 0) + (v.audio_series2 ? 1 : 0), 0);
+---
+
+<BaseLayout title="របាយការណ៍ Progress report" description="A learner's ReanKhmer progress for parents: study days this week, lessons finished, letters heard and what's next. Made on the device; nothing is uploaded.">
+  <h1 class="mb-1 text-2xl font-semibold print:hidden"><T km="បង្ហាញឪពុកម្តាយ" en="Show my parents" /></h1>
+  <p class="mb-5 text-slate-600 print:hidden dark:text-slate-400">
+    <T km="វឌ្ឍនភាពរបស់អ្នករៀននៅលើឧបករណ៍នេះ។ ផ្ញើជារូបភាព ឬបោះពុម្ព។" en="This learner's progress on this device. Share it as a picture, or print it." stack />
+  </p>
+  <ParentReport client:load totals={{ letters: consonants.filter((c) => c.audio).length, vowels: vowelSounds }} />
+</BaseLayout>

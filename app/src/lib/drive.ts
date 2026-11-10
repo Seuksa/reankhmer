@@ -65,7 +65,7 @@ async function findFile(): Promise<{ id: string; modifiedTime: string } | null> 
 
 /** Saves this device's progress to Drive (replaces the previous backup). Returns the save time. */
 export async function backupToDrive(): Promise<string> {
-  const body = exportProgress();
+  const body = await exportProgress();
   const existing = await findFile();
   if (existing) {
     const res = await call(`${UPLOAD}/files/${existing.id}?uploadType=media&fields=modifiedTime`, {

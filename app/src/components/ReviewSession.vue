@@ -2,7 +2,7 @@
 import { computed, onMounted, ref } from 'vue';
 import { play } from '../lib/audio';
 import { grade, options, ratingFor, sessionIds, NEW_PER_DAY, type ReviewItem } from '../lib/review';
-import { markHeard, progress } from '../lib/progress';
+import { markHeard, progress, updateDay } from '../lib/progress';
 import T from './T.vue';
 
 const props = defineProps<{ items: ReviewItem[] }>();
@@ -24,6 +24,7 @@ onMounted(async () => {
   counts.value = { due: due.length, fresh: fresh.length };
   queue.value = [...due, ...fresh];
   loading.value = false;
+  if (!queue.value.length) updateDay({ review: true }); // nothing due today: the review part of the duty is done
 });
 
 const nextDue = computed(() => {
@@ -37,7 +38,7 @@ async function next() {
   picked.value = null;
   slipped.value = false;
   const id = queue.value.shift();
-  if (!id) { current.value = null; finished.value = true; return; }
+  if (!id) { current.value = null; finished.value = true; updateDay({ review: true }); return; }
   current.value = byId.get(id) ?? null;
   if (!current.value) return next();
   choices.value = options(current.value, props.items);

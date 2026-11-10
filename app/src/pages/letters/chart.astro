@@ -1,0 +1,88 @@
+---
+// Static route: wins over [slug].astro (content.ts also refuses a consonant slug "chart").
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import T from '../../components/T.astro';
+import { consonants, khmerDigits, letterHref } from '../../lib/content';
+
+const groups = [
+  { series: 1, km: 'អក្សរសំឡេង «អ»', en: 'a-series (first series)', note: { km: 'ឈ្មោះបញ្ចប់ដោយ «អ»', en: 'names end in -or' }, letters: consonants.filter((c) => c.series === 1) },
+  { series: 2, km: 'អក្សរសំឡេង «អូ»', en: 'o-series (second series)', note: { km: 'ឈ្មោះបញ្ចប់ដោយ «អូ»', en: 'names end in -ou' }, letters: consonants.filter((c) => c.series === 2) },
+];
+const tone = (s: number) => s === 1
+  ? 'border-teal-300 bg-teal-50 text-teal-900 dark:border-teal-800 dark:bg-teal-950/50 dark:text-teal-100'
+  : 'border-amber-300 bg-amber-50 text-amber-900 dark:border-amber-800 dark:bg-amber-950/40 dark:text-amber-100';
+---
+
+<BaseLayout title="តារាងព្យញ្ជនៈ Printable Khmer alphabet chart" description="Printable chart of the 33 Khmer consonants in their two series, with names and romanisation. Fits on one A4 page. តារាងព្យញ្ជនៈខ្មែរ ៣៣ តួ សម្រាប់បោះពុម្ព។">
+  <div class="chart-page">
+    <div class="no-print mb-4 flex flex-wrap items-center gap-3">
+      <nav class="text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href="/letters" class="hover:underline"><T km="ព្យញ្ជនៈ" en="Consonants" /></a>
+        <span aria-hidden="true"> / </span>
+        <T km="តារាងសម្រាប់បោះពុម្ព" en="Printable chart" />
+      </nav>
+      <button type="button" id="print-chart" class="btn ml-auto">
+        <svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6z" /></svg>
+        <T km="បោះពុម្ព" en="Print" />
+      </button>
+    </div>
+
+    <h1 class="mb-1 text-2xl font-semibold"><T km="ព្យញ្ជនៈខ្មែរ ៣៣ តួ" en="The 33 Khmer consonants" /></h1>
+    <p class="mb-5 text-sm text-slate-500">
+      <T km="ពណ៌បៃតង៖ អក្សរសំឡេង «អ»។ ពណ៌លឿង៖ អក្សរសំឡេង «អូ»។ លេខតូចជាលំដាប់ក្នុងតួអក្សរ។" en="Green: a-series. Amber: o-series. The small number is the letter's place in the alphabet." />
+    </p>
+
+    {groups.map((g) => (
+      <section class="chart-group mb-6">
+        <h2 class="mb-2 font-semibold">
+          <T km={g.km} en={g.en} />
+          <span class="text-sm font-normal text-slate-500"> · <T km={g.note.km} en={g.note.en} /> · {g.letters.length}</span>
+        </h2>
+        <ul class="chart-grid grid grid-cols-4 gap-2 min-[400px]:grid-cols-5 sm:grid-cols-6">
+          {g.letters.map((c) => (
+            <li>
+              <a href={letterHref(c)} class:list={['chart-cell relative flex flex-col items-center justify-center rounded-xl border-2 px-1 py-2 text-center', tone(c.series)]}>
+                <span class="chart-num absolute top-1 left-1.5 text-[0.65rem] opacity-60">{khmerDigits(consonants.indexOf(c) + 1)}</span>
+                <span lang="km" class="chart-char font-khmer-serif text-5xl leading-tight">{c.char}</span>
+                <span class="chart-name text-sm font-medium">{c.name}</span>
+                {c.roman.toLowerCase() !== c.name && <span class="chart-roman text-[0.7rem] opacity-70">({c.roman})</span>}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+
+    <p class="chart-foot mt-2 text-xs text-slate-500">រៀនខ្មែរ ReanKhmer · rean.seuksa.com · <T km="ស្តាប់សំឡេងអក្សរនីមួយៗ តាមអ៊ីនធឺណិត" en="hear every letter online" /></p>
+  </div>
+</BaseLayout>
+
+<script>
+  document.getElementById('print-chart')?.addEventListener('click', () => window.print());
+</script>
+
+<style is:global>
+  @media print {
+    @page { size: A4 portrait; margin: 12mm; }
+    /* Only the chart: no site header, footer, bottom nav or skip link. */
+    body > header, body > footer, body > nav, body > a[href='#main'], .no-print { display: none !important; }
+    html, body { background: #fff !important; color: #000 !important; }
+    html.dark { color-scheme: light; }
+    body { padding: 0 !important; min-height: 0 !important; display: block !important; }
+    main { max-width: none !important; padding: 0 !important; }
+    .chart-page { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .chart-page h1 { font-size: 18pt; margin: 0 0 1mm; }
+    .chart-page h2 { font-size: 12pt; margin-bottom: 2mm; }
+    .chart-page p { margin-bottom: 3mm; }
+    .chart-group { margin-bottom: 4mm; break-inside: avoid; }
+    .chart-grid { grid-template-columns: repeat(6, minmax(0, 1fr)) !important; gap: 2mm !important; }
+    .chart-cell { padding: 1.5mm 1mm !important; border-radius: 3mm; text-decoration: none; }
+    .chart-char { font-size: 30pt !important; line-height: 1.25 !important; }
+    .chart-name { font-size: 10pt !important; }
+    .chart-roman { font-size: 7pt !important; }
+    /* Print in light colours even when the site is in dark mode. */
+    .chart-cell[class*='teal'] { background: #f0fdfa !important; border-color: #5eead4 !important; color: #134e4a !important; }
+    .chart-cell[class*='amber'] { background: #fffbeb !important; border-color: #fcd34d !important; color: #78350f !important; }
+    .chart-page .text-slate-500 { color: #475569 !important; }
+  }
+</style>

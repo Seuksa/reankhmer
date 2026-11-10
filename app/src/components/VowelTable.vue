@@ -4,8 +4,10 @@ import type { Vowel } from '../lib/content';
 import { loadProgress, progress } from '../lib/progress';
 import AudioButton from './AudioButton.vue';
 import T from './T.vue';
+import { vowelSlugs } from '../lib/slug';
 
-defineProps<{ vowels: Vowel[] }>();
+const props = defineProps<{ vowels: Vowel[] }>();
+const slugs = vowelSlugs(props.vowels);
 onMounted(loadProgress);
 // Each vowel sounds different after an a-series consonant (ក) and an o-series consonant (គ).
 </script>
@@ -19,7 +21,11 @@ onMounted(loadProgress);
     </div>
     <ul>
       <li v-for="v in vowels" :key="v.id" class="grid grid-cols-[4.5rem_1fr_1fr] items-center gap-2 border-t border-slate-200 px-3 py-2 dark:border-slate-800">
-        <span lang="km" class="font-khmer-serif text-4xl text-slate-500">{{ v.sign ? '◌' + v.sign : '◌' }}</span>
+        <!-- The sign links to the vowel's own page; the play buttons are unchanged. -->
+        <a :href="`/vowels/${slugs.get(v.id)}`" class="group flex flex-col items-start rounded-lg hover:text-brand-700 dark:hover:text-brand-200" :aria-label="`${v.sign ? '◌' + v.sign : '◌'} ${v.roman_hint ?? ''}: more`">
+          <span lang="km" class="font-khmer-serif text-4xl text-slate-500 group-hover:text-brand-700 dark:group-hover:text-brand-200">{{ v.sign ? '◌' + v.sign : '◌' }}</span>
+          <span class="text-xs text-slate-500 underline decoration-dotted group-hover:text-brand-700 dark:group-hover:text-brand-200"><T km="បន្ថែម" en="more" /></span>
+        </a>
         <span class="flex items-center gap-3">
           <span lang="km" class="font-khmer-serif w-14 text-3xl">{{ 'ក' + v.sign }}</span>
           <AudioButton v-if="v.audio_series1" :src="`/${v.audio_series1}`" :heard-key="`v:${v.id}:1`" size="sm" />

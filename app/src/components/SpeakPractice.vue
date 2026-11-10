@@ -10,6 +10,7 @@ import {
   KEEP, MAX_SECONDS, deleteAllTakes, describe, loadTake, micSupported, saveTake, startRecording, takeIds,
   type MicError, type Recording, type SpeakSet, type Voice,
 } from '../lib/speak';
+import { markStep } from '../lib/progress';
 import T from './T.vue';
 import VoicePicture from './VoicePicture.vue';
 
@@ -114,6 +115,9 @@ async function toggleRecord() {
     take.value = blob; setTakeUrl(blob); myVoice.value = null;
     await saveTake(it.id, blob).catch(() => {});
     saved.value = new Set(await takeIds());
+    // study plan: recording 3 items of this set (or all of them, if fewer) completes the step
+    const mine = set.value.items.filter((x) => saved.value.has(x.id)).length;
+    if (mine >= Math.min(3, set.value.items.length)) markStep(`speak:${set.value.id}`);
     void describe(blob).then((v) => { if (item.value?.id === it.id) myVoice.value = v; });
     await compare();
   } catch (e) {

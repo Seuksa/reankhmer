@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import T from '../components/T.astro';
 import CacheRefresh from '../components/CacheRefresh.vue';
+import StudyPlan from '../components/StudyPlan.vue';
 import { CHAPTER_TITLE, chapters, khmerDigits, lessonHref } from '../lib/content';
 
 const starts = [
@@ -12,6 +13,8 @@ const starts = [
 ---
 
 <BaseLayout description="Free Khmer course for beginners and Khmer families abroad: learn to read, hear, write and speak Khmer (Cambodian) with native-speaker recordings. រៀនអាន ស្តាប់ សរសេរ និងនិយាយភាសាខ្មែរ។">
+  <StudyPlan client:load />
+
   <section class="mb-10 rounded-3xl bg-gradient-to-br from-brand-700 to-brand-900 px-6 py-10 text-white sm:px-10">
     <h1 class="text-3xl font-semibold sm:text-4xl">
       <span lang="km" class="block">រៀនអាន ស្តាប់ និងនិយាយខ្មែរ</span>
@@ -55,7 +58,15 @@ const starts = [
     ))}
   </ol>
 
-  <div class="mt-10">
+  <a href="/parents" class="card mt-10 flex items-center gap-4 hover:border-brand-500">
+    <span class="grid size-12 shrink-0 place-items-center rounded-2xl bg-brand-50 text-2xl dark:bg-brand-900/40" aria-hidden="true">👪</span>
+    <span>
+      <span class="block font-semibold"><T km="សម្រាប់ឪពុកម្តាយ" en="For parents" /></span>
+      <span class="text-sm text-slate-500"><T km="របៀបរៀនជាមួយកូន ១០ នាទីក្នុងមួយថ្ងៃ និងតារាងអក្សរសម្រាប់បោះពុម្ព" en="How to learn with your child, 10 minutes a day, and a printable letter chart" /></span>
+    </span>
+  </a>
+
+  <div class="mt-6">
     <CacheRefresh client:visible />
   </div>
 </BaseLayout>

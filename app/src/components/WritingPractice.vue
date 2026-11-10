@@ -4,9 +4,19 @@ import type { Consonant } from '../lib/content';
 import { play } from '../lib/audio';
 import { loadProgress, markHeard, progress } from '../lib/progress';
 import T from './T.vue';
+import { consonantSlugs } from '../lib/slug';
 
 const props = defineProps<{ letters: Consonant[] }>();
-const idx = ref(0);
+// /writing?letter=kor opens that letter (links from the letter pages). Rendered client-only, so location exists.
+const startAt = (() => {
+  if (typeof location === 'undefined') return 0;
+  const q = new URLSearchParams(location.search).get('letter');
+  if (!q) return 0;
+  const slugs = consonantSlugs(props.letters);
+  const i = props.letters.findIndex((c) => slugs.get(c.id) === q || c.char === q);
+  return Math.max(0, i);
+})();
+const idx = ref(startAt);
 const letter = computed(() => props.letters[idx.value]);
 
 // ---------- 2006 animation (Flash via Ruffle, loaded only on this page) ----------
@@ -146,7 +156,10 @@ const stars = computed(() => {
 });
 
 watch(idx, async () => { ink.getContext('2d')!.clearRect(0, 0, SIZE, SIZE); await nextTick(); void reset(); void showFlash(); });
-onMounted(() => { void loadProgress(); void reset(); void showFlash(); });
+onMounted(() => {
+  void loadProgress(); void reset(); void showFlash();
+  if (startAt) document.querySelector('[role=tab][aria-selected=true]')?.scrollIntoView({ block: 'nearest', inline: 'center' });
+});
 </script>
 
 <template>

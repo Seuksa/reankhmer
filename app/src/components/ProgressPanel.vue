@@ -30,9 +30,9 @@ async function keepData() {
   persisted.value = (await navigator.storage?.persist?.()) ?? false;
 }
 
-function download() {
+async function download() {
   const a = document.createElement('a');
-  a.href = URL.createObjectURL(exportProgress());
+  a.href = URL.createObjectURL(await exportProgress());
   a.download = `reankhmer-progress-${new Date().toISOString().slice(0, 10)}.json`;
   a.click();
   URL.revokeObjectURL(a.href);

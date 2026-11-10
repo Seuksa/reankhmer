@@ -59,7 +59,7 @@ const description = clip(les.article?.trim() || `Khmer lesson, chapter ${ch.numb
 
   {letters.length > 0 && (
     <section class="mb-8">
-      <LetterGrid client:load letters={letters} game />
+      <LetterGrid client:load letters={letters} game lessonId={les.id} />
       <p class="mt-4 text-sm text-slate-500"><a href="/letters" class="underline"><T km="មើលព្យញ្ជនៈទាំង ៣៣" en="See all 33 consonants" /></a></p>
     </section>
   )}

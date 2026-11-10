@@ -53,7 +53,7 @@ export default defineConfig({
       workbox: {
         // App shell + every page is precached; lesson audio/images are cached on first use
         // or all at once from the Progress page ("Download for offline").
-        globPatterns: ['**/*.{html,js,css,svg,woff2}'],
+        globPatterns: ['**/*.{html,js,css,svg,woff2}', 'plan-steps.json'],
         globIgnores: ['assets/**', 'ruffle/**'],
         navigateFallback: null,
         cleanURLs: true,

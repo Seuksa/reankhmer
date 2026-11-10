@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import T from '../components/T.astro';
 import LetterGrid from '../components/LetterGrid.vue';
-import { consonants } from '../lib/content';
+import { consonants, letterHref } from '../lib/content';
 ---
 
 <BaseLayout title="ព្យញ្ជនៈ Consonants" description="The 33 Khmer consonants with sound, name and romanisation; tap to hear each one and test yourself. ព្យញ្ជនៈខ្មែរ ៣៣ តួ ជាមួយសំឡេង។">
@@ -15,4 +15,17 @@ import { consonants } from '../lib/content';
     />
   </p>
   <LetterGrid client:load letters={consonants} game />
+
+  <section class="mt-10">
+    <div class="mb-3 flex flex-wrap items-center gap-3">
+      <h2 class="text-lg font-semibold"><T km="ទំព័រសម្រាប់អក្សរនីមួយៗ" en="A page for each letter" /></h2>
+      <a href="/letters/chart" class="btn-quiet ml-auto"><T km="តារាងអក្សរសម្រាប់បោះពុម្ព" en="Printable chart" /></a>
+    </div>
+    <p class="mb-3 text-sm text-slate-500"><T km="សំឡេង ពាក្យឧទាហរណ៍ និងរបៀបសរសេរ" en="Sound, example words and how to write it" /></p>
+    <ul class="flex flex-wrap gap-2">
+      {consonants.map((c) => (
+        <li><a href={letterHref(c)} class="chip"><span lang="km" class="font-khmer-serif text-lg">{c.char}</span> {c.name}</a></li>
+      ))}
+    </ul>
+  </section>
 </BaseLayout>

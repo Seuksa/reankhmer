@@ -2,10 +2,11 @@
 import { computed, onMounted, ref } from 'vue';
 import type { Consonant } from '../lib/content';
 import { play } from '../lib/audio';
-import { loadProgress, markHeard, progress } from '../lib/progress';
+import { loadProgress, markHeard, markStep, progress } from '../lib/progress';
 import T from './T.vue';
 
-const props = defineProps<{ letters: Consonant[]; game?: boolean }>();
+/** lessonId: on a lesson page, finding as many letters as the lesson has completes that study-plan step */
+const props = defineProps<{ letters: Consonant[]; game?: boolean; lessonId?: number }>();
 onMounted(loadProgress);
 
 const filter = ref<0 | 1 | 2>(0);
@@ -41,6 +42,7 @@ async function guess(c: Consonant) {
   if (c.id === target.value.id) {
     score.value.right++;
     feedback.value = 'right';
+    if (props.lessonId && score.value.right >= props.letters.length) markStep(`find:${props.lessonId}`);
     markHeard(`c:${c.id}`);
     setTimeout(nextRound, 900);
   } else {
