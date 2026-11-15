@@ -3,7 +3,7 @@
  * Home page study plan: who is learning, today's duty (daily review + the next ~10-minute step),
  * this week against the weekly goal, and a link to the report for parents.
  */
-import { computed, onMounted, ref } from 'vue';
+import { computed, nextTick, onMounted, ref } from 'vue';
 import { kd, lessonCount, lessonsDone, nextStep, stepDone, useStudyDay, type PlanStep } from '../lib/plan';
 import { loadProgress, markSeen, profileChanged, progress, setPlan } from '../lib/progress';
 import { badges } from '../lib/awards';
@@ -39,6 +39,14 @@ onMounted(async () => {
 const name = ref('');
 const days = ref(5);
 const adding = ref(false);
+// with no learner yet the plan stays one row until the visitor chooses to start it
+const opening = ref(false);
+const nameInput = ref<HTMLInputElement | null>(null);
+async function openForm() {
+  opening.value = true;
+  await nextTick();
+  nameInput.value?.focus();
+}
 function start() {
   if (!name.value.trim()) return;
   const first = !profiles.value.length;
@@ -81,9 +89,20 @@ const lessonLabel = (s: PlanStep) => ({ km: `មេរៀន ${kd(s.ch)}.${kd(s.
 </script>
 
 <template>
-  <section v-if="ready" class="card mb-10 border-brand-200 dark:border-brand-900" aria-labelledby="plan-h">
-    <!-- 1. nobody yet: start a plan -->
-    <form v-if="!me || adding" class="space-y-4" @submit.prevent="start">
+  <section v-if="ready" class="card mb-10 border-brand-200 dark:border-brand-900" :class="!me && !opening ? '!py-4' : ''" aria-labelledby="plan-h">
+    <!-- 1a. nobody yet: one row, the form opens only when asked -->
+    <div v-if="!me && !opening" class="flex items-center gap-3">
+      <div class="min-w-0 flex-1">
+        <h2 id="plan-h" class="font-semibold"><T km="ផែនការសិក្សារបស់ខ្ញុំ" en="My study plan" /></h2>
+        <p class="hidden text-sm text-slate-600 sm:block dark:text-slate-400"><T km="ដាក់ឈ្មោះអ្នក ដើម្បីឱ្យគេហទំព័រចាំថាអ្នករៀនដល់ណា (ស្រេចចិត្ត)។" en="Add your name so the site remembers your progress (optional)." /></p>
+      </div>
+      <button type="button" class="btn shrink-0" :aria-expanded="false" @click="openForm">
+        <span class="sm:hidden"><T km="ចាប់ផ្តើម" en="Start" /></span><span class="hidden sm:inline"><T km="ចាប់ផ្តើមផែនការ" en="Start my plan" /></span> →
+      </button>
+    </div>
+
+    <!-- 1b. start a plan (first learner, or adding another) -->
+    <form v-else-if="!me || adding" class="space-y-4" @submit.prevent="start">
       <h2 id="plan-h" class="text-xl font-semibold"><T km="ផែនការសិក្សារបស់ខ្ញុំ" en="My study plan" /></h2>
       <p class="text-slate-600 dark:text-slate-400">
         <T km="រៀនបន្តិចម្តងៗ ប្រហែល ១០ នាទីក្នុងមួយថ្ងៃ។ គេហទំព័រនឹងចាំថាអ្នករៀនដល់ណា ហើយប្រាប់ពីកិច្ចការថ្ងៃនេះ។"
@@ -91,7 +110,7 @@ const lessonLabel = (s: PlanStep) => ({ km: `មេរៀន ${kd(s.ch)}.${kd(s.
       </p>
       <label class="block max-w-sm">
         <span class="mb-1 block text-sm font-medium"><T km="ឈ្មោះអ្នករៀន" en="Learner's name" /></span>
-        <input v-model="name" required maxlength="40" autocomplete="off" class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-slate-900" />
+        <input ref="nameInput" v-model="name" required maxlength="40" autocomplete="off" class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-slate-900" />
       </label>
       <fieldset v-if="!me">
         <legend class="mb-1 text-sm font-medium"><T km="ចង់រៀនប៉ុន្មានថ្ងៃក្នុងមួយសប្តាហ៍?" en="How many days a week?" /></legend>
@@ -104,7 +123,7 @@ const lessonLabel = (s: PlanStep) => ({ km: `មេរៀន ${kd(s.ch)}.${kd(s.
       <p class="text-xs text-slate-500"><T km="ឈ្មោះ និងវឌ្ឍនភាពនៅលើឧបករណ៍នេះតែប៉ុណ្ណោះ។" en="The name and progress stay on this device only." /></p>
       <div class="flex gap-2">
         <button class="btn" type="submit"><T km="ចាប់ផ្តើម" en="Start" /></button>
-        <button v-if="adding" type="button" class="btn-quiet" @click="adding = false"><T km="បោះបង់" en="Cancel" /></button>
+        <button v-if="adding || !me" type="button" class="btn-quiet" @click="adding = false; opening = false"><T km="បោះបង់" en="Cancel" /></button>
       </div>
     </form>
 
